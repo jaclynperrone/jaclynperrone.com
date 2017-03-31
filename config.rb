@@ -12,6 +12,10 @@ set :layout, "layouts/application"
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
 
+configure :development do
+  activate :livereload
+end
+
 configure :build do
   activate :relative_assets
 end
