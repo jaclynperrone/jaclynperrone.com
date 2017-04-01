@@ -1,0 +1,21 @@
+.site-header {
+  margin: $small-spacing;
+  text-align: center;
+
+  @include grid-media($neat-grid-large) {
+    align-self: center;
+    flex: 1 1 30%;
+    text-align: right;
+    padding-right: $large-spacing;
+  }
+
+  @include grid-media($neat-grid-xlarge) {
+    flex: 1 1 40%;
+  }
+}
+
+.site-header__heading {
+  color: $medium-gray;
+  font-family: 'Playfair Display', serif;
+  font-size: $heading-font-size;
+}

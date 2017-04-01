@@ -1,0 +1,22 @@
+.gallery-list__item {
+  float: left;
+  margin: $xsmall-spacing;
+}
+
+.gallery-list__image {
+  border-radius: $base-border-radius;
+  display: block;
+  object-fit: cover;
+
+  @include grid-media($neat-grid-medium) {
+    @include size(11em);
+  }
+
+  @include grid-media($neat-grid-large) {
+    @include size(13.5em);
+  }
+
+  @include grid-media($neat-grid-xlarge) {
+    @include size(15.5em);
+  }
+}

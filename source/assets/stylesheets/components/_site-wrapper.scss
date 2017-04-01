@@ -1,0 +1,6 @@
+.site-wrapper {
+  @include grid-media($neat-grid-large) {
+    display: flex;
+    width: 100%;
+  }
+}
