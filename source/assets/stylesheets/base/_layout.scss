@@ -1,0 +1,16 @@
+html {
+  background-color: $white;
+  box-sizing: border-box;
+  padding: $xsmall-spacing;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}

@@ -1,3 +1,6 @@
+activate :directory_indexes
+activate :sprockets
+
 activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
@@ -13,7 +16,9 @@ set :layout, "layouts/application"
 # page '/path/to/file.html', layout: 'other_layout'
 
 configure :development do
-  activate :livereload
+  activate :livereload do |reload|
+    reload.no_swf = true
+  end
 end
 
 configure :build do
