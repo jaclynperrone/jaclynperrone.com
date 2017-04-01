@@ -1,5 +1,15 @@
 .gallery-list {
   @include clearfix;
+
+  @include grid-media($neat-grid-medium) {
+    width: 760px;
+    @include margin(null auto);
+  }
+
+  @include grid-media($neat-grid-large) {
+    margin: 0;
+    width: auto;
+  }
 }
 
 .gallery-list__item {
