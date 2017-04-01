@@ -1,6 +1,9 @@
 .site-wrapper {
+  display: flex;
+  flex-direction: column;
+
   @include grid-media($neat-grid-large) {
-    display: flex;
+    flex-direction: row;
     width: 100%;
   }
 }

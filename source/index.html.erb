@@ -1,27 +1,12 @@
 ---
-title: Jaclyn Perrone
+title: Gallery
 ---
-
-<div class="site-wrapper">
-  <header class="site-header">
-    <div class="outer-container">
-      <h1 class="site-header__heading">Jaclyn Perrone</h1>
-      <nav>
-        <ul class="site-header-list">
-          <li class="site-header-list__item"><%= link_to "Gallery", "#" %></li>
-          <li class="site-header-list__item"><%= link_to "About", "#" %></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <section class="site-content">
-    <section class="gallery">
-      <ul class="gallery-list">
-        <% data.gallery.images.each do |i| %>
-          <li class="gallery-list__item"><%=image_tag "#{i}", class: "gallery-list__image" %></li>
-        <% end %>
-      </ul>
-    </section>
+<section class="site-content">
+  <section class="gallery">
+    <ul class="gallery-list">
+      <% data.gallery.images.each do |i| %>
+        <li class="gallery-list__item"><%=image_tag "#{i}", class: "gallery-list__image" %></li>
+      <% end %>
+    </ul>
   </section>
-</div>
+</section>

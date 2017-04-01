@@ -1,0 +1,20 @@
+.about-page {
+  background-image: image-url("field.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-page__copy {
+  background-color: $white;
+  border-radius: $base-border-radius;
+  font-family: 'Roboto', sans-serif;
+  font-size: $base-font-size;
+  font-weight: 300;
+  margin: $base-spacing;
+  padding: $base-spacing;
+
+  @include grid-media($neat-grid-medium) {
+    font-size: $medium-font-size;
+    margin: $large-spacing $xlarge-spacing;
+  }
+}

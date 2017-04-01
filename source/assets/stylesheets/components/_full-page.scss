@@ -1,0 +1,9 @@
+.full-page {
+  display: flex;
+  margin: $small-spacing;
+}
+
+.full-page__content {
+  align-self: center;
+  flex: 1;
+}

@@ -26,6 +26,7 @@ $base-spacing: 1rem;
 $xsmall-spacing: 0.25rem;
 $small-spacing: 0.5rem;
 $large-spacing: 2rem;
+$xlarge-spacing: 4rem;
 $base-z-index: 0;
 
 // Colors
@@ -35,10 +36,11 @@ $dark-gray: #333;
 $medium-gray: #666;
 $light-gray: #ddd;
 $white: #fff;
+$mauve: #978888;
 
 // Font Colors
 $base-font-color: $dark-gray;
-$action-color: $blue;
+$action-color: $mauve;
 
 // Border
 $base-border-color: $light-gray;
