@@ -1,6 +1,12 @@
 body {
   display: flex;
+  flex-direction: column;
   margin: 0;
+
+  @include grid-media($neat-grid-large) {
+    flex-direction: row;
+    width: 100%;
+  }
 }
 
 html {

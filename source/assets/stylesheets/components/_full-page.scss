@@ -1,9 +1,15 @@
 .full-page {
-  display: flex;
+  flex: 1;
   margin: $small-spacing;
+
+  @include grid-media($neat-grid-medium) {
+    display: flex;
+  }
 }
 
 .full-page__content {
-  align-self: center;
-  flex: 1;
+  @include grid-media($neat-grid-medium) {
+    align-self: center;
+    flex: 1;
+  }
 }
