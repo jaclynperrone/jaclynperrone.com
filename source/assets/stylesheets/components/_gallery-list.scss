@@ -1,36 +1,27 @@
 .gallery-list {
   @include clearfix;
-
-  @include grid-media($neat-grid-medium) {
-    width: 760px;
-    @include margin(null auto);
-  }
-
-  @include grid-media($neat-grid-large) {
-    margin: 0;
-    width: auto;
-  }
-}
-
-.gallery-list__item {
-  float: left;
-  margin: $xsmall-spacing;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .gallery-list__image {
+  @include size(100%);
   border-radius: $base-border-radius;
   display: block;
   object-fit: cover;
+}
+
+.gallery-list__item {
+  margin: 0.25%;
+  width: 100%;
 
   @include grid-media($neat-grid-medium) {
-    @include size(11.35em);
+    width: 24.5%;
   }
 
-  @include grid-media($neat-grid-large) {
-    @include size(13.5em);
-  }
-
-  @include grid-media($neat-grid-xlarge) {
-    @include size(15.5em);
+  &:before {
+    content: "";
+    float: left;
+    padding-top: 100%;
   }
 }
