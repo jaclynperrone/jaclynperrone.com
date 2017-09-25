@@ -1,5 +1,4 @@
 .gallery {
-  @include clearfix;
   margin: $xsmall-spacing;
 
   @include grid-media($neat-grid-large) {
