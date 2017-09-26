@@ -2,6 +2,12 @@
   margin: $small-spacing;
   text-align: center;
 
+  @include grid-media($neat-grid-medium) {
+    .gallery-is-open & {
+      display: none;
+    }
+  }
+
   @include grid-media($neat-grid-large) {
     align-self: center;
     flex: 1 0 30%;

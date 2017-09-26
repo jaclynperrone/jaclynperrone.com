@@ -8,17 +8,45 @@
   border-radius: $base-border-radius;
   display: block;
   object-fit: cover;
+
+  @include grid-media($neat-grid-medium) {
+    .active & {
+      margin-top: 65px;
+      margin-left: auto;
+      object-fit: none;
+      width: auto;
+    }
+  }
+
+  @include grid-media($neat-grid-large) {
+    .active & {
+      margin-top: 0;
+    }
+  }
 }
 
 .gallery-list__item {
+  cursor: pointer;
   margin: 0.25%;
   width: 100%;
 
   @include grid-media($neat-grid-medium) {
     width: 24.5%;
+
+    &.active {
+      width: 100%;
+
+      &::before {
+        padding-top: 0;
+      }
+    }
+
+    .gallery-is-open &:not(.active) {
+      display: none;
+    }
   }
 
-  &:before {
+  &::before {
     content: "";
     float: left;
     padding-top: 100%;
