@@ -1,20 +1,37 @@
 .about-page {
-  background-image: image-url("field.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  // animation: colorchange 50s;
+  background: radial-gradient(#ad1588, #75075b);
+
+  // @keyframes colorchange {
+  //   0%   {background-color: #a20f7f;}
+  //   25%  {background-color: #ce009b;}
+  //   50%  {background-color: #b00085;}
+  //   75%  {background-color: #8d006b;}
+  //   100% {background-color: #740058;}
+  // }
 }
 
 .about-page__copy {
-  background-color: $white;
-  border-radius: $base-border-radius;
+  color: rgba($white, 0.9);
   font-family: 'Roboto', sans-serif;
-  font-size: $base-font-size;
   font-weight: 300;
-  margin: $base-spacing;
-  padding: $base-spacing;
+  font-size: $base-font-size;
+  padding: $large-spacing;
+
+  a {
+    color: #fdd14b;
+
+    &:hover {
+      color: darken(#fdd14b, 20%);
+    }
+  }
+
+  p {
+    margin-bottom: $large-spacing;
+  }
 
   @include grid-media($neat-grid-medium) {
-    font-size: $medium-font-size;
-    margin: $large-spacing $xlarge-spacing;
+    font-size: $copy-font-size;
+    padding: $large-spacing $xlarge-spacing;
   }
 }

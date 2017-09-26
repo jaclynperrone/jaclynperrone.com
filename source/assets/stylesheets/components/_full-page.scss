@@ -1,7 +1,8 @@
 .full-page {
-  border-radius: $base-border-radius;
+  border-radius: 2 * $base-border-radius;
+  border: 2px solid $white;
   flex: 1;
-  margin: $small-spacing;
+  margin: $xsmall-spacing;
 
   @include grid-media($neat-grid-medium) {
     display: flex;
