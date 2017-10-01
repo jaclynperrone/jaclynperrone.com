@@ -10,7 +10,7 @@
 }
 
 .full-page__content {
-  @include grid-media($neat-grid-medium) {
+  @include grid-media($neat-grid-large) {
     align-self: center;
     flex: 1;
   }

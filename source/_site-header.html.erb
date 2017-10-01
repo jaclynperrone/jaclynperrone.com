@@ -1,11 +1,13 @@
 <header class="site-header">
-  <h1 class="site-header__heading">Jaclyn Perrone</h1>
+  <h1>
+    <%= link_to "Jaclyn Perrone", "index.html", class: "site-header__heading" %>
+  </h1>
   <nav>
     <ul class="site-header-list">
-      <li class="site-header-list__item">
+      <li class="site-header-list__item <%=nav_active('index.html') %>" >
         <%= link_to "Artwork", "index.html" %>
       </li>
-      <li class="site-header-list__item">
+      <li class="site-header-list__item <%=nav_active('about.html') %>">
         <%= link_to "About", "about.html" %>
       </li>
     </ul>

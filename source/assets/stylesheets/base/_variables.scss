@@ -10,7 +10,7 @@ $base-font-family: $font-stack-system;
 $heading-font-family: $base-font-family;
 
 // Font Sizes
-$base-font-size: 1em;
+$base-font-size: 1rem;
 $heading-font-size: $base-font-size * 2.25;
 $small-font-size: $base-font-size * 0.75;
 $copy-font-size: $base-font-size * 1.125;
@@ -38,10 +38,12 @@ $medium-gray: #666;
 $light-gray: #ddd;
 $white: #fff;
 $mauve: #978888;
+$purple: #53182E;
 
 // Font Colors
 $base-font-color: $dark-gray;
 $action-color: $mauve;
+$active-color: $purple;
 
 // Border
 $base-border-color: $light-gray;

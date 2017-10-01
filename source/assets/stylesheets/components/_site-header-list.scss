@@ -1,6 +1,48 @@
 .site-header-list {
-  font-family: 'Chathura', sans-serif;
-  font-size: $large-font-size;
-  line-height: 1.25;
-  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+
+  @include grid-media($neat-grid-large) {
+    flex-direction: column;
+  }
+}
+
+.site-header-list__item {
+  position: relative;
+
+  @include grid-media($neat-grid-small) {
+    padding: 0 $base-spacing;
+
+    &.active {
+      a {
+        color: $active-color;
+        border-bottom: 1px solid $active-color;
+      }
+    }
+  }
+
+  @include grid-media($neat-grid-large) {
+    padding: 0;
+
+    a {
+      padding-right: 0.75rem;
+    }
+
+    &.active {
+      a {
+        color: $active-color;
+        border-bottom: 0;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        transform: skew(150deg);
+        border: 1px solid rgba($active-color, 0.8);
+        right: 0;
+        height: 15px;
+        top: 10px;
+      }
+    }
+  }
 }

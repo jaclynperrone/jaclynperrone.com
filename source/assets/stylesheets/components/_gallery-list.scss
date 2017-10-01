@@ -4,15 +4,18 @@
 }
 
 .gallery-list__image {
-  @include size(100%);
   border-radius: $base-border-radius;
   display: block;
   object-fit: cover;
+  width: 100%;
 
   @include grid-media($neat-grid-medium) {
+    height: 100%;
+
     .active & {
-      margin-top: 65px;
+      height: 100%;
       margin-left: auto;
+      margin-top: 65px;
       object-fit: none;
       width: auto;
     }
@@ -33,6 +36,12 @@
   @include grid-media($neat-grid-medium) {
     width: 24.5%;
 
+    &::before {
+      content: "";
+      float: left;
+      padding-top: 100%;
+    }
+
     &.active {
       width: 100%;
 
@@ -44,11 +53,5 @@
     .gallery-is-open &:not(.active) {
       display: none;
     }
-  }
-
-  &::before {
-    content: "";
-    float: left;
-    padding-top: 100%;
   }
 }

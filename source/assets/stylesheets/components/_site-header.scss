@@ -11,8 +11,8 @@
   @include grid-media($neat-grid-large) {
     align-self: center;
     flex: 1 0 30%;
+    padding-right: $base-spacing;
     text-align: right;
-    padding-right: $large-spacing;
   }
 
   @include grid-media($neat-grid-xlarge) {
@@ -22,6 +22,11 @@
 
 .site-header__heading {
   color: $medium-gray;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Oswald', sans-serif;
   font-size: $heading-font-size;
+  font-weight: 200;
+
+  @include grid-media($neat-grid-large) {
+    padding-right: 0.75rem;
+  }
 }

@@ -24,3 +24,9 @@ end
 configure :build do
   activate :relative_assets
 end
+
+helpers do
+  def nav_active(path)
+    current_page.path == path ? "active" : ""
+  end
+end

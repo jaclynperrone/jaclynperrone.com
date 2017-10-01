@@ -1,30 +1,13 @@
 .about-page {
-  // animation: colorchange 50s;
-  background: radial-gradient(#ad1588, #75075b);
-
-  // @keyframes colorchange {
-  //   0%   {background-color: #a20f7f;}
-  //   25%  {background-color: #ce009b;}
-  //   50%  {background-color: #b00085;}
-  //   75%  {background-color: #8d006b;}
-  //   100% {background-color: #740058;}
-  // }
+  background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
 }
 
 .about-page__copy {
-  color: rgba($white, 0.9);
+  color: $medium-gray;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: $base-font-size;
   padding: $large-spacing;
-
-  a {
-    color: #fdd14b;
-
-    &:hover {
-      color: darken(#fdd14b, 20%);
-    }
-  }
 
   p {
     margin-bottom: $large-spacing;
@@ -34,4 +17,9 @@
     font-size: $copy-font-size;
     padding: $large-spacing $xlarge-spacing;
   }
+}
+
+.about-page__image {
+  @include size(100px);
+  margin: 0 auto $base-spacing auto;
 }

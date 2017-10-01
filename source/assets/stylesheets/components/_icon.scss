@@ -1,0 +1,10 @@
+.icon--back {
+  @include transition(stroke $base-duration $base-timing);
+  fill:none;
+  stroke: $action-color;
+  stroke-width:3;
+
+  &:hover {
+    stroke: $active-color;
+  }
+}
