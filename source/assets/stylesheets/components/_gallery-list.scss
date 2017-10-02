@@ -13,17 +13,9 @@
     height: 100%;
 
     .active & {
-      height: 100%;
-      margin-left: auto;
-      margin-top: 65px;
-      object-fit: none;
-      width: auto;
-    }
-  }
-
-  @include grid-media($neat-grid-large) {
-    .active & {
-      margin-top: 0;
+      height: auto;
+      margin-top: $xlarge-spacing;
+      object-fit: contain;
     }
   }
 }
