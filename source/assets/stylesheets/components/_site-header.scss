@@ -1,10 +1,11 @@
 .site-header {
+  @include transition(all $base-duration $base-timing);
   margin: $small-spacing;
   text-align: center;
 
-  @include grid-media($neat-grid-medium) {
+  @include grid-media($neat-grid-large) {
     .gallery-is-open & {
-      display: none;
+      flex: 1 0 10%;
     }
   }
 
@@ -27,6 +28,40 @@
   font-weight: 200;
 
   @include grid-media($neat-grid-large) {
-    padding-right: 0.75rem;
+    padding-right: $medium-spacing;
+  }
+}
+
+.site-header__back {
+  display: none;
+
+  @include grid-media($neat-grid-medium) {
+    @include position(absolute, $medium-spacing null null 0);
+    cursor: pointer;
+    display: block;
+    opacity: 0;
+    transition: opacity 0.2s;
+    visibility: hidden;
+    width: 100px;
+    // z-index: 1;
+
+    .gallery-is-open & {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  @include grid-media($neat-grid-large) {
+    @include position(absolute, null $medium-spacing null auto);
+  }
+}
+
+.site-header__nav {
+  .gallery-is-open & {
+    @include position(absolute, 0);
+
+    @include grid-media($neat-grid-large) {
+      position: relative;
+    }
   }
 }

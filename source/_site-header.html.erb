@@ -2,7 +2,10 @@
   <h1>
     <%= link_to "Jaclyn Perrone", "index.html", class: "site-header__heading" %>
   </h1>
-  <nav>
+  <nav class="site-header__nav">
+    <div class="site-header__back">
+      <%= partial "/assets/images/icon--back.svg" %>
+    </div>
     <ul class="site-header-list">
       <li class="site-header-list__item <%=nav_active('index.html') %>" >
         <%= link_to "Artwork", "index.html" %>

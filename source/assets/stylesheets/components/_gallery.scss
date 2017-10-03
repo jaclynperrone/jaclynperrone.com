@@ -6,19 +6,3 @@
     height: 100vh;
   }
 }
-
-.gallery__close {
-  @include position(absolute, $small-spacing null null $small-spacing);
-  transition: opacity 0.2s;
-  width: 100px;
-  opacity: 0;
-  cursor: pointer;
-  visibility: hidden;
-
-  @include grid-media($neat-grid-medium) {
-    .gallery-is-open & {
-      visibility: visible;
-      opacity: 1;
-    }
-  }
-}

@@ -4,7 +4,7 @@ $(function(){
     $(this).addClass('active').siblings().removeClass('active');
   });
 
-  $('.gallery__close').click(function(){
+  $('.site-header__back').click(function(){
     $('body').removeClass('gallery-is-open');
     $('.gallery-list__item').removeClass('active');
   });
