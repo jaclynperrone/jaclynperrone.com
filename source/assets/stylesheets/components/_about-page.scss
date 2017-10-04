@@ -14,12 +14,23 @@
   }
 
   @include grid-media($neat-grid-medium) {
-    font-size: $copy-font-size;
+    font-size: $base-font-size;
     padding: $large-spacing $xlarge-spacing;
   }
 }
 
 .about-page__image {
-  @include size(100px);
-  margin: 0 auto $base-spacing auto;
+  @include margin(null auto $small-spacing);
+  @include size(75px);
+
+  @include grid-media($neat-grid-medium) {
+    @include size(100px);
+  }
+}
+
+.about-page__footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
