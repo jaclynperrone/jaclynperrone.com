@@ -1,18 +1,23 @@
 <header class="site-header">
-  <h1>
-    <%= link_to "Jaclyn Perrone", "index.html", class: "site-header__heading" %>
-  </h1>
-  <nav class="site-header__nav">
-    <div class="site-header__back">
+  <div class="site-header__content">
+    <div class="site-header__back site-header__back--medium js-gallery-close">
       <%= partial "/assets/images/icon--back.svg" %>
     </div>
-    <ul class="site-header-list">
-      <li class="site-header-list__item <%=nav_active('index.html') %>" >
-        <%= link_to "Artwork", "index.html" %>
-      </li>
-      <li class="site-header-list__item <%=nav_active('about.html') %>">
-        <%= link_to "About", "about.html" %>
-      </li>
-    </ul>
-  </nav>
+    <h1>
+      <%= link_to "Jaclyn Perrone", "index.html", class: "site-header__heading" %>
+    </h1>
+    <nav class="site-header__nav">
+      <div class="site-header__back js-gallery-close">
+        <%= partial "/assets/images/icon--back.svg" %>
+      </div>
+      <ul class="site-header-list">
+        <li class="site-header-list__item <%=nav_active('index.html') %>" >
+          <%= link_to "Artwork", "index.html" %>
+        </li>
+        <li class="site-header-list__item <%=nav_active('about.html') %>">
+          <%= link_to "About", "about.html" %>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </header>

@@ -1,16 +1,15 @@
 .site-header-list {
   display: flex;
   justify-content: center;
-  // opacity: 1;
-  // position: relative;
-  // transition: opacity 0.2s;
-  // visibility: visible;
+  opacity: 1;
+  position: relative;
+  transition: all $base-duration $base-timing;
+  visibility: visible;
 
   @include grid-media($neat-grid-medium) {
     .gallery-is-open & {
-      display: none;
-      // visibility: none;
-      // opacity: 0;
+      opacity: 0;
+      visibility: none;
     }
   }
 
@@ -27,8 +26,8 @@
 
     &.active {
       a {
-        color: $active-color;
         border-bottom: 1px solid $active-color;
+        color: $active-color;
       }
     }
   }
@@ -47,13 +46,13 @@
       }
 
       &::before {
-        content: '';
-        position: absolute;
-        transform: skew(150deg);
         border: 1px solid rgba($active-color, 0.8);
-        right: 0;
+        content: '';
         height: 15px;
+        position: absolute;
+        right: 0;
         top: 10px;
+        transform: skew(150deg);
       }
     }
   }

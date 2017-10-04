@@ -4,20 +4,29 @@
   text-align: center;
 
   @include grid-media($neat-grid-large) {
+    align-self: center;
+    flex: 1 0 30%;
+    padding-right: $base-spacing;
+    text-align: right;
+
     .gallery-is-open & {
       flex: 1 0 10%;
     }
   }
 
-  @include grid-media($neat-grid-large) {
-    align-self: center;
-    flex: 1 0 30%;
-    padding-right: $base-spacing;
-    text-align: right;
-  }
-
   @include grid-media($neat-grid-xlarge) {
     flex: 1 0 40%;
+  }
+}
+
+.site-header__content {
+  @include grid-media($neat-grid-medium) {
+    display: flex;
+    align-items: center;
+  }
+
+  @include grid-media($neat-grid-large) {
+    display: block;
   }
 }
 
@@ -27,41 +36,54 @@
   font-size: $heading-font-size;
   font-weight: 200;
 
-  @include grid-media($neat-grid-large) {
+  @include grid-media($neat-grid-medium) {
     padding-right: $medium-spacing;
   }
 }
 
 .site-header__back {
+  transition: all $base-duration $base-timing;
+  cursor: pointer;
   display: none;
+}
 
-  @include grid-media($neat-grid-medium) {
-    @include position(absolute, $medium-spacing null null 0);
-    cursor: pointer;
+.site-header__back {
+  @include grid-media($neat-grid-large) {
+    @include position(absolute, null $medium-spacing null auto);
     display: block;
     opacity: 0;
-    transition: opacity 0.2s;
     visibility: hidden;
     width: 100px;
-    // z-index: 1;
+    z-index: 1;
 
     .gallery-is-open & {
       visibility: visible;
       opacity: 1;
     }
   }
+}
+
+.site-header__back--medium {
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+
+  @include grid-media($neat-grid-medium) {
+    display: block;
+
+    .gallery-is-open & {
+      visibility: visible;
+      opacity: 1;
+      width: 60px;
+      margin-right: $base-spacing;
+    }
+  }
 
   @include grid-media($neat-grid-large) {
-    @include position(absolute, null $medium-spacing null auto);
+    display: none;
   }
 }
 
 .site-header__nav {
-  .gallery-is-open & {
-    @include position(absolute, 0);
-
-    @include grid-media($neat-grid-large) {
-      position: relative;
-    }
-  }
+  position: relative;
 }
