@@ -6,3 +6,14 @@
     height: 100vh;
   }
 }
+
+.gallery__nav {
+  display: none;
+
+  @include grid-media($neat-grid-medium) {
+    .gallery-is-open & {
+      display: block;
+      @include position(absolute, $gallery-margin $gallery-margin null $gallery-margin);
+    }
+  }
+}

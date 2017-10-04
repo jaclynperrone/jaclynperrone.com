@@ -1,2 +1,2 @@
 //= require jquery
-//= require gallery-list-item
+//= require gallery

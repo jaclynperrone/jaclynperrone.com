@@ -1,0 +1,34 @@
+.gallery-nav-list {
+  display: flex;
+  font-size: $small-font-size;
+  justify-content: space-between;
+}
+
+.gallery-nav-list__item {
+  transition: all $base-duration $base-timing;
+  opacity: 1;
+  visibility: visible;
+  background-color: rgba($black, 0.8);
+  border-radius: 2px;
+  color: rgba($white, 0.8);
+  cursor: pointer;
+  padding: $xsmall-spacing;
+
+  &:hover {
+    color: $white;
+  }
+}
+
+.gallery-nav-list__item--prev {
+  .gallery-shows-first & {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.gallery-nav-list__item--next {
+  .gallery-shows-last & {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
