@@ -2,8 +2,4 @@
   @include grid-media($neat-grid-large) {
     flex: 1 1 70%;
   }
-
-  @include grid-media($neat-grid-xlarge) {
-    flex: 1 1 60%;
-  }
 }

@@ -5,17 +5,9 @@
 
   @include grid-media($neat-grid-large) {
     align-self: center;
-    flex: 1 0 30%;
+    flex: 1 0 15%;
     padding-right: $base-spacing;
     text-align: right;
-
-    .gallery-is-open & {
-      flex: 1 0 10%;
-    }
-  }
-
-  @include grid-media($neat-grid-xlarge) {
-    flex: 1 0 40%;
   }
 }
 
