@@ -4,7 +4,7 @@
   text-align: center;
 
   @include grid-media($neat-grid-large) {
-    align-self: center;
+    // align-self: center;
     flex: 1 0 15%;
     padding-right: $base-spacing;
     text-align: right;
@@ -19,6 +19,16 @@
 
   @include grid-media($neat-grid-large) {
     display: block;
+    flex: 1;
+  }
+}
+
+.site-header__container {
+
+  @include grid-media($neat-grid-large) {
+    display: flex;
+    height: 100%;
+    align-items: center;
   }
 }
 

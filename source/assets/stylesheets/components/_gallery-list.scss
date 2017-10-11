@@ -3,6 +3,10 @@
   flex-wrap: wrap;
 }
 
+.gallery-list--about {
+  // width: 50%;
+}
+
 .gallery-list__image {
   border-radius: $base-border-radius;
   display: block;
@@ -44,5 +48,11 @@
     .gallery-is-open &:not(.active) {
       display: none;
     }
+  }
+}
+
+.gallery-list__item--about {
+  @include grid-media($neat-grid-medium) {
+    width: 32.5%;
   }
 }
