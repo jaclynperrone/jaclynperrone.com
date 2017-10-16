@@ -24,8 +24,6 @@ p {
 
 a {
   color: $action-color;
-  font-family: 'Oswald', sans-serif;
-  font-size: $medium-font-size;
   font-weight: 300;
   text-decoration: none;
   transition: color $base-duration $base-timing;
@@ -33,7 +31,7 @@ a {
   &:active,
   &:focus,
   &:hover {
-    color: shade($action-color, 25%);
+    color: $action-color-hover;
   }
 }
 

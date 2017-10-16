@@ -1,5 +1,7 @@
 .site-content {
   flex: 1;
+  margin: $xsmall-spacing;
+
   @include grid-media($neat-grid-large) {
     flex: 1 1 70%;
   }
@@ -30,11 +32,31 @@
 .site-content__container {
   background-color: #f5f5f5;
   display: flex;
-  height: 100%;
+  margin: $gallery-margin;
   // flex-direction: row;
   // justify-content: center;
 
   @include grid-media($neat-grid-large) {
     // align-items: center;
+  }
+}
+
+.site-content__external-link {
+  display: flex;
+  align-items: center;
+
+  span {
+    margin-left: $xsmall-spacing;
+    vertical-align: top;
+  }
+
+  svg {
+    fill: $action-color;
+  }
+
+  &:hover {
+    svg {
+      fill: $action-color-hover;
+    }
   }
 }

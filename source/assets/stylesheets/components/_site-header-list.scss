@@ -21,6 +21,11 @@
 .site-header-list__item {
   position: relative;
 
+  a {
+    font-family: "Oswald", sans-serif;
+    font-size: 1.25rem;
+  }
+
   @include grid-media($neat-grid-small) {
     padding: 0 $base-spacing;
 

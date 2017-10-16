@@ -11,16 +11,22 @@ title: About
         I have been an artist for as long as I can remember, and received a BA in Visual Arts from Fordham University in NYC. Since then I have been painting and drawing on my nights and weekends, steadily adding to my portfolio while taking on commissioned work.
       </p>
       <p>
-        During my days I work as a product designer at thoughtbot, where I help clients envision and create their digital products from start to finish. I specialize in consulting, user research, usability testing, UI/UX design, and front-end development. My resum&eacute; is available upon request.
+        During my days I work as a product designer at <a href="http://thoughtbot.com" target="_blank">thoughtbot</a>, where I help clients envision and create their digital products from start to finish. I specialize in consulting, user research, usability testing, UI/UX design, and front-end development. My resum&eacute; is available upon request.
       </p>
       <p>
         I love to collaborate and talk design. Feel free to reach out if you would like to chat, or are in need of consulting, mentorship, or artwork!
       </p>
       <p>
-        <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#104;&#101;&#108;&#108;&#111;&#64;&#106;&#97;&#99;&#108;&#121;&#110;&#112;&#101;&#114;&#114;&#111;&#110;&#101;&#46;&#99;&#111;&#109;">&#104;&#x65;&#x6c;&#x6c;&#111;&#64;&#106;&#x61;&#99;&#x6c;&#121;&#110;&#112;&#101;&#114;&#x72;&#111;&#x6e;&#101;&#x2e;&#99;&#111;&#x6d;</a>
+        <a class="site-content__external-link" href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#104;&#101;&#108;&#108;&#111;&#64;&#106;&#97;&#99;&#108;&#121;&#110;&#112;&#101;&#114;&#114;&#111;&#110;&#101;&#46;&#99;&#111;&#109;">
+          <%= partial "/assets/images/icon--email.svg" %>
+          <span>&#104;&#x65;&#x6c;&#x6c;&#111;&#64;&#106;&#x61;&#99;&#x6c;&#121;&#110;&#112;&#101;&#114;&#x72;&#111;&#x6e;&#101;&#x2e;&#99;&#111;&#x6d;</span>
+        </a>
       </p>
       <p>
-        <%= link_to "@jaclynperr", "https://www.instagram.com/jaclynperr/" %>
+        <% link_to "https://www.instagram.com/jaclynperr/", class: "site-content__external-link" do %>
+          <%= partial "/assets/images/icon--instagram.svg" %>
+          <span>@jaclynperr</span>
+        <% end %>
       </p>
     </div>
     <div class="site-content__gallery">
@@ -30,6 +36,5 @@ title: About
         <% end %>
       </ul>
     </div>
-
   </div>
 </section>

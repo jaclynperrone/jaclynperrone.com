@@ -13,7 +13,7 @@ $heading-font-family: $base-font-family;
 $base-font-size: 1rem;
 $heading-font-size: $base-font-size * 2.25;
 $small-font-size: $base-font-size * 0.75;
-$medium-font-size: $base-font-size * 1.25;
+$medium-font-size: $base-font-size * 1.125;
 $large-font-size: $base-font-size * 1.75;
 
 // Line height
@@ -43,6 +43,7 @@ $purple: #53182E;
 // Font Colors
 $base-font-color: $dark-gray;
 $action-color: $mauve;
+$action-color-hover: shade($action-color, 25%);
 $active-color: $purple;
 
 // Border
