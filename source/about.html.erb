@@ -3,6 +3,13 @@ title: About
 ---
 <section class="site-content site-content--about">
   <div class="site-content__container">
+    <div class="site-content__gallery--mobile">
+      <ul class="gallery-list">
+        <% data.about.mobileImagesTop.each do |i| %>
+          <li class="gallery-list__item gallery-list__item--mobile"><%=image_tag "#{i}", class: "gallery-list__image gallery-list__image--mobile" %></li>
+        <% end %>
+      </ul>
+    </div>
     <div class="site-content__copy">
       <p>
         Hi! My name is Jaclyn and I am a lover of computers and a wielder of paintbrushes (and bass guitars).
@@ -17,13 +24,13 @@ title: About
         I love to collaborate and talk design. Feel free to reach out if you would like to chat, or are in need of consulting, mentorship, or artwork!
       </p>
       <p>
-        <a class="site-content__external-link" href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#104;&#101;&#108;&#108;&#111;&#64;&#106;&#97;&#99;&#108;&#121;&#110;&#112;&#101;&#114;&#114;&#111;&#110;&#101;&#46;&#99;&#111;&#109;">
+        <a class="site-content__external-link" href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#104;&#101;&#108;&#108;&#111;&#64;&#106;&#97;&#99;&#108;&#121;&#110;&#112;&#101;&#114;&#114;&#111;&#110;&#101;&#46;&#99;&#111;&#109;" target="_blank">
           <%= partial "/assets/images/icon--email.svg" %>
           <span>&#104;&#x65;&#x6c;&#x6c;&#111;&#64;&#106;&#x61;&#99;&#x6c;&#121;&#110;&#112;&#101;&#114;&#x72;&#111;&#x6e;&#101;&#x2e;&#99;&#111;&#x6d;</span>
         </a>
       </p>
       <p>
-        <% link_to "https://www.instagram.com/jaclynperr/", class: "site-content__external-link" do %>
+        <% link_to "https://www.instagram.com/jaclynperr/", class: "site-content__external-link", target: "_blank" do %>
           <%= partial "/assets/images/icon--instagram.svg" %>
           <span>@jaclynperr</span>
         <% end %>
@@ -33,6 +40,13 @@ title: About
       <ul class="gallery-list gallery-list--about">
         <% data.about.images.each do |i| %>
           <li class="gallery-list__item gallery-list__item--about"><%=image_tag "#{i}", class: "gallery-list__image" %></li>
+        <% end %>
+      </ul>
+    </div>
+    <div class="site-content__gallery--mobile">
+      <ul class="gallery-list">
+        <% data.about.mobileImagesBottom.each do |i| %>
+          <li class="gallery-list__item gallery-list__item--mobile"><%=image_tag "#{i}", class: "gallery-list__image gallery-list__image--mobile" %></li>
         <% end %>
       </ul>
     </div>
