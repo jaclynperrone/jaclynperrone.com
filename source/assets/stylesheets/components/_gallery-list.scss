@@ -29,7 +29,8 @@
   width: 100%;
 
   @include grid-media($neat-grid-medium) {
-    width: 24.5%;
+    // width: 24.5%;
+    width: 19.5%;
 
     &::before {
       content: "";
