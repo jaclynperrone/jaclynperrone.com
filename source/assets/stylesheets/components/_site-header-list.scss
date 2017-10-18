@@ -20,21 +20,23 @@
 
 .site-header-list__item {
   position: relative;
+  font-size: $medium-font-size;
+  padding-left: $large-spacing;
 
   a {
     font-family: "Oswald", sans-serif;
-    font-size: 1.25rem;
   }
 
-  @include grid-media($neat-grid-small) {
-    padding: 0 $base-spacing;
-
-    &.active {
-      a {
-        border-bottom: 1px solid $active-color;
-        color: $active-color;
-      }
+  &.active {
+    a {
+      border-bottom: 1px solid $active-color;
+      color: $active-color;
     }
+  }
+
+  @include grid-media($neat-grid-medium) {
+    font-size: 1.25rem;
+    padding-left: $xlarge-spacing;
   }
 
   @include grid-media($neat-grid-large) {

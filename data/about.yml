@@ -1,28 +1,28 @@
 images:
   - about/crit.jpg
-  - about/mountain.jpg
-  - about/band.jpg
+  - about/canyon.jpg
+  - about/planes.jpg
   - about/research.jpg
   - about/nyc.jpg
-  - about/tiny.jpg
-  - about/friends.jpg
   - about/bass.jpg
-  - about/canyon.jpg
-  # - about/canoe.jpg
+  # - about/friends.jpg
+  # - about/bass.jpg
+  # - about/canyon.jpg
+  # - about/band.jpg
   # - about/canyon.jpg
   # - about/computer.jpg
   # - about/howie.jpg
 
 mobileImagesTop:
   - about/crit-mobile.jpg
-  - about/mountain.jpg
-  - about/band.jpg
+  - about/canyon.jpg
+  - about/planes.jpg
   - about/research.jpg
   - about/nyc.jpg
 
 mobileImagesBottom:
-  - about/canoe.jpg
-  - about/tiny.jpg
-  - about/friends.jpg
   - about/bass.jpg
-  - about/canyon.jpg
+  - about/canoe.jpg
+  - about/friends.jpg
+  - about/tiny.jpg
+  - about/mountain.jpg
