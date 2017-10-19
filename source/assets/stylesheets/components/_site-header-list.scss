@@ -41,6 +41,7 @@
 
   @include grid-media($neat-grid-large) {
     padding: 0;
+    font-size: 1.5vw;
 
     a {
       padding-right: $medium-spacing;
@@ -63,4 +64,5 @@
       }
     }
   }
+
 }

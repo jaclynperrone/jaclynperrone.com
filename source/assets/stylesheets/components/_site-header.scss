@@ -6,7 +6,7 @@
   @include grid-media($neat-grid-large) {
     // align-self: center;
     flex: 1 0 15%;
-    padding: 0 $base-spacing 0 0;
+    padding: 0 $large-spacing 0 0;
     text-align: right;
   }
 }
@@ -56,7 +56,12 @@
   }
 
   @include grid-media($neat-grid-large) {
+    font-size: 3vw;
     margin-bottom: $small-spacing;
+  }
+
+  @include grid-media($neat-grid-xlarge) {
+    
   }
 }
 
