@@ -1,25 +1,48 @@
 .gallery-nav-list {
+  transition: all $base-duration $base-timing;
   display: flex;
-  font-size: $small-font-size;
-  justify-content: space-between;
+  position: absolute;
+  right: -10px;
+  justify-content: space-around;
+  // width: 100%;
+  visibility: hidden;
+  max-height: 0;
+  opacity: 0;
+  // font-size: $small-font-size;
+
+  @include grid-media($neat-grid-medium) {
+    .gallery-is-open & {
+      visibility: visible;
+      opacity: 1;
+      max-height: 100px;
+    }
+  }
+
+  @include grid-media($neat-grid-large) {
+    right: -3px;
+    margin-top: $small-spacing;
+  }
+
 }
 
 .gallery-nav-list__item {
+  // padding: 0 $large-spacing;
   transition: all $base-duration $base-timing;
   opacity: 1;
   visibility: visible;
-  background-color: rgba($black, 0.8);
-  border-radius: 2px;
-  color: rgba($white, 0.8);
+  // background-color: rgba($black, 0.8);
+  // border-radius: 2px;
+  // color: rgba($white, 0.8);
   cursor: pointer;
-  padding: $xsmall-spacing;
+  // padding: $xsmall-spacing;
 
-  &:hover {
-    color: $white;
-  }
+  // &:hover {
+  //   color: $white;
+  // }
 }
 
 .gallery-nav-list__item--prev {
+
   .gallery-shows-first & {
     opacity: 0;
     visibility: hidden;
@@ -27,6 +50,8 @@
 }
 
 .gallery-nav-list__item--next {
+  padding: 0 $large-spacing 0 $base-spacing;
+
   .gallery-shows-last & {
     opacity: 0;
     visibility: hidden;

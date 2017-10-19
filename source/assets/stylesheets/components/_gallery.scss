@@ -6,13 +6,13 @@
   }
 }
 
-.gallery__nav {
-  display: none;
+// .gallery__nav {
+//   display: none;
 
-  @include grid-media($neat-grid-medium) {
-    .gallery-is-open & {
-      display: block;
-      @include position(absolute, $gallery-margin $gallery-margin null $gallery-margin);
-    }
-  }
-}
+//   @include grid-media($neat-grid-medium) {
+//     .gallery-is-open & {
+//       display: block;
+//       @include position(absolute, $gallery-margin $gallery-margin null $gallery-margin);
+//     }
+//   }
+// }
