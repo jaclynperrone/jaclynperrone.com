@@ -1,10 +1,8 @@
 .site-header {
   @include transition(all $base-duration $base-timing);
   padding: $large-spacing;
-  // text-align: center;
 
   @include grid-media($neat-grid-large) {
-    // align-self: center;
     flex: 1 0 15%;
     padding: 0 $large-spacing 0 0;
     text-align: right;
@@ -12,17 +10,13 @@
 }
 
 .site-header__content {
-    display: flex;
-    // align-items: center;
-    align-items: flex-end;
-    justify-content: space-between;
+  align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
 
-    @include grid-media($neat-grid-medium) {
-      align-items: center;
-      // align-items: center;
-      // align-items: flex-end;
-      // justify-content: flex-start;
-    }
+  @include grid-media($neat-grid-medium) {
+    align-items: center;
+  }
 
   @include grid-media($neat-grid-large) {
     display: block;
@@ -32,20 +26,20 @@
 
 .site-header__container {
   @include grid-media($neat-grid-large) {
+    align-items: center;
     display: flex;
     height: 100%;
-    align-items: center;
   }
 }
 
 .site-header__heading {
   color: $medium-gray;
+  flex: 1;
   font-family: "Oswald", sans-serif;
   font-size: $large-font-size;
   font-weight: 200;
-  padding-right: $medium-spacing;
   margin-bottom: 0;
-  flex: 1;
+  padding-right: $medium-spacing;
 
   a {
     font-weight: 200;
@@ -62,52 +56,6 @@
 
   @include grid-media($neat-grid-xlarge) {
     
-  }
-}
-
-.site-header__back {
-  transition: all $base-duration $base-timing;
-  cursor: pointer;
-  display: none;
-}
-
-.site-header__back {
-  @include grid-media($neat-grid-large) {
-    @include position(absolute, null $medium-spacing null auto);
-    display: block;
-    opacity: 0;
-    visibility: hidden;
-    width: 100px;
-    z-index: 1;
-
-    .gallery-is-open & {
-      visibility: visible;
-      opacity: 1;
-    }
-  }
-}
-
-.site-header__back--medium {
-  // opacity: 0;
-  // visibility: hidden;
-  // width: 0;
-
-  @include grid-media($neat-grid-medium) {
-    // display: block;
-    opacity: 0;
-    visibility: hidden;
-    width: 0;
-
-    .gallery-is-open & {
-      visibility: visible;
-      opacity: 1;
-      width: 60px;
-      margin-right: $base-spacing;
-    }
-  }
-
-  @include grid-media($neat-grid-large) {
-    display: none;
   }
 }
 

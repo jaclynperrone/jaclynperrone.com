@@ -1,0 +1,19 @@
+.link--with-icon {
+  align-items: center;
+  display: flex;
+
+  span {
+    margin-left: $xsmall-spacing;
+    vertical-align: top;
+  }
+
+  svg {
+    fill: $action-color;
+  }
+
+  &:hover {
+    svg {
+      fill: $action-color-hover;
+    }
+  }
+}

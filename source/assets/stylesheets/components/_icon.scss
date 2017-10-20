@@ -1,8 +1,8 @@
 .icon--navigation {
   @include transition(stroke $base-duration $base-timing);
   fill: none;
-  stroke: $action-color;
   stroke-width:3;
+  stroke: $action-color;
   width: 60px;
 
   &:hover {

@@ -1,0 +1,46 @@
+.single-page {
+  align-self: center;
+
+  @include grid-media($neat-grid-medium) {
+    overflow: hidden;
+  }
+}
+
+.single-page__container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  @include grid-media($neat-grid-large) {
+    flex-direction: row;
+  }
+}
+
+.single-page__copy {
+  color: $purple;
+  flex: 1 1 60%;
+  padding: $large-spacing;
+
+  @include grid-media($neat-grid-large) {
+    align-self: center;
+    font-size: 1.25vw;
+  }
+}
+
+.single-page__gallery {
+  display: none;
+
+  @include grid-media($neat-grid-large) {
+    align-self: center;
+    display: block;
+    flex: 1 1 40%;
+  }
+}
+
+.single-page__gallery--mobile {
+  flex: 1;
+
+  @include grid-media($neat-grid-large) {
+    display: none;
+  }
+}
