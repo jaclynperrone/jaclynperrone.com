@@ -7,7 +7,7 @@
 
     .gallery-is-open & {
       align-self: center;
-      box-shadow: -55px 1px 164px -58px rgba($mauve, 0.3);
+      box-shadow: $container-box-shadow;
     }
   }
 }

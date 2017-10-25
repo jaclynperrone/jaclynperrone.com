@@ -3,10 +3,15 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
+  transition: background-color $base-duration $base-timing;
 
   @include grid-media($neat-grid-large) {
     flex-direction: row;
     width: 100%;
+
+    &.gallery-is-open {
+      background-color: rgba($mauve, 0.2);
+    }
   }
 }
 

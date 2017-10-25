@@ -15,14 +15,14 @@
             <%= partial "/assets/images/icon--next.svg" %>
           </li>
 
-          <li class="gallery-nav-list__item js-gallery-close"><%= partial "/assets/images/icon--close.svg" %></li>
+          <li class="gallery-nav-list__item gallery-nav-list__item--close  js-gallery-close"><%= partial "/assets/images/icon--close.svg" %></li>
         </ul>
 
         <ul class="site-header-list">
           <li class="site-header-list__item <%=nav_active('index.html') %>" >
             <%= link_to "Artwork", "index.html" %>
           </li>
-          
+
           <li class="site-header-list__item <%=nav_active('about.html') %>">
             <%= link_to "About", "about.html" %>
           </li>

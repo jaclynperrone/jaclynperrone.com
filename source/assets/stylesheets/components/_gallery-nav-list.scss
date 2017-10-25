@@ -1,11 +1,11 @@
 .gallery-nav-list {
   @include position(absolute, null -10px null null);
-  transition: all $base-duration $base-timing;
   display: flex;
   justify-content: space-around;
-  visibility: hidden;
   max-height: 0;
   opacity: 0;
+  transition: all $base-duration $base-timing;
+  visibility: hidden;
 
   @include grid-media($neat-grid-medium) {
     .gallery-is-open & {
@@ -24,15 +24,27 @@
 
 .gallery-nav-list__item {
   cursor: pointer;
-  opacity: 1;
+  opacity: 0.1;
   transition: all $base-duration $base-timing;
   visibility: visible;
+
+  .gallery-is-open & {
+    opacity: 1;
+  }
+}
+
+@mixin inactiveGalleryNavItem {
+  opacity: 0.1;
+    cursor: not-allowed;
+
+    &:hover svg {
+      stroke: $action-color;
+    }
 }
 
 .gallery-nav-list__item--prev {
   .gallery-shows-first & {
-    opacity: 0;
-    visibility: hidden;
+    @include inactiveGalleryNavItem;
   }
 }
 
@@ -40,7 +52,6 @@
   padding: 0 $large-spacing 0 $base-spacing;
 
   .gallery-shows-last & {
-    opacity: 0;
-    visibility: hidden;
+    @include inactiveGalleryNavItem;
   }
 }
