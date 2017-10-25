@@ -1,8 +1,14 @@
 .single-page {
   align-self: center;
+  border: 1px solid rgba($mauve, 0.2);
+  border-radius: $base-border-radius;
 
   @include grid-media($neat-grid-medium) {
     overflow: hidden;
+  }
+
+  @include grid-media($neat-grid-large) {
+    box-shadow: -55px 1px 164px -58px rgba($mauve, 0.3);
   }
 }
 

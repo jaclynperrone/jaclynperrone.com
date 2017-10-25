@@ -1,11 +1,13 @@
 .site-content {
-  border-radius: $base-border-radius;
-  border: 1px solid rgba($mauve, 0.2);
   flex: 1;
   margin: $xsmall-spacing;
 
   @include grid-media($neat-grid-large) {
-    box-shadow: -55px 1px 164px -58px rgba($mauve, 0.3);
     flex: 1 1 70%;
+
+    .gallery-is-open & {
+      align-self: center;
+      box-shadow: -55px 1px 164px -58px rgba($mauve, 0.3);
+    }
   }
 }
