@@ -3,7 +3,11 @@
   fill: none;
   stroke-width:3;
   stroke: $action-color;
-  width: 60px;
+  width: 5vw;
+
+  @include grid-media($neat-grid-large) {
+    width: 3.5vw;
+  }
 
   &:hover {
     stroke: $active-color;

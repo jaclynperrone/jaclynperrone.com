@@ -36,7 +36,7 @@
   color: $medium-gray;
   flex: 1;
   font-family: "Oswald", sans-serif;
-  font-size: $large-font-size;
+  font-size: 7.5vw;
   font-weight: 200;
   margin-bottom: 0;
   padding-right: $medium-spacing;
@@ -46,16 +46,12 @@
   }
 
   @include grid-media($neat-grid-medium) {
-    font-size: $heading-font-size;
+    font-size: 4vw;
   }
 
   @include grid-media($neat-grid-large) {
     font-size: 3vw;
     margin-bottom: $small-spacing;
-  }
-
-  @include grid-media($neat-grid-xlarge) {
-    
   }
 }
 

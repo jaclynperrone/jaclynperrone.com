@@ -5,13 +5,15 @@ body {
   margin: 0;
   transition: background-color $base-duration $base-timing;
 
-  @include grid-media($neat-grid-large) {
-    flex-direction: row;
-    width: 100%;
-
+  @include grid-media($neat-grid-medium) {
     &.gallery-is-open {
       background-color: rgba($mauve, 0.2);
     }
+  }
+
+  @include grid-media($neat-grid-large) {
+    flex-direction: row;
+    width: 100%;
   }
 }
 
