@@ -6,6 +6,10 @@
   padding: $large-spacing;
   z-index: 1;
 
+  &.header-is-reduced {
+    padding: $small-spacing;
+  }
+
   @include grid-media($neat-grid-medium) {
     .gallery-is-open & {
       background-color: $light-mauve;
@@ -22,6 +26,10 @@
 
     .gallery-is-open & {
       background-color: transparent;
+    }
+
+    &.header-is-reduced {
+      padding: 0 $large-spacing 0 0;
     }
   }
 }
