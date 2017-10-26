@@ -1,11 +1,37 @@
 .site-header {
+  @include position(fixed, 0 0 null 0);
   @include transition(all $base-duration $base-timing);
+  background-color: $white;
+  box-shadow: 0px 10px 68px -26px rgba($mauve, 0.3);
   padding: $large-spacing;
+  z-index: 1;
+
+  @include grid-media($neat-grid-medium) {
+    .gallery-is-open & {
+      background-color: $light-mauve;
+    }
+  }
 
   @include grid-media($neat-grid-large) {
-    flex: 1 0 15%;
+    @include position(fixed, 0 null 0 null);
+    background-color: transparent;
+    box-shadow: none;
+    width: 22%;
     padding: 0 $large-spacing 0 0;
     text-align: right;
+
+    .gallery-is-open & {
+      background-color: transparent;
+    }
+  }
+}
+
+.site-header-placeholder {
+  display: none;
+
+  @include grid-media($neat-grid-large) {
+    display: block;
+    flex: 1 0 15%;
   }
 }
 
@@ -13,10 +39,6 @@
   align-items: flex-end;
   display: flex;
   justify-content: space-between;
-
-  @include grid-media($neat-grid-medium) {
-    align-items: center;
-  }
 
   @include grid-media($neat-grid-large) {
     display: block;

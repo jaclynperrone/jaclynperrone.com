@@ -3,16 +3,18 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
+  padding-top: 80px;
   transition: background-color $base-duration $base-timing;
 
   @include grid-media($neat-grid-medium) {
     &.gallery-is-open {
-      background-color: rgba($mauve, 0.2);
+      background-color: $light-mauve;
     }
   }
 
   @include grid-media($neat-grid-large) {
     flex-direction: row;
+    padding-top: 0;
     width: 100%;
   }
 }

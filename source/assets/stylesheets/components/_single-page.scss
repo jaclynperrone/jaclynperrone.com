@@ -3,10 +3,6 @@
   border: 1px solid rgba($mauve, 0.2);
   border-radius: $base-border-radius;
 
-  @include grid-media($neat-grid-medium) {
-    overflow: hidden;
-  }
-
   @include grid-media($neat-grid-large) {
     box-shadow: $container-box-shadow;
   }
