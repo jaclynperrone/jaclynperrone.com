@@ -21,7 +21,6 @@
     background-color: transparent;
     box-shadow: none;
     width: 22%;
-    padding: 0 $large-spacing 0 0;
     text-align: right;
 
     .gallery-is-open & {
@@ -69,7 +68,6 @@
   font-size: 7.5vw;
   font-weight: 200;
   margin-bottom: 0;
-  padding-right: $medium-spacing;
 
   a {
     font-weight: 200;
