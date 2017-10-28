@@ -21,7 +21,6 @@
 .site-header-list__item {
   font-size: 4.5vw;
   padding-left: $large-spacing;
-  position: relative;
 
   a {
     font-family: "Oswald", sans-serif;
@@ -42,5 +41,25 @@
   @include grid-media($neat-grid-large) {
     font-size: 1.5vw;
     padding: 0;
+
+    a {
+      align-items: center;
+      display: inline-flex;
+
+      &::before {
+        @include size(15px 10px);
+        content: "";
+      }
+    }
+
+    &.active {
+      a {
+        border: 0;
+
+        &::before {
+          background: image-url('icon--active.svg') no-repeat center center;
+        }
+      }
+    }
   }
 }
