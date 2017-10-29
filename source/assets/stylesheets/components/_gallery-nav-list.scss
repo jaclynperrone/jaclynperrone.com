@@ -27,6 +27,14 @@
   transition: all $base-duration $base-timing;
   visibility: visible;
 
+  &:hover {
+    transform: scale(1.1);
+
+    .icon--navigation {
+      stroke: $active-color;
+    }
+  }
+
   .gallery-is-open & {
     opacity: 1;
   }

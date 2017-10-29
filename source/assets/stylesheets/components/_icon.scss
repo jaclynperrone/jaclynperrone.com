@@ -8,8 +8,4 @@
   @include grid-media($neat-grid-large) {
     width: 3.5vw;
   }
-
-  &:hover {
-    stroke: $active-color;
-  }
 }
