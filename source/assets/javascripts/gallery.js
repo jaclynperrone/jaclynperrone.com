@@ -1,42 +1,43 @@
 $(function(){
+  var totalImages = $('ul.gallery-list li.js-gallery-item').length-1;
+  var currentIndex = 0;
+
+  function showSelectedImage() {
+    $('#'+currentIndex).addClass('active').siblings().removeClass('active');
+  }
+
+  $('.js-gallery-item').each(function(){
+    var index = $(this).index();
+    $(this).attr('id',index);
+  });
+
   $('.js-gallery-prev').click(function(){
-    var activeGallery = $('.js-gallery-item.active');
-
-    activeGallery.removeClass('active').prev().addClass('active');
-
-    $('body').removeClass('gallery-shows-last');
-
-    if ($('.js-gallery-item:first-child').hasClass('active')) {
-      $('body').addClass('gallery-shows-first');
+    currentIndex--;
+    if (currentIndex < 0) {
+      currentIndex = totalImages;
     }
+    showSelectedImage();
   });
 
   $('.js-gallery-next').click(function(){
-    var activeGallery = $('.js-gallery-item.active');
-
-    activeGallery.removeClass('active').next().addClass('active');
-
-    $('body').removeClass('gallery-shows-first');
-
-    if ($('.js-gallery-item:last-child').hasClass('active')) {
-      $('body').addClass('gallery-shows-last');
+   currentIndex++;
+    if (currentIndex > totalImages) {
+      currentIndex = 0;
     }
+    showSelectedImage();
   });
 
   $('.js-gallery-item').click(function(){
-    window.scrollTo(0,0);
+    var viewport = $(window).width();
+
+    if (viewport >= 768) {
+      window.scrollTo(0,0);
+    }
+
+    currentIndex = $(this).index();
 
     $('body').addClass('gallery-is-open');
-
-    $(this).addClass('active').siblings().removeClass('active');
-
-    if ($(this).is(':first-child')) {
-      $('body').addClass('gallery-shows-first');
-    }
-
-    if ($(this).is(':last-child')) {
-      $('body').addClass('gallery-shows-last');
-    }
+    showSelectedImage();
   });
 
   $('.js-gallery-close').click(function(){

@@ -33,25 +33,6 @@
   }
 }
 
-@mixin inactiveGalleryNavItem {
-  opacity: 0.2;
-    cursor: not-allowed;
-
-    &:hover svg {
-      stroke: $action-color;
-    }
-}
-
-.gallery-nav-list__item--prev {
-  .gallery-shows-first & {
-    @include inactiveGalleryNavItem;
-  }
-}
-
 .gallery-nav-list__item--next {
   padding: 0 $large-spacing 0 $base-spacing;
-
-  .gallery-shows-last & {
-    @include inactiveGalleryNavItem;
-  }
 }
