@@ -17,14 +17,6 @@
     .active & {
       height: auto;
       object-fit: contain;
-
-      &:hover {
-        transform: scale(1);
-      }
-    }
-
-    &:hover {
-      transform: scale(1.1);
     }
   }
 }
@@ -55,11 +47,19 @@
       padding-top: 100%;
     }
 
+    &:hover .gallery-list__image {
+      transform: scale(1.1);
+    }
+
     &.active {
       width: 100%;
 
       &::before {
         padding-top: 0;
+      }
+
+      &:hover .gallery-list__image {
+        transform: scale(1);
       }
     }
 

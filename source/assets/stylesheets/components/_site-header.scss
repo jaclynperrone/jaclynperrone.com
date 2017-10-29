@@ -10,7 +10,7 @@
     padding: $small-spacing;
   }
 
-  @include grid-media($neat-grid-medium) {
+  @include grid-media($neat-grid-medium-only) {
     .gallery-is-open & {
       background-color: $light-mauve;
     }
@@ -20,17 +20,11 @@
     @include position(fixed, 0 null 0 null);
     background-color: transparent;
     box-shadow: none;
-    padding: 0;
     padding: 0 $large-spacing 0 0;
     text-align: right;
     width: 22%;
 
-    .gallery-is-open & {
-      background-color: transparent;
-    }
-
     &.header-is-reduced {
-      padding: 0;
       padding: 0 $large-spacing 0 0;
     }
   }

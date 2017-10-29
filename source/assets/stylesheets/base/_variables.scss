@@ -74,6 +74,10 @@ $neat-grid-medium: (
   "media": $medium-screen
 );
 
+$neat-grid-medium-only: (
+  "media": "(max-width:" + ($large-screen - 1) + ") and (min-width:" + $medium-screen + ")"
+);
+
 $neat-grid-large: (
   "media": $large-screen
 );
