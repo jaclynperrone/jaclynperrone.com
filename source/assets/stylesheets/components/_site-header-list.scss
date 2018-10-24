@@ -45,11 +45,6 @@
     a {
       align-items: center;
       display: inline-flex;
-
-      &::before {
-        @include size(15px 10px);
-        content: "";
-      }
     }
 
     &.active {
@@ -57,7 +52,8 @@
         border: 0;
 
         &::before {
-          background: image-url('icon--active.svg') no-repeat center center;
+          content: "•";
+          padding-right: $xsmall-spacing;
         }
       }
     }
