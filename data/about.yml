@@ -2,7 +2,7 @@ images:
   - about/crit.jpg
   - about/canyon.jpg
   - about/planes.jpg
-  - about/research.jpg
+  - about/etsy.jpg
   - about/nyc.jpg
   - about/bass.jpg
 
@@ -10,7 +10,7 @@ mobileImagesTop:
   - about/crit-mobile.jpg
   - about/canyon.jpg
   - about/planes.jpg
-  - about/research.jpg
+  - about/etsy.jpg
   - about/nyc.jpg
 
 mobileImagesBottom:
