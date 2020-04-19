@@ -1,0 +1,9 @@
+.list-bands {
+  @media only screen and (min-width: $small-screen) {
+    columns: 3;
+
+    li {
+      margin-bottom: 0;
+    }
+  }
+}

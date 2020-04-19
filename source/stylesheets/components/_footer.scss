@@ -1,0 +1,38 @@
+.footer {
+  @media only screen and (min-width: $small-screen) {
+    display: flex;
+  }
+}
+
+.footer__content--copy {
+  line-height: $base-line-height;
+
+  p {
+    margin-bottom: $large-spacing;
+    font-weight: $strong-font-weight;
+  }
+
+  @media only screen and (min-width: $small-screen) {
+    flex: 1 70%;
+    padding-left: $section-spacing;
+  }
+}
+
+.footer__content--image {
+  @media only screen and (min-width: $small-screen) {
+    flex: 1 30%;
+  }
+}
+
+.footer__closing {
+  margin-top: $section-spacing;
+}
+
+.footer__image {
+  max-width: 100%;
+}
+
+.footer__ingredients {
+  font-size: $small-font-size;
+  margin-top: $xsmall-spacing;
+}

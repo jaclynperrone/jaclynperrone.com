@@ -1,0 +1,9 @@
+.anchor-reset {
+  color: $base-body-color;
+  font-size: 1em;
+  font-weight: $base-font-weight;
+
+  &:hover {
+    color: $base-body-color;
+  }
+}

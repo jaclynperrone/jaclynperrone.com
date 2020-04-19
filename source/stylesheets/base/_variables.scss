@@ -1,0 +1,56 @@
+// Breakpoints
+$small-screen: 600px;
+
+// Typography
+$base-font-family: "Work Sans", "Helvetica", sans-serif;
+$heading-font-family: "Fjalla One", "Helvetica", sans-serif;
+
+// Font Sizes
+$base-font-size: 1.1em;
+$small-font-size: $base-font-size * 0.75;
+$medium-font-size: $base-font-size * 1.125;
+
+// Border Radius
+$base-border-width: 5px;
+
+// Font Weights
+$base-font-weight: 300;
+$strong-font-weight: 500;
+
+// Line height
+$base-line-height: 1.6;
+
+// Spacing
+$base-spacing: 1rem;
+$large-spacing: 1.5rem;
+$medium-spacing: 0.75rem;
+$small-spacing: 0.5rem;
+$xsmall-spacing: 0.25rem;
+$section-spacing: 4rem;
+
+// Colors
+$blue: #0ecbe0;
+$dark-gray: #333;
+$gray: #666;
+$mustard: #f8af06;
+$white: #fff;
+$salmon: #fd5b30;
+
+$base-body-color: $dark-gray;
+$copy-dimmed: $gray;
+
+$primary-tint: $salmon;
+$secondary-tint: $blue;
+
+$action-color: shade($primary-tint, 10%);
+$action-color-hover: shade($primary-tint, 20%);
+
+$first-stop: tint($primary-tint, 75%);
+$second-stop: tint($primary-tint, 50%);
+$third-stop: tint($primary-tint, 25%);
+$fourth-stop: tint($primary-tint, 0%);
+$fifth-stop: tint($primary-tint, 0%);
+
+// Animations
+$base-duration: 150ms;
+$base-timing: ease;

@@ -1,0 +1,40 @@
+.section-container {
+   padding: $base-spacing;
+
+  @media only screen and (min-width: $small-screen) {
+    padding: $section-spacing;
+  }
+}
+
+.section-container--hero {
+  background-color: $first-stop;
+
+  .section-content {
+    background-color: transparent;
+  }
+
+  @media only screen and (min-width: $small-screen) {
+    padding-bottom: 0;
+  }
+}
+
+.section-container--designer {
+  background-color: $first-stop;
+}
+
+.section-container--artist {
+  background-color: $second-stop;
+}
+
+.section-container--contact {
+  background-color: $third-stop;
+}
+
+.section-container--footer {
+  background-color: $fourth-stop;
+}
+
+.section-container--musician {
+  background-color: $third-stop;
+}
+

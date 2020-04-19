@@ -1,0 +1,13 @@
+.section-sub {
+  margin: $section-spacing $base-spacing;
+}
+
+.section-sub--sub {
+  margin: $section-spacing/2 $base-spacing;
+}
+
+.section-sub--tilt {
+  @media only screen and (min-width: $small-screen) {
+    margin-top: 5rem;
+  }
+}

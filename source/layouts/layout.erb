@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-16122727-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-16122727-1');
+    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title><%= current_page.data.title %></title>
+    <%= stylesheet_link_tag "site" %>
+  </head>
+  <body>
+    <div class="site-wrapper">
+      <%= yield %>
+    </div>
+  </body>
+</html>

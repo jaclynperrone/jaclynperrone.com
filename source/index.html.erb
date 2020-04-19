@@ -1,10 +1,23 @@
 ---
-title: Jaclyn Perrone - Artwork
+title: Jaclyn Perrone
 ---
-<section class="site-content">
-  <ul class="gallery-list">
-    <% data.gallery.images.each do |i| %>
-      <li class="gallery-list__item gallery-list__item--artwork js-gallery-item"><%=image_tag "#{i}", class: "gallery-list__image" %></li>
-    <% end %>
-  </ul>
-</section>
+<header class="section-container section-container--hero">
+  <div class="section-content">
+    <h1>Jaclyn Perrone</h1>
+    <div>👋 I'm a Design Director at
+    <%= link_to(
+      "thoughtbot",
+      "https://thoughtbot.com",
+      target: "_blank", :class => "anchor-reset"
+      ) %> and a Jackie of all trades.</div>
+  </div>
+</header>
+
+<main>
+  <%= partial "design-leader" %>
+  <%= partial "artist" %>
+  <%= partial "contact" %>
+</main>
+
+  <%= partial "footer" %>
+
