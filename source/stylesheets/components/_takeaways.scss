@@ -1,0 +1,42 @@
+.takeaways {
+	background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffd6cb' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+	background-color: tint($primary-tint, 95%);
+	color: $copy-dimmed;
+	line-height: 1.5;
+	margin-top: $section-spacing;
+	border: 2px dotted $first-stop;
+	padding: $large-spacing;
+	border-radius: $base-border-radius;
+
+  h3 {
+    margin-top: 0;
+  }
+
+	@media only screen and (min-width: $small-screen) {
+		column-gap: $xlarge-spacing;
+		grid-template-columns: repeat(3, 1fr);
+	  display: grid;
+	}
+}
+
+.takeaways__heading {
+	grid-column-end: 4;
+  color: $second-stop;
+  font-family: $heading-font-family;
+  grid-column-start: 1;
+  text-align: center;
+}
+
+.takeaways__content {
+	@media only screen and (max-width: $small-screen) {
+		margin-bottom: $xlarge-spacing;
+	}
+}
+
+.takeaways__content-heading {
+	display: flex;
+} //see if you want this
+
+.takeaways__content-heading-icon {
+	margin-right: $small-spacing;
+}

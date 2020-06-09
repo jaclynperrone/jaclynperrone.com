@@ -1,0 +1,96 @@
+.card {
+	position: relative;
+	line-height: 1.5;
+	margin-bottom: $large-spacing;
+  padding: $base-spacing;
+  border-radius: $base-border-radius;
+}
+
+.card--columns {
+	@media only screen and (min-width: $small-screen) {
+    display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: $xlarge-spacing;
+  }
+}
+
+.card__heading {
+	text-align: center;
+	grid-column-end: 4;
+  grid-column-start: 1;
+  margin: 0;
+  font-family: $heading-font-family;
+  margin-bottom: $base-spacing;
+}
+
+.card__col-heading {
+	margin-bottom: $small-spacing;
+	margin-top: 0;
+}
+
+.card__col {
+	margin-bottom: $base-spacing;
+
+	p:first-of-type {
+		margin-top: 0;
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	@media only screen and (min-width: $small-screen) {
+		margin-bottom: 0;
+  }
+}
+
+.card--stack-1 {
+	z-index: 0;
+	margin-top: $xlarge-spacing;
+
+	@media only screen and (min-width: $small-screen) {
+		transform: rotate(5deg);
+		margin-top: $xxlarge-spacing;
+  }
+}
+
+.card--stack-2 {
+	z-index: 2;
+
+	@media only screen and (min-width: $small-screen) {
+		margin-top: -$xxlarge-spacing;
+		transform: rotate(-5deg);
+  }
+}
+
+.card--stack-3 {
+	z-index: 1;
+
+	@media only screen and (min-width: $small-screen) {
+		margin-top: -$xlarge-spacing;
+		transform: rotate(3deg);
+  }
+}
+
+.card--blue {
+	border: 2px dotted $ice-blue;
+	background: tint($primary-tint, 95%);
+
+	.list--checks, .list--nested {
+		li {
+			&:before {
+				color: $blue;
+			}
+		}
+	}
+}
+
+.card--pink {
+	border: 2px dotted $first-stop;
+	background: tint($primary-tint, 95%);
+}
+
+.card--yellow {
+	border: 2px dotted $yellow;
+	background: tint($primary-tint, 95%);
+}

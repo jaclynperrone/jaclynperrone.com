@@ -1,0 +1,278 @@
+---
+title: Jaclyn Perrone - MBTA Case Study
+type: case study
+---
+
+<section class="section-container section-container--designer">
+  <div class="section-content gradient-border-wrap gradient-border-wrap--first">
+    <div class="gradient-border-wrap__module">
+      <div class="article">
+        <div class="section-content__header">
+          <h2 class="section-content__heading section-content__heading--tilt">Case study</h2>
+          <h2 class="section-content__subheading">MBTA</h2>
+        </div>
+
+        <ul class="tag-list">
+          <li class="tag-list__item">🤝 Client work</li>
+          <li class="tag-list__item">💁‍♀️ Project lead</li>
+          <li class="tag-list__item">💬 Generative user research</li>
+          <li class="tag-list__item">⚡ Rapid prototyping</li>
+          <li class="tag-list__item">💡 Idea validation</li>
+          <li class="tag-list__item">🧩 MVP release</li>
+        </ul>
+
+        <h3 class="article__heading">Challenge</h3>
+
+        <p>When the MBTA in Boston came to thoughtbot, they had an objective that they wanted to solve: <strong>How might we improve communication between officials on the Green Line?</strong></p>
+
+        <p>Being that a problem of this nature could be solved in a myriad of different ways, we decided to use Design Thinking to tackle the problem with its solution-based, user-centric approach. The five phases of the Design Thinking process are: Empathize, Define, Ideate, Prototype, Test. With a small team of six designers and developers, we set out to do these phases over the course of three months, with the goal of having software in the hands of Green Line officials quickly to get feedback and continue iteration from there.</p>
+
+        <div class="article__image-container">
+          <div class="article__image">
+            <%= image_tag "mbta-reservoir.jpg",
+                :class => "",
+                :alt => "Heading to user interviews" %>
+          </div>
+          <div class="article__caption">Heading to Reservoir terminal for our first user interview</div>
+        </div>
+
+        <h3 class="article__heading">Applying the Design Thinking Process</h3>
+
+        <h2>Empathize</h2>
+        <p>The first phase of the Design Thinking process is Empathize, which means learning about your customers and the world in which they operate. Understanding your users’ needs, wants, and desires is the cornerstone to any successful design project, and will determine whether your product solves a real problem or misses the mark.</p>
+
+        <p>In order to do this, we interviewed 21 MBTA officials, operators, and supervisors to get a better understanding of how the Green Line operates as a whole, across all the different positions. We had a series of objectives for our interviews:</p>
+
+        <div class="card card--columns card--list card--blue card-pattern--kiwi">
+          <h4 class="card__heading"><span>Research objectives</span></h4>
+          <div class="card__col">
+            <ul class="list list--checks">
+              <li>Get a sense of the different relationships within Green Line operations.</li>
+              <li>Evaluate where we can supplement manual processes with technology.</li>
+              <li>Identify inefficiencies and communication gaps in their workflow.</li>
+            </ul>
+          </div>
+          <div class="card__col">
+            <ul class="list list--checks">
+              <li>Understand the broader context of Green Line operations.</li>
+              <li>Identify at what points officials need more information to perform a task more efficiently.</li>
+              <li>Identify user needs that are unarticulated. Focus on their feelings towards a particular workflow and their motivations in certain situations.</li>
+            </ul>
+          </div>
+        </div>
+
+        <p>We held one-on-one, hour long interviews with different officials over the course of a month. Oftentimes our team would split up and interview multiple people in one day to cover more ground quickly. We asked questions such as:</p>
+
+        <div class="card card--columns card--list card--blue card-pattern--kiwi">
+          <h4 class="card__heading">Interview questions</h4>
+          <div class="card__col">
+            <ul class="list list--ordered">
+              <li>Walk us through your typical day.</span>
+                <ul class="list list--nested">
+                  <li>What’s frustrating?</li>
+                  <li>What’s rewarding?</li>
+                </ul>
+              </li>
+              <li>What types of decisions do you make throughout the day?
+                <ul class="list list--nested">
+                  <li>What types of information do you need to be successful?</li>
+                  <li>What is challenging to access?</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="card__col">
+            <ul class="list">
+              <li>Can you tell me about a challenging experience you had on the job?
+                <ul class="list list--nested">
+                  <li>How did you handle it?</li>
+                  <li>What tools did you use?</li>
+                </ul>
+              </li>
+              <li>If you had a magic wand and could fix one thing right now, what would you fix?</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="article__image-container">
+          <div class="article__image">
+            <%= image_tag "mbta-interview.jpg",
+                :class => "",
+                :alt => "Interviewing a Chief Inspector" %>
+          </div>
+          <div class="article__caption">Interviewing an MBTA Chief Inspector</div>
+        </div>
+
+        <div class="article__image-container">
+          <div class="article__image">
+            <%= image_tag "mbta-occ.jpg",
+                :class => "",
+                :alt => "Visiting the OCC" %>
+          </div>
+          <div class="article__caption">Visiting the Operations Control Center (OCC) to conduct user research</div>
+        </div>
+
+        <h2>Define</h2>
+        <p>After a day’s interviews were over, we would come together as a team and synthesize. We captured our observations (things we heard, saw, felt) on sticky notes, and over time clustered similar ones together to form overarching insights. We came up with 30+ insights, all of which could easily spin off into their own product offering. The task at hand was prioritizing these insights and choosing one that we could tackle together in this short time that would yield the highest impact. This marked the second phase of the Design Thinking process: Define. Now it was up to us to use these insights to determine an objective to work towards that focuses on a critical, common unmet need that we heard throughout our interviews.</p>
+
+        <div class="article__image-container">
+          <div class="article__image">
+            <%= image_tag "mbta-insights.jpg",
+                :class => "",
+                :alt => "Our board of insights" %>
+          </div>
+          <div class="article__caption">User research findings clustered into overarching themes</div>
+        </div>
+
+        <p>In order to help inform prioritization, we created a series of user personas to further document our findings. We culminated our findings into seven different personas, featuring the Chief Inspector, Desk Official, Dispatcher, Operator, Pull-out Inspector, Supervisor, and Yard Master. Our personas dove into topics such as: Goals, Behaviors & Habits, Technology Access, and Relationships. It was important for us to create and share artifacts like these from the research phase, to help inform future MBTA projects.</p>
+
+        <div class="article__image-container">
+          <div class="article__image ui">
+            <%= image_tag "mbta-persona.jpg",
+                :class => "border",
+                :alt => "A Chief Inspector persona" %>
+          </div>
+          <div class="article__caption">Persona for a Chief Inspector</div>
+        </div>
+
+        <p>Once we had a better understanding of all the different players and the nature of their relationships (the questions they asked each other and the blockers they experienced), we revisited our insights and determined that <strong>reducing radio chatter</strong> would have the greatest impact on their community. At this time there was one radio channel that handled all the communication on the Green Line, and there were times it was taken up with questions that could be easily answered through software (eg. who is operating a particular train). Questions like these prevented more urgent information from being distributed, which ultimately caused a breakdown in communication.</p>
+
+        <div class="article__image-container article__image-container--2up">
+          <div class="article__image">
+            <%= image_tag "mbta-whiteboard-1.jpg",
+                :class => "",
+                :alt => "MVP screen" %>
+          </div>
+          <div class="article__image">
+            <%= image_tag "mbta-whiteboard-2.jpg",
+                :class => "",
+                :alt => "MVP screen" %>
+          </div>
+          <div class="article__caption">Mapping out communication between Green Line officials</div>
+        </div>
+
+        <h2>Ideate</h2>
+
+        <p>Now that we had a problem statement defined (<em>how might we reduce radio chatter?</em>), we were now ready to begin the third phase of the Design Thinking process: Ideate. As a team we sat down and did a series of design exercises to help us generate as many solutions as possible to solve our objective. We started with a round of Mind Mapping, which is used as a warm-up exercise to get our ideas out of our heads and onto paper. From there we did a few rounds of a rapid sketching exercise called Speedy Eights, to get as many solutions and ideas out as quickly as we can. Finally, we finished up with an activity called Story Boarding, which allowed each of us to develop an idea further by diving into the details of its interaction. After a few rounds of sharing and critiquing our ideas, we converged on a final storyboard that outlined the screens of the prototype we wanted to build.</p>
+
+        <div class="article__image-container article__image-container--2up article__image-container--mosiac">
+          <div class="article__image mosiac-1">
+            <%= image_tag "mbta-sketch-1.jpg",
+                :class => "",
+                :alt => "MVP screen" %>
+          </div>
+          <div class="article__image mosiac-2">
+            <%= image_tag "mbta-sketch-2.jpg",
+                :class => "",
+                :alt => "MVP screen" %>
+          </div>
+          <div class="article__image mosiac-3">
+            <%= image_tag "mbta-sketch-3.jpg",
+                :class => "",
+                :alt => "MVP screen" %>
+          </div>
+          <div class="article__image mosiac-4">
+            <%= image_tag "mbta-sketch-4.jpg",
+                :class => "",
+                :alt => "MVP screen" %>
+          </div>
+          <div class="article__caption">A selection of sketches from ideation exercises</div>
+        </div>
+
+        <h2>Prototype & Test</h2>
+
+        <p>This took us right into the last two phases of the Design Thinking process: Prototyping and Testing. Our first prototype had a few key objectives:</p>
+
+        <div class="heading-lockup heading-lockup--item">
+          <h5 class="heading-lockup__subheading">Objective 1</h5>
+          <h4 class="heading-lockup__heading">Provide more context about what’s currently happening in the system</h4>
+        </div>
+
+        <div class="heading-lockup heading-lockup--item">
+          <h5 class="heading-lockup__subheading">Objective 2</h5>
+          <h4 class="heading-lockup__heading">Enable Green Line officials to keep each other updated about non-emergency issues</h4>
+        </div>
+
+        <div class="heading-lockup">
+          <h5 class="heading-lockup__subheading">Objective 3</h5>
+          <h4 class="heading-lockup__heading">Improve the fidelity of our data by making crucial train sheet data digital</h4>
+        </div>
+
+        <p>These objectives took the shape of an experience that showed train location, operator information, reported issues, and train sheets. We created this experience as a low-fidelity clickable prototype to start, so we could get it in the hands of officials quickly to hear their feedback and iterate on the design. This prototype wasn’t functional–it was a series of static screens created in a design program called Sketch, and linked together in a prototyping tool called InVision.</p>
+
+        <p>We went back out to our interviewees and showed them the prototype on our phones to get their feedback. We asked questions like “What’s happening on this screen? What information is missing here? When would you use this feature? What would you do next?” After multiple rounds of showing and iterating on our prototype, we started to have a clearer idea of what we wanted to build for our first version of the product, our MVP.</p>
+
+        <div class="article__image-container article__image-container--4up">
+          <div class="article__image ui">
+            <%= image_tag "mbta-prototype-1.png",
+                :class => "border",
+                :alt => "Prototype screen" %>
+          </div>
+          <div class="article__image ui">
+            <%= image_tag "mbta-prototype-2.png",
+                :class => "border",
+                :alt => "Prototype screen" %>
+          </div>
+          <div class="article__image ui">
+            <%= image_tag "mbta-prototype-3.png",
+                :class => "border",
+                :alt => "Prototype screen" %>
+          </div>
+          <div class="article__image ui">
+            <%= image_tag "mbta-prototype-4.png",
+                :class => "border",
+                :alt => "Prototype screen" %>
+          </div>
+          <div class="article__caption">A selection of screens from our first prototype</div>
+        </div>
+
+        <div class="article__image-container article__image-container--4up">
+          <div class="article__image ui">
+            <%= image_tag "mbta-mvp-1.png",
+                :class => "",
+                :alt => "MVP screen" %>
+          </div>
+          <div class="article__image ui">
+            <%= image_tag "mbta-mvp-2.png",
+                :class => "",
+                :alt => "MVP screen" %>
+          </div>
+          <div class="article__image ui">
+            <%= image_tag "mbta-mvp-3.png",
+                :class => "",
+                :alt => "MVP screen" %>
+          </div>
+          <div class="article__image ui">
+            <%= image_tag "mbta-mvp-4.png",
+                :class => "",
+                :alt => "MVP screen" %>
+          </div>
+          <div class="article__caption">A selection of screens from our newly designed MVP</div>
+        </div>
+
+        <h3 class="article__heading">Prioritize & Release</h3>
+        <p>As a team we created a backlog of all the features that we wanted to include in our first build, based on user feedback from testing. Once this list was created, we prioritized and honed in on which features would be required in order for our app to function and provide value. These features included train locations, train sheets (entering who is operating which car), and a way to collect user feedback. We also decided to integrate analytics from the start in order to gather information on usage to inform future iterations.</p>
+
+        <div class="article__image-container article__image-container--2up">
+          <div class="article__image">
+            <%= image_tag "mbta-release-1.jpg",
+                :class => "",
+                :alt => "MVP screen" %>
+          </div>
+          <div class="article__image">
+            <%= image_tag "mbta-release-2.jpg",
+                :class => "",
+                :alt => "MVP screen" %>
+          </div>
+          <div class="article__caption">MBTA Inspectors using our app during our initial launch</div>
+        </div>
+
+        <p>With a plan in place, we started designing and developing the first version of the app. Designers honed in on visual styling and user experience, while developers laid the foundation for the backend functionality. After a few weeks, we had a real, working app! We identified a rollout plan for our first release, and when we were ready, we loaded our app on a few tablets and gave them to designated Green Line officials to use. And the MBTA team has been collecting feedback and iterating on it ever since!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-container section-container--artist">
+  <%= partial "case-study-list" %>
+</section>

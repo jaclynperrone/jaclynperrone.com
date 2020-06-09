@@ -1,0 +1,13 @@
+.tag-list__item {
+	background: tint($primary-tint, 95%);
+	border: 2px dotted $first-stop;
+	border-radius: $base-border-radius;
+	display: inline-block;
+	font-size: $small-font-size;
+	margin: $small-spacing $xsmall-spacing;
+	padding: $xsmall-spacing $medium-spacing;
+
+	@media only screen and (min-width: $small-screen) {
+    padding: $small-spacing $base-spacing;
+  }
+}
