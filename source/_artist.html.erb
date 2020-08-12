@@ -1,38 +1,40 @@
 <section class="section-container section-container--artist">
-  <div class="section-content">
-    <h2 class="section-content__heading section-content__heading--tilt">Artist</h2>
+  <div class="section-content gradient-border-wrap gradient-border-wrap--second">
+    <div class="gradient-border-wrap__module">
+      <h2 class="section-content__heading section-content__heading--tilt">Artist</h2>
 
-    <section class="section-sub section-sub--tilt">
-      <h3>Artwork</h3>
-      <ul>
-        <li><%= link_to(
-            "Etsy",
-            "http://jaclynperroneart.etsy.com/",
-            target: "_blank"
-            ) %>
-          <div class="item-details">I sell prints of my original artwork on Etsy</div>
-        </li>
-        <li><%= link_to(
-            "Instagram",
-            "https://www.instagram.com/jaclynperr",
-            target: "_blank"
-            ) %>
-          <div class="item-details">I (try to) post my latest artwork (in a timely fashion) on Instagram</div>
-        </li>
-      </ul>
-    </section>
+      <section class="section-sub section-sub--tilt">
+        <h3 id="artwork">Artwork</h3>
+        <ul>
+          <li class="item-details"><%= link_to(
+              "Etsy",
+              "http://jaclynperroneart.etsy.com/",
+              target: "_blank"
+              ) %>
+            <div class="item-details__description">I sell prints of my original artwork on Etsy</div>
+          </li>
+          <li class="item-details"><%= link_to(
+              "Instagram",
+              "https://www.instagram.com/jaclynperr",
+              target: "_blank"
+              ) %>
+            <div class="item-details__description">I (try to) post my latest artwork (in a timely fashion) on Instagram</div>
+          </li>
+        </ul>
+      </section>
 
-    <section class="section-sub">
-      <h3>Podcasts</h3>
-      <ul>
-       <li><%= link_to(
-          "Artists of Camberville",
-          "https://daniellehmonroe.com/ep6/",
-          target: "_blank"
-          ) %><span>, guest</span>
-        <div class="item-details">Episode 6: "My Interview With Jaclyn Perrone"</div>
-        </li>
-      </ul>
-    </section>
+      <section class="section-sub">
+        <h3 id="art-podcasts">Podcasts</h3>
+        <ul>
+         <li class="item-details"><%= link_to(
+            "Artists of Camberville",
+            "https://daniellehmonroe.com/ep6/",
+            target: "_blank"
+            ) %><span class="item-details__role">, guest</span>
+          <div class="item-details__description">Episode 6: "My Interview With Jaclyn Perrone"</div>
+          </li>
+        </ul>
+      </section>
+    </div>
   </div>
 </section>

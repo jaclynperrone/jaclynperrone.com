@@ -3,7 +3,8 @@ $small-screen: 600px;
 
 // Typography
 $base-font-family: "Work Sans", "Helvetica", sans-serif;
-$heading-font-family: "Fjalla One", "Helvetica", sans-serif;
+$heading-font-family: "Fugaz One", "Helvetica", sans-serif;
+$subheading-font-family: "Fjalla One", "Helvetica", sans-serif;
 
 // Font Sizes
 $base-font-size: 1.1em;
@@ -11,30 +12,37 @@ $small-font-size: $base-font-size * 0.75;
 $medium-font-size: $base-font-size * 1.125;
 
 // Border Radius
-$base-border-width: 5px;
+$base-border-radius: 10px;
 
 // Font Weights
 $base-font-weight: 300;
 $strong-font-weight: 500;
 
 // Line height
-$base-line-height: 1.6;
+$base-line-height: 1.7;
 
 // Spacing
 $base-spacing: 1rem;
 $large-spacing: 1.5rem;
+$xlarge-spacing: 2rem;
+$xxlarge-spacing: 4rem;
 $medium-spacing: 0.75rem;
 $small-spacing: 0.5rem;
 $xsmall-spacing: 0.25rem;
 $section-spacing: 4rem;
 
 // Colors
-$blue: #0ecbe0;
+// $blue: #0ecbe0;
+$blue: #4dacb8;
 $dark-gray: #333;
+$light-gray: #e4e4e4;
 $gray: #666;
-$mustard: #f8af06;
+$orange: #f8af06;
 $white: #fff;
 $salmon: #fd5b30;
+$black: #000;
+$yellow: #f7ce47;
+$ice-blue: #bce0db;
 
 $base-body-color: $dark-gray;
 $copy-dimmed: $gray;

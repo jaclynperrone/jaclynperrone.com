@@ -11,3 +11,9 @@
     margin-top: 5rem;
   }
 }
+
+.section-sub--tilt-casestudy {
+	 @media only screen and (max-width: $small-screen) {
+    margin-top: 2rem;
+  }
+}

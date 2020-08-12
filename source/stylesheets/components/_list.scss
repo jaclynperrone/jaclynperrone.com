@@ -1,0 +1,58 @@
+.list {
+	li {
+		margin-bottom: $base-spacing;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.list--bands {
+	 @media only screen and (min-width: $small-screen) {
+	  columns: 3;
+
+	  li {
+	    margin-bottom: 0;
+	  }
+	}
+}
+
+.list--checks {
+	li {
+		display: flex;
+
+		&:before {
+			content: '✓';
+			margin-right: $base-spacing;
+		}
+	}
+}
+
+.list--contact {
+  columns: 2;
+  margin: $xlarge-spacing 0 $large-spacing;
+
+  @media only screen and (min-width: $small-screen) {
+    columns: 4;
+
+    li {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.list--nested {
+	margin-top: $xsmall-spacing;
+
+	li {
+		margin-bottom: $xsmall-spacing;
+		padding-left: $base-spacing;
+		display: flex;
+
+		&:before {
+			content: '•';
+			margin-right: $base-spacing;
+		}
+	}
+}

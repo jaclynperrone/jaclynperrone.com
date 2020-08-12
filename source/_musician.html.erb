@@ -1,32 +1,34 @@
 <section class="section-container section-container--musician">
-  <div class="section-content">
-    <h2 class="section-content__heading section-content__heading--tilt">Musician</h2>
+  <div class="section-content gradient-border-wrap gradient-border-wrap--second">
+    <div class="gradient-border-wrap__module">
+      <h2 class="section-content__heading section-content__heading--tilt">Musician</h2>
 
-    <section class="section-sub section-sub--tilt">
-      <h3>Bands</h3>
-      <ul class="list-bands">
-        <li><%= link_to(
-            "The Planes",
-            "https://theplanesnyc.bandcamp.com/album/wax-diamond",
-            target: "_blank"
-            ) %><span>, bassist</span>
-          <div class="item-details">Brooklyn, 2016 - 2017</div>
-        </li>
-        <li><%= link_to(
-            "Twiga",
-            "https://twiga.bandcamp.com/",
-            target: "_blank"
-            ) %><span>, bassist</span>
-          <div class="item-details">Brooklyn, 2014 - 2017</div>
-        </li>
-        <li><%= link_to(
-            "Boxford",
-            "https://thehungry.bandcamp.com/",
-            target: "_blank"
-            ) %><span>, bassist</span>
-          <div class="item-details">Brooklyn, 2013 - 2014</div>
-        </li>
-      </ul>
-    </section>
+      <section class="section-sub section-sub--tilt">
+        <h3>Bands</h3>
+        <ul class="list--bands">
+          <li class="item-details"><%= link_to(
+              "The Planes",
+              "https://theplanesnyc.bandcamp.com/album/wax-diamond",
+              target: "_blank"
+              ) %><span class="item-details__role">, bassist</span>
+            <div class="item-details__description">Brooklyn, 2016 - 2017</div>
+          </li>
+          <li class="item-details"><%= link_to(
+              "Twiga",
+              "https://twiga.bandcamp.com/",
+              target: "_blank"
+              ) %><span class="item-details__role">, bassist</span>
+            <div class="item-details__description">Brooklyn, 2014 - 2017</div>
+          </li>
+          <li class="item-details"><%= link_to(
+              "Boxford",
+              "https://thehungry.bandcamp.com/",
+              target: "_blank"
+              ) %><span class="item-details__role">, bassist</span>
+            <div class="item-details__description">Brooklyn, 2013 - 2014</div>
+          </li>
+        </ul>
+      </section>
+    </div>
   </div>
 </section>

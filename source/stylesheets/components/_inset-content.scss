@@ -1,0 +1,30 @@
+.inset-content {
+  background: tint($primary-tint, 95%);
+  border-radius: $base-border-radius;
+  color: $copy-dimmed;
+  padding: $base-spacing;
+  // border: 2px dotted $first-stop;
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffd6cb' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+
+  h3 {
+    margin-top: 0;
+  }
+}
+
+.inset-content__list {
+  li {
+    margin-bottom: $small-spacing;
+  }
+}
+
+.inset-content__list--full-width {
+  @media only screen and (min-width: $small-screen) {
+    columns: 3;
+  }
+}
+
+.inset-content__action {
+  display: inline-block;
+  font-size: 1rem;
+  margin-top: $base-spacing;
+}

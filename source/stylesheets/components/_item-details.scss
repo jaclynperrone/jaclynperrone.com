@@ -1,5 +1,12 @@
 .item-details {
+	line-height: 1.5;
+}
+
+.item-details__description {
   color: $copy-dimmed;
   font-style: italic;
-  margin-top: $xsmall-spacing;
+}
+
+.item-details__role {
+  font-size: $base-font-size;
 }
