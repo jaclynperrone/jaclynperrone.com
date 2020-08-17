@@ -6,6 +6,7 @@ activate :autoprefixer do |prefix|
 end
 
 activate :directory_indexes
+set :relative_links, true
 
 # Layouts
 # https://middlemanapp.com/basics/layouts/
@@ -46,7 +47,6 @@ configure :development do
   activate :livereload
 end
 
-# configure :build do
-#   activate :minify_css
-#   activate :minify_javascript
-# end
+configure :build do
+	activate :relative_assets
+end
