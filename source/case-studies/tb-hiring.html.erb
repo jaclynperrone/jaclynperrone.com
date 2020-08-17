@@ -138,7 +138,14 @@ type: case study
 
         <p>We are still making improvements to this day, like using a more rigorous HTML/CSS assessment and incorporating more design challenges. Overall, these improvements have been so overwhelmingly positive for our team, and has led to a higher conversation rate of office visit to offers extended. We feel so much more confident in our process, and trust that it will continue to evolve as our needs change overtime.</p>
 
-        <p>For additional reading, feel free to check out Kyle’s write-up on thoughtbot’s blog: <a class="anchor-reset" href="https://thoughtbot.com/blog/redesigning-how-we-hire-designers-at-thoughtbot" target="_blank">https://thoughtbot.com/blog/redesigning-how-we-hire-designers-at-thoughtbot</a></p>
+        <p>For additional reading, feel free to
+          <%= link_to(
+            "check out Kyle’s write-up on thoughtbot’s blog",
+            "https://thoughtbot.com/blog/redesigning-how-we-hire-designers-at-thoughtbot",
+            :class=>"anchor-reset",
+            target: "_blank"
+            ) %>.
+        </p>
       </div>
       <%= partial "challenges" %>
     </div>
