@@ -4,7 +4,6 @@
 
 .item-details__header {
   margin-bottom: $base-spacing;
-  border-top: 1px solid $light-gray;
   padding-top: $base-spacing;
   // line-height: 1.5;
 
@@ -31,12 +30,30 @@
   color: $copy-dimmed;
   font-size: $small-font-size;
   letter-spacing: 2px;
+  border-bottom: 1px solid $light-gray;
+  display: block;
 }
 
 .item-details__image {
   width: 50%;
 
   img {
+    width: 100%;
+  }
+}
+
+.item-details__2-col {
+   display: grid;
+   gap: 2rem;
+   grid-template-columns: repeat(2, 1fr);
+
+  @media only screen and (min-width: $small-screen) {
+    gap: 5rem;
+
+  }
+
+  .item-details__image {
+    margin-top: $base-spacing;
     width: 100%;
   }
 }

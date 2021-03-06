@@ -2,56 +2,202 @@
   <div class="gradient-border-wrap__module">
     <h2 class="section-content__heading section-content__heading--tilt">Case studies</h2>
     <section class="section-sub section-sub--tilt">
-      <h3>Client work</h3>
-      <ul>
-        <li class="item-details">
-          <%= link_to "Corvus Insurance",
-                      "/case-studies/corvus",
-                      target: "_blank" %><span class="item-details__role">, lead facilitator</span>
-          <div class="item-details__description">Created and facilitated a custom Design Thinking workshop for a company-wide summit of 70 attendees.</div>
-        </li>
-        <li class="item-details">
-          <%= link_to "Harvard Business Review",
-                      "/case-studies/hbr-curation",
-                      target: "_blank" %><span class="item-details__role">, lead facilitator</span>
-          <div class="item-details__description">Facilitated a two-week Product Design Sprint to ideate and validate a direction for content curation.</div>
-        </li>
-        <li class="item-details">
-          <%= link_to "MBTA",
-                      "/case-studies/mbta",
-                      target: "_blank" %><span class="item-details__role">, project lead</span>
-          <div class="item-details__description">Led a small product team through a three month design research exploration to help MBTA officials improve communication on the Green Line.</div>
-        </li>
-        <li class="item-details">
-          <%= link_to "Harvard Business Review",
-                      "/case-studies/hbr-share",
-                      target: "_blank" %><span class="item-details__role">, lead facilitator</span>
-          <div class="item-details__description">Facilitated a four-week generative user research and Product Design Sprint engagement to uncover subscriber pain points and potential solutions.</div>
-        </li>
-        <li class="item-details">
-          <%= link_to "Vree",
-                      "/case-studies/vree",
-                      target: "_blank" %><span class="item-details__role">, lead facilitator</span>
-          <div class="item-details__description">Facilitated a Product Design Sprint with a founder of an early stage start-up to validate her initial product idea.</div>
-        </li>
+      <h3>Design & Facilitation</h3>
+      <ul class="section-sub__list section-sub__list--case-study-list">
+
+          <li class="item-details">
+            <span class="item-details__number">01</span>
+            <div class="item-details__2-col">
+              <div class="item-details__copy">
+                <div class="item-details__header">
+                  <%= link_to(
+                  "Corvus Insurance",
+                  "/case-studies/corvus",
+                  target: "_blank"
+                  ) %>
+                  <div class="item-details__role">lead facilitator</div>
+                </div>
+                <div class="item-details__description">Created and facilitated a custom Design Thinking workshop for a company-wide summit of 70 attendees.</div>
+              </div>
+              <div class="item-details__image">
+                 <% link_to(
+                  "/case-studies/corvus",
+                  target: "_blank",
+                  rel: "Corvus Insurance") do %>
+                  <%= image_tag "corvus-employee.jpg",
+                    :class => "",
+                    :alt => "Corvus Insurance" %>
+                <% end %>
+              </div>
+            </div>
+          </li>
+
+          <li class="item-details">
+            <span class="item-details__number">02</span>
+            <div class="item-details__2-col">
+              <div class="item-details__copy">
+                <div class="item-details__header">
+                  <%= link_to(
+                  "Harvard Business Review",
+                  "/case-studies/hbr-curation",
+                  target: "_blank"
+                  ) %>
+                  <div class="item-details__role">lead facilitator</div>
+                </div>
+                <div class="item-details__description">Facilitated a two-week Product Design Sprint to ideate and validate a direction for content curation.</div>
+              </div>
+              <div class="item-details__image">
+                 <% link_to(
+                  "/case-studies/hbr-curation",
+                  target: "_blank",
+                  rel: "Harvard Business Review") do %>
+                  <%= image_tag "corvus-employee.jpg",
+                    :class => "",
+                    :alt => "Harvard Business Review" %>
+                <% end %>
+              </div>
+            </div>
+          </li>
+
+         <li class="item-details">
+            <span class="item-details__number">03</span>
+            <div class="item-details__2-col">
+              <div class="item-details__copy">
+                <div class="item-details__header">
+                  <%= link_to(
+                  "MBTA",
+                  "/case-studies/mbta",
+                  target: "_blank"
+                  ) %>
+                  <div class="item-details__role">project lead</div>
+                </div>
+                <div class="item-details__description">Led a small product team through a three month design research exploration to help MBTA officials improve communication on the Green Line.</div>
+              </div>
+              <div class="item-details__image">
+                 <% link_to(
+                  "/case-studies/mbta",
+                  target: "_blank",
+                  rel: "MBTA") do %>
+                  <%= image_tag "corvus-employee.jpg",
+                    :class => "",
+                    :alt => "MBTA" %>
+                <% end %>
+              </div>
+            </div>
+          </li>
+
+         <li class="item-details">
+            <span class="item-details__number">04</span>
+            <div class="item-details__2-col">
+              <div class="item-details__copy">
+                <div class="item-details__header">
+                  <%= link_to(
+                  "Harvard Business Review",
+                  "/case-studies/hbr-share",
+                  target: "_blank"
+                  ) %>
+                  <div class="item-details__role">lead facilitator</div>
+                </div>
+                <div class="item-details__description">Facilitated a four-week generative user research and Product Design Sprint engagement to uncover subscriber pain points and potential solutions.</div>
+              </div>
+              <div class="item-details__image">
+                 <% link_to(
+                  "/case-studies/hbr-share",
+                  target: "_blank",
+                  rel: "Harvard Business Review") do %>
+                  <%= image_tag "corvus-employee.jpg",
+                    :class => "",
+                    :alt => "Harvard Business Review" %>
+                <% end %>
+              </div>
+            </div>
+          </li>
+
+         <li class="item-details">
+            <span class="item-details__number">05</span>
+            <div class="item-details__2-col">
+              <div class="item-details__copy">
+                <div class="item-details__header">
+                  <%= link_to(
+                  "Vree",
+                  "/case-studies/vree",
+                  target: "_blank"
+                  ) %>
+                  <div class="item-details__role">lead facilitator</div>
+                </div>
+                <div class="item-details__description">Facilitated a Product Design Sprint with a founder of an early stage start-up to validate her initial product idea.</div>
+              </div>
+              <div class="item-details__image">
+                 <% link_to(
+                  "/case-studies/vree",
+                  target: "_blank",
+                  rel: "Vree") do %>
+                  <%= image_tag "corvus-employee.jpg",
+                    :class => "",
+                    :alt => "Vree" %>
+                <% end %>
+              </div>
+            </div>
+          </li>
       </ul>
     </section>
 
     <section class="section-sub">
-      <h3>Internal team work</h3>
-      <ul>
-        <li class="item-details">
-          <%= link_to "Rethinking our Designer hiring process",
-                      "/case-studies/tb-hiring",
-                      target: "_blank" %><span class="item-details__role">, instigator and co-conspirator</span>
-          <div class="item-details__description">When I became a Design Director at thoughtbot I realized our hiring process for Designers was long overdue for an overhaul.</div>
-        </li>
-        <li class="item-details">
-          <%= link_to "Difficult Conversations workshop",
-                      "/case-studies/tb-consulting",
-                      target: "_blank" %><span class="item-details__role">, creator</span>
-          <div class="item-details__description">Consulting is hard. Having difficult conversations with clients is hard. I created a role-playing workshop to help our team do just that.</div>
-        </li>
+      <h3>Team Enablement</h3>
+      <ul class="section-sub__list section-sub__list--case-study-list">
+         <li class="item-details">
+            <span class="item-details__number">01</span>
+            <div class="item-details__2-col">
+              <div class="item-details__image">
+                 <% link_to(
+                  "/case-studies/tb-hiring",
+                  target: "_blank",
+                  rel: "Rethinking our Designer hiring process") do %>
+                  <%= image_tag "corvus-employee.jpg",
+                    :class => "",
+                    :alt => "Rethinking our Designer hiring process" %>
+                <% end %>
+              </div>
+              <div class="item-details__copy">
+                <div class="item-details__header">
+                  <%= link_to(
+                  "Rethinking our Designer hiring process",
+                  "/case-studies/tb-hiring",
+                  target: "_blank"
+                  ) %>
+                  <div class="item-details__role">instigator and co-conspirator</div>
+                </div>
+                <div class="item-details__description">When I became a Design Director at thoughtbot I realized our hiring process for Designers was long overdue for an overhaul.</div>
+              </div>
+            </div>
+          </li>
+
+         <li class="item-details">
+            <span class="item-details__number">01</span>
+            <div class="item-details__2-col">
+              <div class="item-details__image">
+                 <% link_to(
+                  "/case-studies/tb-consulting",
+                  target: "_blank",
+                  rel: "Difficult Conversations workshop") do %>
+                  <%= image_tag "corvus-employee.jpg",
+                    :class => "",
+                    :alt => "Difficult Conversations workshop" %>
+                <% end %>
+              </div>
+              <div class="item-details__copy">
+                <div class="item-details__header">
+                  <%= link_to(
+                  "Difficult Conversations workshop",
+                  "/case-studies/tb-consulting",
+                  target: "_blank"
+                  ) %>
+                  <div class="item-details__role">creator</div>
+                </div>
+                <div class="item-details__description">Consulting is hard. Having difficult conversations with clients is hard. I created a role-playing workshop to help our team do just that.</div>
+              </div>
+            </div>
+          </li>
       </ul>
     </section>
   </div>

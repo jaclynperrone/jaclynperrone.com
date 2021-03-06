@@ -34,6 +34,13 @@
   // // height: 100vh;
   // background: red;
   position: relative;
+  padding: $section-spacing 0;
+
+  @media only screen and (min-width: $small-screen) {
+    // position: sticky;
+    // top: 0;
+    padding: 0;
+  }
 }
 
 .site-body {
@@ -103,3 +110,5 @@
     }
 
 }
+
+
