@@ -6,6 +6,7 @@
 
 .footer__content--copy {
   line-height: $base-line-height;
+  grid-column: span 2;
 
   p {
     margin-bottom: $large-spacing;
@@ -13,14 +14,20 @@
   }
 
   @media only screen and (min-width: $small-screen) {
-    flex: 1 70%;
-    padding-left: $section-spacing;
+    // flex: 1 70%;
+    // padding-left: $section-spacing;
   }
 }
 
 .footer__content--image {
-  @media only screen and (min-width: $small-screen) {
-    flex: 1 30%;
+
+
+  @media only screen and (max-width: $small-screen) {
+    // flex: 1 30%;
+    // width: 50%;
+    // grid-column-end: 2;
+    grid-column: span 2;
+
   }
 }
 

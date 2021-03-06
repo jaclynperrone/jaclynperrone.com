@@ -12,10 +12,16 @@
 }
 
 .section-content--footer {
+  display: grid;
   background-color: transparent;
+  // padding: 0 8rem;
 
-  @media only screen and (max-width: $small-screen) {
+
+  @media only screen and (min-width: $small-screen) {
     margin-top: $section-spacing;
+    gap: 5rem;
+    grid-template-columns: repeat(3, 1fr);
+    width: 50vw;
   }
 }
 
