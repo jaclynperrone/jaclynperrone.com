@@ -28,6 +28,10 @@
 
 .article__heading {
 	margin-top: $xxlarge-spacing;
+  margin-bottom: $base-spacing;
+  text-transform: uppercase;
+  font-weight: 500;
+  border-bottom: 1px solid $light-gray;
 }
 
 .article__image {
@@ -58,6 +62,9 @@
 
 .article__subheader {
 	margin-top: $xlarge-spacing;
+  margin-bottom: $medium-spacing;
+  text-transform: none;
+  font-weight: 500;
 }
 
 .article__caption {
