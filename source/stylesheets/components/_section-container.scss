@@ -7,7 +7,7 @@
 }
 
 .section-container--hero {
-  background-color: $first-stop;
+  // background-color: $first-stop;
 
   .section-content {
     background-color: transparent;
@@ -19,15 +19,15 @@
 }
 
 .section-container--designer {
-  background-color: $first-stop;
+  // background-color: $first-stop;
 }
 
 .section-container--artist {
-  background-color: $second-stop;
+  // background-color: $second-stop;
 }
 
 .section-container--contact {
-  background-color: $third-stop;
+  // background-color: $third-stop;
   position: relative;
 
   &::after {
@@ -46,9 +46,9 @@
 }
 
 .section-container--footer {
-  background-color: $fourth-stop;
+  // background-color: $fourth-stop;
 }
 
 .section-container--musician {
-  background-color: $third-stop;
+  // background-color: $third-stop;
 }

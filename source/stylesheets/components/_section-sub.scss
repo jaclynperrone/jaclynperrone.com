@@ -1,19 +1,47 @@
 .section-sub {
-  margin: $section-spacing $base-spacing;
+  // margin: $section-spacing $base-spacing;
+  @media only screen and (min-width: $small-screen) {
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  background-color: pink;
+
+  h3 {
+    @media only screen and (min-width: $small-screen) {
+      text-align: right;
+    }
+  }
 }
 
 .section-sub--sub {
-  margin: $section-spacing/2 $base-spacing;
+  // margin: $section-spacing/2 $base-spacing;
+}
+
+.section-sub__list {
+  @media only screen and (min-width: $small-screen) {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-start: span 3;
+  }
+
+  li {
+    // display: inline-block;
+    margin-bottom: 0;
+    background-color: yellow;
+  }
 }
 
 .section-sub--tilt {
   @media only screen and (min-width: $small-screen) {
-    margin-top: 5rem;
+    // margin-top: 5rem;
   }
 }
 
 .section-sub--tilt-casestudy {
 	 @media only screen and (max-width: $small-screen) {
-    margin-top: 2rem;
+    // margin-top: 2rem;
   }
 }
