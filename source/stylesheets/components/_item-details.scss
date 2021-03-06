@@ -1,12 +1,42 @@
 .item-details {
-	line-height: 1.5;
+	// line-height: 1.5;
+}
+
+.item-details__header {
+  margin-bottom: $base-spacing;
+  border-top: 1px solid $light-gray;
+  padding-top: $base-spacing;
+  // line-height: 1.5;
+
 }
 
 .item-details__description {
   color: $copy-dimmed;
   font-style: italic;
+  margin-bottom: $base-spacing;
+  // line-height: 1.5;
 }
 
 .item-details__role {
-  font-size: $base-font-size;
+  margin-top: $xsmall-spacing;
+  color: $copy-dimmed;
+  text-transform: uppercase;
+  font-size: $small-font-size;
+  font-weight: 400;
+}
+
+.item-details__number {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  color: $copy-dimmed;
+  font-size: $small-font-size;
+  letter-spacing: 2px;
+}
+
+.item-details__image {
+  width: 50%;
+
+  img {
+    width: 100%;
+  }
 }

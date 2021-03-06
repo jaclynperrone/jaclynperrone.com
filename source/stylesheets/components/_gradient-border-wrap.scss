@@ -4,14 +4,11 @@
 }
 
 .gradient-border-wrap__module {
-	background: aliceblue;
+	// background: aliceblue;
   // padding: $small-spacing;
   // outline: 1px dashed $white;
-
-  @media only screen and (min-width: $small-screen) {
     display: grid;
-    gap: 3rem;
-  }
+    // gap: 8rem;
 }
 
 .gradient-border-wrap--first {

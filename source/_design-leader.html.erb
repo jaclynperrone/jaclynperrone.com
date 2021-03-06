@@ -6,19 +6,49 @@
       <section class="section-sub section-sub--tilt">
         <h3 id="podcasts">Podcasts</h3>
         <ul class="section-sub__list">
-          <li class="item-details"><%= link_to(
+          <li class="item-details">
+            <span class="item-details__number">01</span>
+            <div class="item-details__header">
+              <%= link_to(
               "Tentative",
               "https://www.tentative.fm/",
               target: "_blank"
-              ) %><span class="item-details__role">, co-host</span>
+              ) %>
+              <div class="item-details__role">co-host</div>
+            </div>
             <div class="item-details__description">A podcast by thoughtbot about digital product design</div>
+            <div class="item-details__image">
+               <% link_to(
+                "https://www.tentative.fm/",
+                target: "_blank",
+                rel: "Tentative") do %>
+                <%= image_tag "corvus-employee.jpg",
+                  :class => "",
+                  :alt => "Tentative" %>
+              <% end %>
+            </div>
           </li>
-          <li class="item-details"><%= link_to(
+          <li class="item-details">
+            <span class="item-details__number">02</span>
+            <div class="item-details__header">
+              <%= link_to(
               "Awkward Silences by User Interviews",
               "https://www.userinterviews.com/blog/thoughtbots-jaclyn-perrone-preparing-for-amazing-research",
               target: "_blank"
-              ) %><span class="item-details__role">, guest</span>
-            <div class="item-details__description">Episode 2: "When Research Doesn't Go As Planned"</div>
+              ) %>
+              <div class="item-details__role">guest</div>
+            </div>
+            <div class="item-details__description">Episode 2: "When Research Doesn't Go As Planned</div>
+            <div class="item-details__image">
+              <% link_to(
+                "https://www.userinterviews.com/blog/thoughtbots-jaclyn-perrone-preparing-for-amazing-research",
+                target: "_blank",
+                rel: "Awkward Silences") do %>
+                <%= image_tag "corvus-employee.jpg",
+                  :class => "",
+                  :alt => "Awkward Silences" %>
+              <% end %>
+            </div>
           </li>
         </ul>
       </section>
@@ -27,77 +57,218 @@
         <h3 id="workshops">Workshops</h3>
         <ul class="section-sub__list">
           <li class="item-details">
-            <%= link_to(
-              "Patient Has Entered the Chat! A Conversation About Remote User Research in Healthcare",
-              "https://thoughtbot.com/events/user-research-healthcare",
-              target: "_blank"
-              ) %>
+            <span class="item-details__number">01</span>
+            <div class="item-details__header">
+              <%= link_to(
+                "Patient Has Entered the Chat! A Conversation About Remote User Research in Healthcare",
+                "https://thoughtbot.com/events/user-research-healthcare",
+                target: "_blank"
+                ) %>
+                <div class="item-details__role">facilitator</div>
+            </div>
             <div class="item-details__description">thoughtbot with Seven, 2020</div>
+            <div class="item-details__image">
+              <% link_to(
+                "https://thoughtbot.com/events/user-research-healthcare",
+                target: "_blank",
+                rel: "Patient Has Entered the Chat!") do %>
+                <%= image_tag "corvus-employee.jpg",
+                  :class => "",
+                  :alt => "Patient Has Entered the Chat!" %>
+              <% end %>
+            </div>
           </li>
+
           <li class="item-details">
-            <%= link_to(
+            <span class="item-details__number">02</span>
+            <div class="item-details__header">
+              <%= link_to(
               "How to Unstick Your Product Strategy with One Exercise",
               "https://info.thoughtbot.com/unstick-your-product-strategy-recording",
               target: "_blank"
               ) %>
+              <div class="item-details__role">facilitator</div>
+            </div>
             <div class="item-details__description">thoughtbot with Harvard Business Review, 2020</div>
+            <div class="item-details__image">
+              <% link_to(
+                "https://info.thoughtbot.com/unstick-your-product-strategy-recording",
+                target: "_blank",
+                rel: "How to Unstick Your Product Strategy with One Exercise") do %>
+                <%= image_tag "corvus-employee.jpg",
+                  :class => "",
+                  :alt => "How to Unstick Your Product Strategy with One Exercise" %>
+              <% end %>
+            </div>
           </li>
-          <li class="item-details"><%= link_to(
+
+          <li class="item-details">
+            <span class="item-details__number">03</span>
+            <div class="item-details__header">
+              <%= link_to(
               "7 Tips for Better User Interviews",
               "https://www.userinterviews.com/blog/7-tips-for-better-user-interviews",
               target: "_blank"
               ) %>
+              <div class="item-details__role">facilitator</div>
+            </div>
             <div class="item-details__description">User Interviews, 2020</div>
+            <div class="item-details__image">
+              <% link_to(
+                "https://www.userinterviews.com/blog/7-tips-for-better-user-interviews",
+                target: "_blank",
+                rel: "7 Tips for Better User Interviews") do %>
+                <%= image_tag "corvus-employee.jpg",
+                  :class => "",
+                  :alt => "7 Tips for Better User Interviews" %>
+              <% end %>
+            </div>
           </li>
-          <li class="item-details"><%= link_to(
+
+          <li class="item-details">
+            <span class="item-details__number">04</span>
+            <div class="item-details__header">
+              <%= link_to(
               "Conducting User Research Interviews",
               "https://thoughtbot.com/blog/tips-for-conducting-user-research-interviews-workshop",
               target: "_blank"
               ) %>
+              <div class="item-details__role">facilitator</div>
+            </div>
             <div class="item-details__description">MassChallenge, 2019</div>
+            <div class="item-details__image">
+              <% link_to(
+                "https://thoughtbot.com/blog/tips-for-conducting-user-research-interviews-workshop",
+                target: "_blank",
+                rel: "Conducting User Research Interviews") do %>
+                <%= image_tag "corvus-employee.jpg",
+                  :class => "",
+                  :alt => "Conducting User Research Interviews" %>
+              <% end %>
+            </div>
           </li>
-          <li class="item-details"><%= link_to(
+
+          <li class="item-details">
+            <span class="item-details__number">05</span>
+            <div class="item-details__header">
+              <%= link_to(
               "The Product Design Sprint - 5 Phase Breakdown",
               "https://thoughtbot.com/purpose-built/validation?wvideo=xyh7stibu2",
               target: "_blank"
               ) %>
+              <div class="item-details__role">facilitator</div>
+            </div>
             <div class="item-details__description">VentureCafe, 2018</div>
+            <div class="item-details__image">
+              <% link_to(
+                "https://thoughtbot.com/purpose-built/validation?wvideo=xyh7stibu2",
+                target: "_blank",
+                rel: "The Product Design Sprint - 5 Phase Breakdown") do %>
+                <%= image_tag "corvus-employee.jpg",
+                  :class => "",
+                  :alt => "The Product Design Sprint - 5 Phase Breakdown" %>
+              <% end %>
+            </div>
           </li>
-
         </ul>
       </section>
 
       <section class="section-sub">
         <h3 id="articles">Articles</h3>
-        <ul class="section-sub__list">
-          <li class="item-details"><%= link_to(
-              "Gliding to Success: The MBTA and thoughtbot Launch an App for Train Officials",
+        <ul class="section-sub__list section-sub__list--4-col">
+
+          <li class="item-details">
+            <span class="item-details__number">01</span>
+            <div class="item-details__header">
+              <%= link_to(
+              "Gliding to Success",
               "https://designmuseumfoundation.org/gliding-to-success/",
               target: "_blank"
               ) %>
-              <div class="item-details__description">Design Museum magazine</div>
+              <div class="item-details__role">co-author</div>
+            </div>
+            <div class="item-details__description">Design Museum magazine</div>
+            <div class="item-details__image">
+              <% link_to(
+                "https://designmuseumfoundation.org/gliding-to-success/",
+                target: "_blank",
+                rel: "Gliding to Success") do %>
+                <%= image_tag "corvus-employee.jpg",
+                  :class => "",
+                  :alt => "Gliding to Success" %>
+              <% end %>
+            </div>
           </li>
 
-          <li class="item-details"><%= link_to(
-              "User Testing Gone Wild: A Guide to Course Correction",
+          <li class="item-details">
+            <span class="item-details__number">02</span>
+            <div class="item-details__header">
+              <%= link_to(
+              "User Testing Gone Wild",
               "https://www.invisionapp.com/inside-design/user-testing-guide/",
               target: "_blank"
               ) %>
-              <div class="item-details__description">InVision - Inside Design</div>
+              <div class="item-details__role">author</div>
+            </div>
+            <div class="item-details__description">InVision - Inside Design</div>
+            <div class="item-details__image">
+              <% link_to(
+                "https://www.invisionapp.com/inside-design/user-testing-guide/",
+                target: "_blank",
+                rel: "User Testing Gone Wild") do %>
+                <%= image_tag "corvus-employee.jpg",
+                  :class => "",
+                  :alt => "User Testing Gone Wild" %>
+              <% end %>
+            </div>
           </li>
-          <li class="item-details"><%= link_to(
+
+
+          <li class="item-details">
+            <span class="item-details__number">03</span>
+            <div class="item-details__header">
+              <%= link_to(
               "Tips for Conducting User Research Interviews",
               "https://thoughtbot.com/blog/tips-for-conducting-user-research-interviews",
               target: "_blank"
               ) %>
-              <div class="item-details__description">thoughtbot - Giant Robots Smashing Into Other Giant Robots</div>
+              <div class="item-details__role">author</div>
+            </div>
+            <div class="item-details__description">thoughtbot blog - Giant Robots Smashing Into Other Giant Robots</div>
+            <div class="item-details__image">
+              <% link_to(
+                "https://thoughtbot.com/blog/tips-for-conducting-user-research-interviews",
+                target: "_blank",
+                rel: "Tips for Conducting User Research Interviews") do %>
+                <%= image_tag "corvus-employee.jpg",
+                  :class => "",
+                  :alt => "Tips for Conducting User Research Interviews" %>
+              <% end %>
+            </div>
           </li>
-          <li class="item-details"><%= link_to(
+
+
+          <li class="item-details">
+            <span class="item-details__number">04</span>
+            <div class="item-details__header">
+              <%= link_to(
               "Advice for our User",
               "https://thoughtbot.com/blog/advice-for-our-user",
               target: "_blank"
               ) %>
-              <div class="item-details__description">thoughtbot - Giant Robots Smashing Into Other Giant Robots</div>
+              <div class="item-details__role">author</div>
+            </div>
+            <div class="item-details__description">thoughtbot blog - Giant Robots Smashing Into Other Giant Robots</div>
+            <div class="item-details__image">
+              <% link_to(
+                "https://thoughtbot.com/blog/advice-for-our-user",
+                target: "_blank",
+                rel: "Advice for our User") do %>
+                <%= image_tag "corvus-employee.jpg",
+                  :class => "",
+                  :alt => "Advice for our User" %>
+              <% end %>
+            </div>
           </li>
         </ul>
       </section>
@@ -105,49 +276,95 @@
       <section class="section-sub">
         <h3 id="case-studies">Case Studies</h3>
         <ul class="section-sub__list">
-          <li class="item-details"><%= link_to(
-              "Improving Massachusetts Bay Transportation Authority Internal Communication to Ensure Trains Run Regularly",
+
+          <li class="item-details">
+            <span class="item-details__number">01</span>
+            <div class="item-details__header">
+              <%= link_to(
+              "Improving MBTA Internal Communication to Ensure Trains Run Regularly",
               "https://thoughtbot.com/case-studies/mbta",
               target: "_blank"
-              ) %><span class="item-details__role">, project lead</span>
+              ) %>
+              <div class="item-details__role">project lead</div>
+            </div>
+            <div class="item-details__image">
+              <% link_to(
+                "https://thoughtbot.com/case-studies/mbta",
+                target: "_blank",
+                rel: "Improving MBTA Internal Communication to Ensure Trains Run Regularly") do %>
+                <%= image_tag "corvus-employee.jpg",
+                  :class => "",
+                  :alt => "Improving MBTA Internal Communication to Ensure Trains Run Regularly" %>
+              <% end %>
+            </div>
           </li>
-          <li class="item-details"><%= link_to(
+
+          <li class="item-details">
+            <span class="item-details__number">02</span>
+            <div class="item-details__header">
+              <%= link_to(
               "Engaging Customers to Inform Product Roadmap",
               "https://thoughtbot.com/case-studies/corvus-insurance",
               target: "_blank"
-              ) %><span class="item-details__role">, creator and lead facilitator</span>
+              ) %>
+              <div class="item-details__role">creator and lead facilitator</div>
+            </div>
+            <div class="item-details__image">
+              <% link_to(
+                "https://thoughtbot.com/case-studies/corvus-insurance",
+                target: "_blank",
+                rel: "Engaging Customers to Inform Product Roadmap") do %>
+                <%= image_tag "corvus-employee.jpg",
+                  :class => "",
+                  :alt => "Engaging Customers to Inform Product Roadmap" %>
+              <% end %>
+            </div>
           </li>
-          <li class="item-details"><%= link_to(
+
+          <li class="item-details">
+            <span class="item-details__number">03</span>
+            <div class="item-details__header">
+              <%= link_to(
               "Redesigning How We Hire Designers at thoughtbot",
               "https://thoughtbot.com/blog/redesigning-how-we-hire-designers-at-thoughtbot",
               target: "_blank"
-              ) %><span class="item-details__role">, instigator and co-conspirator</span>
+              ) %>
+              <div class="item-details__role">instigator and co-conspirator</div>
+            </div>
+            <div class="item-details__image">
+              <% link_to(
+                "https://thoughtbot.com/blog/redesigning-how-we-hire-designers-at-thoughtbot",
+                target: "_blank",
+                rel: "Redesigning How We Hire Designers at thoughtbot") do %>
+                <%= image_tag "corvus-employee.jpg",
+                  :class => "",
+                  :alt => "Redesigning How We Hire Designers at thoughtbot" %>
+              <% end %>
+            </div>
           </li>
-          <li class="item-details"><%= link_to(
+
+          <li class="item-details">
+            <span class="item-details__number">04</span>
+            <div class="item-details__header">
+              <%= link_to(
               "LOLA: Improving Conversion and Code",
               "https://thoughtbot.com/case-studies/lola",
               target: "_blank"
-              ) %><span class="item-details__role">, designer</span>
+              ) %>
+              <div class="item-details__role">designer</div>
+            </div>
+            <div class="item-details__image">
+              <% link_to(
+                "https://thoughtbot.com/case-studies/lola",
+                target: "_blank",
+                rel: "LOLA: Improving Conversion and Code") do %>
+                <%= image_tag "corvus-employee.jpg",
+                  :class => "",
+                  :alt => "LOLA: Improving Conversion and Code" %>
+              <% end %>
+            </div>
           </li>
         </ul>
-<!--         <div class="inset-content">
-          <ul class="inset-content__list inset-content__list--full-width">
-            <li>🔒 Case Study 1</li>
-            <li>🔒 Case Study 2</li>
-            <li>🔒 Case Study 3</li>
-            <li>🔒 Case Study 4</li>
-            <li>🔒 Case Study 5</li>
-            <li>🔒 Case Study 6</li>
-          </ul>
-          <div>
-            🔑 <%= link_to(
-              "Ask me for the key",
-              "mailto:hello@jaclynperrone.com?subject=Are you the keymaster?",
-              target: "_blank",
-              :class=>"inset-content__action"
-              ) %>
-          </div>
-        </div> -->
       </section>
     </div>
   </div>

@@ -5,20 +5,50 @@
 
       <section class="section-sub section-sub--tilt">
         <h3 id="artwork">Artwork</h3>
-        <ul class="section-sub__list">
-          <li class="item-details"><%= link_to(
-              "Etsy",
+        <ul class="section-sub__list section-sub__list--2-col">
+
+          <li class="item-details">
+            <span class="item-details__number">01</span>
+            <div class="item-details__header">
+              <%= link_to(
+              "Etsy Shop",
               "http://jaclynperroneart.etsy.com/",
               target: "_blank"
               ) %>
-            <div class="item-details__description">I sell prints of my original artwork on Etsy</div>
+            </div>
+          <div class="item-details__description">I sell prints of my original artwork on Etsy</div>
+            <div class="item-details__image">
+              <% link_to(
+                "http://jaclynperroneart.etsy.com/",
+                target: "_blank",
+                rel: "Etsy Shop") do %>
+                <%= image_tag "thumb-etsy.jpg",
+                  :class => "",
+                  :alt => "Etsy Shop" %>
+              <% end %>
+            </div>
           </li>
-          <li class="item-details"><%= link_to(
+
+          <li class="item-details">
+            <span class="item-details__number">02</span>
+            <div class="item-details__header">
+              <%= link_to(
               "Instagram",
               "https://www.instagram.com/jaclynperr",
               target: "_blank"
               ) %>
-            <div class="item-details__description">I (try to) post my latest artwork (in a timely fashion) on Instagram</div>
+            </div>
+          <div class="item-details__description">I (try to) post my latest artwork (in a timely fashion) on Instagram</div>
+            <div class="item-details__image">
+              <% link_to(
+                "https://www.instagram.com/jaclynperr",
+                target: "_blank",
+                rel: "Instagram") do %>
+                <%= image_tag "corvus-employee.jpg",
+                  :class => "",
+                  :alt => "Instagram" %>
+              <% end %>
+            </div>
           </li>
         </ul>
       </section>
@@ -26,12 +56,28 @@
       <section class="section-sub">
         <h3 id="art-podcasts">Podcasts</h3>
         <ul class="section-sub__list">
-         <li class="item-details"><%= link_to(
-            "Artists of Camberville",
-            "https://daniellehmonroe.com/ep6/",
-            target: "_blank"
-            ) %><span class="item-details__role">, guest</span>
-          <div class="item-details__description">Episode 6: "My Interview With Jaclyn Perrone"</div>
+
+          <li class="item-details">
+            <span class="item-details__number">01</span>
+            <div class="item-details__header">
+              <%= link_to(
+              "Artists of Camberville",
+              "https://daniellehmonroe.com/ep6/",
+              target: "_blank"
+              ) %>
+              <div class="item-details__role">guest</div>
+            </div>
+            <div class="item-details__description">Episode 6: "My Interview With Jaclyn Perrone</div>
+            <div class="item-details__image">
+              <% link_to(
+                "https://daniellehmonroe.com/ep6/",
+                target: "_blank",
+                rel: "Artists of Camberville") do %>
+                <%= image_tag "corvus-employee.jpg",
+                  :class => "",
+                  :alt => "Artists of Camberville" %>
+              <% end %>
+            </div>
           </li>
         </ul>
       </section>

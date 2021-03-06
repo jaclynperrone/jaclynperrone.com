@@ -2,7 +2,8 @@
    padding: $base-spacing;
 
   @media only screen and (min-width: $small-screen) {
-    padding: $section-spacing;
+    // padding: $section-spacing;
+    padding: $section-spacing $base-spacing $section-spacing $section-spacing;
   }
 }
 

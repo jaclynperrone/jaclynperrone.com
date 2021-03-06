@@ -5,18 +5,19 @@
         <h2 class="section-content__heading">Need a hand?</h2>
         <p class="section-content__sub-heading">If you are looking for things like <strong>design leadership</strong>, <strong>mentorship</strong>, <strong>strategic product thinking</strong>, <strong>design workshop facilitation</strong>, and <strong>team enablement</strong>, I'm down to chat! ☕</p>
 
+
         <ul class="list--contact">
-          <li><%= link_to(
+           <li>
+            <%= link_to(
               "LinkedIn",
               "https://www.linkedin.com/in/jaclyniperrone/",
               target: "_blank"
               ) %>
           </li>
-          <li><%= link_to(
-              "GitHub",
-              "https://github.com/jaclynperrone",
-              target: "_blank"
-              ) %>
+          <li>
+            <% link_to "https://github.com/jaclynperrone" do %>
+              <%= image_tag "icon__github.png" %>
+            <% end %>
           </li>
           <li><%= link_to(
               "Instagram",
