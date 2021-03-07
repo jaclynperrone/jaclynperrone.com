@@ -2,7 +2,8 @@
 	position: relative;
 	line-height: 1.5;
 	margin-bottom: $large-spacing;
-  padding: $base-spacing;
+  // padding: $base-spacing;
+  padding: $xlarge-spacing;
   border-radius: $base-border-radius;
 }
 
@@ -78,8 +79,8 @@
 	// background: tint($primary-tint, 95%);
 
   background-color: #fafbff;
-  padding: $xlarge-spacing;
-  border-radius: $base-border-radius;
+
+
 
 	.list--checks, .list--nested {
 		li {
@@ -90,12 +91,17 @@
 	}
 }
 
+.card--gray {
+  background-color: #f9f9f9;
+}
+
 .card--pink {
-	border: 2px dotted $first-stop;
-	background: tint($primary-tint, 95%);
+	// border: 2px dotted $first-stop;
+  background-color: #fff9f8;
+	// background: tint($primary-tint, 95%);
 }
 
 .card--yellow {
-	border: 2px dotted $yellow;
-	background: tint($primary-tint, 95%);
+	// border: 2px dotted $yellow;
+	// background: tint($primary-tint, 95%);
 }
