@@ -35,6 +35,7 @@
 }
 
 .item-details__image {
+  @extend .hvr-grow;
   width: 66%;
 
   img {

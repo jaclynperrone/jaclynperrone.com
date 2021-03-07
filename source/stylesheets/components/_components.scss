@@ -6,6 +6,7 @@
 @import "featured-content-heading";
 @import "footer";
 @import "heading-lockup";
+@import "hover";
 @import "inset-content";
 @import "item-details";
 @import "item-label";
@@ -16,7 +17,6 @@
 @import "tag-list";
 @import "takeaways";
 @import "gradient-border-wrap"; //refactor
-
 
 .site-wrapper {
   @media only screen and (min-width: $small-screen) {
@@ -71,6 +71,7 @@
   }
 
   li {
+    @extend .hvr-pop;
     // margin: $base-spacing 0;
     // background: #888;
     // width: 40px;
