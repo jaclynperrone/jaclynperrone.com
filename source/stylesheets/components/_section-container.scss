@@ -1,5 +1,5 @@
 .section-container {
-  padding: $base-spacing;
+  padding: $xlarge-spacing $base-spacing;
 
   @media only screen and (min-width: $small-screen) {
     padding: $section-spacing $base-spacing $section-spacing $section-spacing;

@@ -1,12 +1,12 @@
 .section-sub {
   background-color: $super-light-gray;
-  padding: $large-spacing;
+  padding: $large-spacing $large-spacing $section-spacing $large-spacing;
 
   @media only screen and (min-width: $small-screen) {
     display: grid;
     gap: 5rem;
     grid-template-columns: repeat(4, 1fr);
-    padding: 6rem $section-spacing;
+    padding: 5rem $section-spacing;
   }
 
   h3 {
@@ -22,10 +22,9 @@
 
 .section-sub__list {
   display: grid;
-  gap: $xlarge-spacing;
+  gap: $section-spacing;
 
   @media only screen and (min-width: $small-screen) {
-    gap: 3rem;
     grid-template-columns: repeat(3, 1fr);
     grid-column-start: span 3;
   }
@@ -36,10 +35,7 @@
 }
 
 .section-sub__list--case-study-list {
-  gap: $section-spacing;
-
   @media only screen and (min-width: $small-screen) {
-    gap: 3rem;
     grid-template-columns: repeat(1, 1fr);
     grid-column-start: span 3;
   }
