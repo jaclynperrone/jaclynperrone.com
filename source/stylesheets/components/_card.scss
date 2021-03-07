@@ -15,12 +15,13 @@
 }
 
 .card__heading {
-	text-align: center;
+	// text-align: center;
 	grid-column-end: 4;
   grid-column-start: 1;
-  margin: 0;
-  font-family: $heading-font-family;
-  margin-bottom: $base-spacing;
+  margin: 0 0 $large-spacing 0;
+  font-size: $medium-font-size;
+  border-bottom: 1px solid $light-gray;
+  // font-weight: $strong-font-weight;
 }
 
 .card__col-heading {
@@ -73,8 +74,12 @@
 }
 
 .card--blue {
-	border: 2px dotted $ice-blue;
-	background: tint($primary-tint, 95%);
+	// border: 2px dotted $ice-blue;
+	// background: tint($primary-tint, 95%);
+
+  background-color: #fafbff;
+  padding: $xlarge-spacing;
+  border-radius: $base-border-radius;
 
 	.list--checks, .list--nested {
 		li {
