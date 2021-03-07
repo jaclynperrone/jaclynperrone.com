@@ -1,21 +1,44 @@
 .heading-lockup {
-	padding-left: $base-spacing;
+	// padding-left: $base-spacing;
+	// display: grid;
+	// grid-auto-flow: column;
+	// grid-gap: $large-spacing;
+	// padding: $base-spacing $section-spacing;
+	// grid-template-columns: 25% 75%;
+	// margin-bottom: $base-spacing;
+	margin: $large-spacing 0;
 
-	.heading-lockup__heading {
-		color: $secondary-tint;
-	}
+	@media only screen and (min-width: $small-screen) {
+   	margin: $xlarge-spacing 0;
+  }
+
+
+}
+
+.heading-lockup__heading {
+	color: $secondary-tint;
+	color: #7e72a5;
 }
 
 .heading-lockup--item {
-	border-bottom: 2px $light-gray dotted;
-	margin-bottom: $base-spacing;
-}
-
-.heading-lockup--primary {
-	border-left: 3px $primary-tint dotted;
+	// border-bottom: 2px $light-gray dotted;
+	// margin-bottom: $base-spacing;
+	// display: grid;
+	// grid-auto-flow: column;
+	grid-gap: $large-spacing;
+	padding: $large-spacing;
 
 	@media only screen and (min-width: $small-screen) {
-    border-left-width: 5px;
+   	padding: $large-spacing $section-spacing;
+  }
+}
+
+
+.heading-lockup--primary {
+	// border-left: 3px $primary-tint dotted;
+
+	@media only screen and (min-width: $small-screen) {
+    // border-left-width: 5px;
   }
 
 	.heading-lockup__heading {
@@ -24,10 +47,10 @@
 }
 
 .heading-lockup--secondary {
-	border-left: 3px $secondary-tint dotted;
+	// border-left: 3px $secondary-tint dotted;
 
 	@media only screen and (min-width: $small-screen) {
-    border-left-width: 5px;
+    // border-left-width: 5px;
   }
 
 	.heading-lockup__heading {
@@ -36,13 +59,21 @@
 }
 
 .heading-lockup__subheading {
-	font-size: $base-font-size;
-	margin-bottom: 0;
+	font-size: $small-font-size;
+	margin: 0;
 	color: $copy-dimmed;
 	font-weight: 400;
+	text-transform: uppercase;
+	// text-align: right;
+	border-bottom: 1px solid $light-gray;
+	margin-bottom: $small-spacing;
+
+
+	// font-family: "Lato", sans-serif;
+  letter-spacing: 1px;
 }
 
 .heading-lockup__heading {
-	font-size: $medium-font-size;
-	margin-top: $small-spacing;
+	font-size: $base-font-size;
+	// margin-top: $small-spacing;
 }

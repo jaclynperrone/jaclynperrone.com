@@ -161,3 +161,11 @@
 	grid-column: span 1;
   grid-row: span 2;
 }
+
+.article__indent {
+  padding: 0 $large-spacing $large-spacing;
+
+  @media only screen and (min-width: $small-screen) {
+    padding: 0 $section-spacing $large-spacing;
+  }
+}
