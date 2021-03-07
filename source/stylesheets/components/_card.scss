@@ -2,7 +2,6 @@
 	position: relative;
 	line-height: 1.5;
 	margin-bottom: $large-spacing;
-  // padding: $base-spacing;
   padding: $xlarge-spacing;
   border-radius: $base-border-radius;
 }
@@ -16,13 +15,13 @@
 }
 
 .card__heading {
-	// text-align: center;
+
 	grid-column-end: 4;
   grid-column-start: 1;
   margin: 0 0 $large-spacing 0;
   font-size: $medium-font-size;
   border-bottom: 1px solid $light-gray;
-  // font-weight: $strong-font-weight;
+
 }
 
 .card__col-heading {
@@ -75,12 +74,7 @@
 }
 
 .card--blue {
-	// border: 2px dotted $ice-blue;
-	// background: tint($primary-tint, 95%);
-
   background-color: $ice-blue;
-
-
 
 	.list--checks, .list--nested {
 		li {
@@ -92,16 +86,10 @@
 }
 
 .card--gray {
-  background-color: #f9f9f9;
+  background-color: $super-light-gray;
 }
 
 .card--pink {
-	// border: 2px dotted $first-stop;
   background-color: #fff9f8;
-	// background: tint($primary-tint, 95%);
 }
 
-.card--yellow {
-	// border: 2px dotted $yellow;
-	// background: tint($primary-tint, 95%);
-}

@@ -10,22 +10,11 @@
 
   p {
     margin-bottom: $large-spacing;
-    // font-weight: $strong-font-weight;
-  }
-
-  @media only screen and (min-width: $small-screen) {
-    // flex: 1 70%;
-    // padding-left: $section-spacing;
   }
 }
 
 .footer__content--image {
-
-
   @media only screen and (max-width: $small-screen) {
-    // flex: 1 30%;
-    // width: 50%;
-    // grid-column-end: 2;
     grid-column: span 2;
 
   }
@@ -37,7 +26,6 @@
 
 .footer__image {
   max-width: 100%;
-  // border-radius: $base-border-radius;
 }
 
 .footer__ingredients {

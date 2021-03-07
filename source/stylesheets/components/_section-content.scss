@@ -2,20 +2,12 @@
   background-color: $white;
   margin-left: auto;
   margin-right: auto;
-  // max-width: 65rem;
-  // padding: $base-spacing;
   position: relative;
-
-  @media only screen and (min-width: $small-screen) {
-    // padding: $section-spacing;
-  }
 }
 
 .section-content--footer {
   display: grid;
   background-color: transparent;
-  // padding: 0 8rem;
-
 
   @media only screen and (min-width: $small-screen) {
     margin-top: $section-spacing;
@@ -30,17 +22,6 @@
   margin-bottom: $base-spacing;
 }
 
-.section-content__heading--tilt {
-  // text-decoration: underline;
-  // transform: rotate(-5deg);
-  // margin-left: $small-spacing;
-
-  @media only screen and (min-width: $small-screen) {
-    margin-top: 0;
-    margin-left: 0;
-  }
-}
-
 .section-content__subheading {
   margin-left: 5px;
   margin-top: $large-spacing;
@@ -48,7 +29,7 @@
   font-size: 2.25rem;
   font-family: $heading-font-family;
   line-height: 1.1;
-  font-weight: 700;
+  font-weight: $black-font-weight;
 
   @media only screen and (min-width: $small-screen) {
     margin-top: 2.5rem;
@@ -69,4 +50,8 @@
   @media only screen and (min-width: $small-screen) {
     font-size: $medium-font-size;
   }
+}
+
+.section-content__wrapper {
+  display: grid;
 }

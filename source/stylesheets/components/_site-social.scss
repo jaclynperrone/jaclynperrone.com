@@ -1,0 +1,45 @@
+.site-social {
+  position: relative;
+  padding: $section-spacing 0;
+
+  @media only screen and (min-width: $small-screen) {
+    padding: 0;
+  }
+}
+
+.site-social__sticky {
+  @media only screen and (min-width: $small-screen) {
+    position: sticky;
+    top: 0;
+  }
+}
+
+.site-social__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  @media only screen and (min-width: $small-screen) {
+    height: 100vh;
+    flex-direction: column;
+  }
+
+  li {
+    @extend .hvr-pop;
+    margin: 0 $small-spacing;
+
+    @media only screen and (min-width: $small-screen) {
+    margin: 0 0 $base-spacing 0;
+    }
+  }
+}
+
+.site-social__icon {
+  width: 2rem;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

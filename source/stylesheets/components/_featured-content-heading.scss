@@ -1,13 +1,8 @@
 .featured-content-heading {
 	text-align: center;
-	// font-family: $heading-font-family;
 	margin-top: 0;
   margin-bottom: $large-spacing;
   font-weight: $strong-font-weight;
-
-	span {
-		// text-shadow: 1.5px 1.5px 0px rgba($black, 0.9);
-	}
 
 	@media only screen and (min-width: $small-screen) {
     font-size: 2rem;

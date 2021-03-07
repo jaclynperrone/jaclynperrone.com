@@ -1,0 +1,63 @@
+.scenario-table {
+  display: grid;
+  grid-gap: $xlarge-spacing;
+  border-radius: $base-border-radius;
+
+  @media only screen and (min-width: $small-screen) {
+    grid-gap: $xlarge-spacing;
+  }
+}
+
+.scenario-table__item {
+  display: grid;
+  grid-gap: $large-spacing;
+  background-color: $ice-blue;
+  padding: $xlarge-spacing;
+
+  @media only screen and (min-width: $small-screen) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: $section-spacing;
+  }
+}
+
+.scenario-table__content {
+  display: grid;
+  grid-gap: $large-spacing;
+
+  @media only screen and (min-width: $small-screen) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-start: span 3;
+    grid-gap: $section-spacing;
+  }
+}
+
+.scenario-table__heading {
+  font-weight: $black-font-weight;
+  text-transform: uppercase;
+
+  @media only screen and (min-width: $small-screen) {
+    text-align: right;
+  }
+}
+
+.scenario-table__subheading {
+  margin-bottom: $small-spacing;
+  margin-top: 0;
+  border-bottom: 1px solid $light-gray;
+}
+
+.scenario-table__col {
+  margin-bottom: $base-spacing;
+
+  p:first-of-type {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media only screen and (min-width: $small-screen) {
+    margin-bottom: 0;
+  }
+}

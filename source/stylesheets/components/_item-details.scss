@@ -1,19 +1,12 @@
-.item-details {
-	// line-height: 1.5;
-}
-
 .item-details__header {
   margin-bottom: $base-spacing;
   padding-top: $base-spacing;
-  // line-height: 1.5;
-
 }
 
 .item-details__description {
   color: $copy-dimmed;
   font-style: italic;
   margin-bottom: $base-spacing;
-  // line-height: 1.5;
 }
 
 .item-details__role {
@@ -25,8 +18,8 @@
 }
 
 .item-details__number {
-  font-family: "Lato", sans-serif;
-  font-weight: 700;
+  font-family: $number-font-family;
+  font-weight: $black-font-weight;
   color: $copy-dimmed;
   font-size: $small-font-size;
   letter-spacing: 2px;
@@ -47,7 +40,7 @@
 
 .item-details__2-col {
    display: grid;
-   gap: 2rem;
+   gap: $xlarge-spacing;
    grid-template-columns: repeat(2, 1fr);
 
   @media only screen and (min-width: $small-screen) {

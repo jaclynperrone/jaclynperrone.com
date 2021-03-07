@@ -1,38 +1,45 @@
-<section class="section-container section-container--contact">
-  <div class="section-content section-content--contact gradient-border-wrap gradient-border-wrap--third">
-    <div class="gradient-border-wrap__module">
-      <div class="section-sub--sub">
-        <h2 class="section-content__heading">Need a hand?</h2>
-        <p class="section-content__sub-heading">If you are looking for things like <strong>design leadership</strong>, <strong>mentorship</strong>, <strong>strategic product thinking</strong>, <strong>design workshop facilitation</strong>, and <strong>team enablement</strong>, I'm down to chat! ☕</p>
-
-
-        <ul class="list--contact">
-           <li>
-            <%= link_to(
-              "LinkedIn",
-              "https://www.linkedin.com/in/jaclyniperrone/",
-              target: "_blank"
-              ) %>
-          </li>
-          <li>
-            <% link_to "https://github.com/jaclynperrone" do %>
-              <%= image_tag "icon__github.png" %>
-            <% end %>
-          </li>
-          <li><%= link_to(
-              "Instagram",
-              "https://www.instagram.com/jaclynperr",
-              target: "_blank"
-              ) %>
-          </li>
-          <li><%= link_to(
-              "Email",
-              "mailto:hello@jaclynperrone.com",
-              target: "_blank"
-              ) %>
-          </li>
-        </ul>
-      </div>
-    </div>
+<div class="site-social">
+  <div class="site-social__sticky">
+    <ul class="site-social__list list--contact">
+      <li>
+        <% link_to(
+          "https://www.linkedin.com/in/jaclyniperrone/",
+          target: "_blank",
+          rel: "LinkedIn") do %>
+          <%= image_tag "icon__linkedin.png",
+            :class => "site-social__icon",
+            :alt => "LinkedIn" %>
+        <% end %>
+      </li>
+      <li>
+        <% link_to(
+          "https://github.com/jaclynperrone",
+          target: "_blank",
+          rel: "GitHub") do %>
+          <%= image_tag "icon__github.png",
+            :class => "site-social__icon",
+            :alt => "GitHub" %>
+        <% end %>
+      </li>
+      <li>
+        <% link_to(
+          "https://www.instagram.com/jaclynperr",
+          target: "_blank",
+          rel: "Instagram") do %>
+          <%= image_tag "icon__instagram.png",
+            :class => "site-social__icon",
+            :alt => "Instagram" %>
+        <% end %>
+      </li>
+      <li>
+        <% link_to(
+          "mailto:hello@jaclynperrone.com",
+          target: "_blank",
+          rel: "Email") do %>
+          <%= image_tag "icon__email.png",
+            :class => "site-social__icon",
+            :alt => "Email" %>
+        <% end %>
+    </ul>
   </div>
-</section>
+</div>

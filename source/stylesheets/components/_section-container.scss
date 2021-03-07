@@ -1,55 +1,19 @@
 .section-container {
-   padding: $base-spacing;
+  padding: $base-spacing;
 
   @media only screen and (min-width: $small-screen) {
-    // padding: $section-spacing;
     padding: $section-spacing $base-spacing $section-spacing $section-spacing;
   }
 }
 
 .section-container--hero {
-  // background-color: $first-stop;
-
-  .section-content {
-    background-color: transparent;
-  }
-
   @media only screen and (min-width: $small-screen) {
     padding-bottom: 0;
   }
 }
 
-.section-container--designer {
-  // background-color: $first-stop;
-}
-
 .section-container--artist {
-  // background-color: $second-stop;
-}
-
-.section-container--contact {
-  // background-color: $third-stop;
-  position: relative;
-
-  &::after {
-    position:absolute;
-    bottom: -50px;
-    left: 0px;
-    width: 100%;
-    content:" ";
-    background:
-    radial-gradient(circle at 50% 0%, $third-stop 25%, $primary-tint 26%, $primary-tint 40%);
-    background-color: $third-stop;
-    background-size:50px 100px;
-    height:50px;
-    background-repeat: repeat-x;
+  .section-sub {
+    background-color: $light-pink;
   }
-}
-
-.section-container--footer {
-  // background-color: $fourth-stop;
-}
-
-.section-container--musician {
-  // background-color: $third-stop;
 }

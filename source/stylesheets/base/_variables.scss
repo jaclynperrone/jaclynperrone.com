@@ -3,9 +3,9 @@ $small-screen: 600px;
 
 // Typography
 $base-font-family: "Work Sans", "Helvetica", sans-serif;
-$heading-font-family: "Work Sans", "Helvetica", sans-serif;
+$heading-font-family: $base-font-family;
 $subheading-font-family: $base-font-family;
-// $subheading-font-family: "Fjalla One", "Helvetica", sans-serif;
+$number-font-family: "Lato", sans-serif;
 
 // Font Sizes
 $base-font-size: 1.1em;
@@ -18,6 +18,7 @@ $base-border-radius: 2px;
 // Font Weights
 $base-font-weight: 300;
 $strong-font-weight: 500;
+$black-font-weight: 700;
 
 // Line height
 $base-line-height: 1.7;
@@ -33,9 +34,10 @@ $xsmall-spacing: 0.25rem;
 $section-spacing: 4rem;
 
 // Colors
-// $blue: #0ecbe0;
 $blue: #4dacb8;
 $dark-gray: #333;
+$super-light-gray: #f9f9f9;
+$light-pink: #fff9f8;
 $light-gray: #e4e4e4;
 $gray: #666;
 $orange: #f8af06;
@@ -45,6 +47,7 @@ $black: #000;
 $yellow: #f7ce47;
 $ice-blue: #fafbff;
 $dusty-purple: #7e72a5;
+$dusty-blue: #708dc3;
 
 $base-body-color: $dark-gray;
 $copy-dimmed: $gray;
