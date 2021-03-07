@@ -40,12 +40,11 @@
 
 .item-details__2-col {
    display: grid;
-   gap: $xlarge-spacing;
-   grid-template-columns: repeat(2, 1fr);
+   gap: 0;
 
   @media only screen and (min-width: $small-screen) {
     gap: 5rem;
-
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .item-details__image {
