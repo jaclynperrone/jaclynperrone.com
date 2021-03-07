@@ -35,10 +35,12 @@
 }
 
 .item-details__image {
-  width: 50%;
+  width: 66%;
 
   img {
     width: 100%;
+    -webkit-box-shadow: 14px 16px 21px -19px rgba($gray, 0.3);
+    box-shadow: 14px 16px 21px -19px rgba($gray, 0.3);
   }
 }
 
