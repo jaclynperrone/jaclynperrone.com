@@ -16,6 +16,7 @@
 		column-gap: $xlarge-spacing;
 		grid-template-columns: repeat(3, 1fr);
 	  display: grid;
+    margin-top: 2*$section-spacing;
 	}
 }
 

@@ -123,7 +123,7 @@
 .scenario-table__item {
   display: grid;
   grid-gap: $large-spacing;
-  background-color: #fafbff;
+  background-color: $ice-blue;
   padding: $xlarge-spacing;
 
   @media only screen and (min-width: $small-screen) {

@@ -16,8 +16,8 @@
 }
 
 .heading-lockup__heading {
-	color: $secondary-tint;
-	color: #7e72a5;
+	// color: $secondary-tint;
+	color: $dusty-purple;
 }
 
 .heading-lockup--item {
@@ -76,4 +76,10 @@
 .heading-lockup__heading {
 	font-size: $base-font-size;
 	// margin-top: $small-spacing;
+}
+
+.heading-lockup__description {
+	margin-top: $medium-spacing;
+	font-size: $base-font-size;
+	line-height: 1.5;
 }
