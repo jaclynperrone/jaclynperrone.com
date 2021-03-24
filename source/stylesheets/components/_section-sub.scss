@@ -29,7 +29,7 @@
     grid-column-start: span 3;
   }
 
-  li {
+  & > li {
     margin-bottom: 0;
   }
 }
