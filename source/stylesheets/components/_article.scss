@@ -68,6 +68,22 @@
   }
 }
 
+.article__embed-container {
+  display: none;
+
+  @media only screen and (min-width: $small-screen) {
+    display: block;
+    margin-bottom: $xxlarge-spacing;
+    text-align: center;
+  }
+}
+
+.article__embed {
+  width: 411px;
+  height: 731px;
+  margin: 0 auto $base-spacing auto;
+}
+
 .article__image-container {
 	column-gap: $small-spacing;
 	display: grid;
@@ -84,6 +100,14 @@
 	@media only screen and (max-width: $small-screen) {
     margin-left: -$base-spacing;
 		margin-right: -$base-spacing;
+  }
+}
+
+.article__image-container--mobile-only {
+  display: grid;
+
+  @media only screen and (min-width: $small-screen) {
+    display: none;
   }
 }
 

@@ -38,6 +38,12 @@
   }
 }
 
+.item-details__image--devices {
+  img {
+    box-shadow: none;
+  }
+}
+
 .item-details__2-col {
    display: grid;
    gap: 0;
