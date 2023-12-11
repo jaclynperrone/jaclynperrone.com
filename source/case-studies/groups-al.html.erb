@@ -1,0 +1,173 @@
+---
+title: Jaclyn Perrone - Action List Case Study
+type: case study
+---
+
+<section class="section-container">
+  <div class="section-content">
+    <div class="section-content__wrapper">
+      <div class="article">
+        <div class="section-content__header">
+          <h2 class="section-content__heading">Case study</h2>
+          <h2 class="section-content__subheading">Action List</h2>
+        </div>
+
+        <ul class="tag-list">
+          <li class="tag-list__item">🏠 In-house work</li>
+          <li class="tag-list__item">💁‍♀️ Design lead</li>
+          <li class="tag-list__item">💬 User research</li>
+          <li class="tag-list__item">⚡ Rapid prototyping</li>
+          <li class="tag-list__item">💡 Idea validation</li>
+          <li class="tag-list__item">🧩 MVP release</li>
+        </ul>
+
+        <h3 class="article__heading">01. Challenge</h3>
+
+        <p>Groups Recover Together is a healthcare organization that provides medication-assisted treatment for its 6,000+ members who are struggling with opioid addiction. Their comprehensive approach to addiction treatment combines medication, group counseling, and peer support to help members on their journey to recovery. They have 80+ treatment centers across the United States, as well as a telehealth offering that I designed <a class="anchor-body" href="/case-studies/groups" target="_blank">back in 2020</a> as a Product Design contractor at thoughtbot. I joined Groups' Product Team in April 2022 as a full-time Senior Product Designer.</p>
+
+        <p>Members (people enrolled in the Groups program) connect with all different kinds of staff members throughout their recovery journey. They meet with intake specialists, counselors, physicians, and office managers, who work together to make a member's experience seamless throughout the program. It takes a lot of hard work, coordination, and team work to do this.</p>
+
+        <p>Members have tasks they need to complete (e.g. submit weekly drug screens and attend weekly group therapy sessions), and staff need to do everything else to keep them on track and accountable. They schedule their therapy sessions, read and record their drug screen results, follow-up on missing drug screens, engage them if their attendance drops, keep track of their expiring prescriptions – the list goes on and on. On any given day, an office manager can have 100 tasks to complete for their member cohort (~150 members).</p>
+
+
+        <h2 class="article__subheader">The Action List Email</h2>
+
+        <p>To help keep track of these various tasks, Groups created an Action List email that was sent out every day to Staff and Counselors to help them focus on what they need to get done for the day. This email was a really great first step. It helped prevent tasks from slipping through the cracks as staff worked hard to make sure their members stayed on track.
+
+        <div class="article__image-container article__image-container--2up">
+          <div class="article__image ui">
+            <%= image_tag "groups-al-email-1.png",
+                :class => "border",
+                :alt => "Screenshot 1 of Action List email" %>
+          </div>
+          <div class="article__image ui">
+            <%= image_tag "groups-al-email-2.png",
+                :class => "border",
+                :alt => "Screenshot 2 of Action List email" %>
+          </div>
+          <div class="article__caption">Screenshots of the original Action List email, before the redesign</div>
+        </div>
+
+        <p>However, much like the <a class="anchor-body" href="/case-studies/groups-ps" target="_blank">Panel Summary</a>, this email left much to be desired. It was hard to parse. At times it had too much information and other times not enough, and it wasn't interactive or trackable. Staff would print it out to get a better handle on it, and physically cross tasks off as they completed them. They were only able to see their own task list, which made it very difficult to cover for others if they needed to. There was also no tracking or sense of progress to share with their managers or other teammates. This lack of transparency made it difficult to work together to ensure members are getting the uninterrupted care and attention they need.</p>
+
+
+        <div class="card card--list card--blue">
+          <h4 class="card__heading">Cons of the Action List email</h4>
+          <ul class="list list--crosses">
+            <li>Unable to gain novel insights via analytics</li>
+            <li>Lack of transparency into others' workload</li>
+            <li>Lack of accountability</li>
+            <li>Lack of interaction, causing inefficiency</li>
+            <li>Cannot display member PHI (Protected Health Information) due to HIPAA compliance, so members are identified by numbers and initials and not their full names. This gives staff an extra step to lookup who the task is referring to.</li>
+          </ul>
+        </div>
+
+        <p>After about 6 months, I was asked to reimagine the Action List tasks as part of our Digital Platform, instead of in an email. The Digital Platform is our custom patient portal that talks directly to our EHR platform (eClinicalWorks). It was created as part of our thoughtbot contract work <a class="anchor-body" href="/case-studies/groups" target="_blank">back in 2020</a>.  It was developed and designed by our team to serve as a more intuitive interface for staff to access the appointment data and medical records that live in our (clunky, difficult to navigate) EHR platform. Taking the Action List tasks out of a static email and into our Digital Platform meant they would become interactive and dynamic, and there would now be a sense of transparency and accountability among staff.</p>
+
+        <div class="card card--list card--blue">
+          <h4 class="card__heading">Pros of the Action List in the Digital Platform</h4>
+          <ul class="list list--checks">
+            <li>New insights to gain via analytics</li>
+            <li>Transparency into everyones' workload</li>
+            <li>Accountability via activity logs</li>
+            <li>Interactive, dynamic content to promote efficiency</li>
+            <li>Ability to send reminders and alerts</li>
+            <li>HIPAA-compliant, so we can display member PHI</li>
+          </ul>
+        </div>
+
+
+        <h3 class="article__heading">02. Process</h3>
+
+        <h2 class="article__subheader">User Interviews</h2>
+
+        <p>In order to get started, I scheduled interviews with various office managers and counselors to learn about their experience using the Action List daily email. I asked them how it fits into their workflow – how it helps them and how it hinders them. In these preliminary conversations I try to understand the bigger picture and the context in which a tool like this exists. I look for opportunities for improvement, as well things we should keep as we move forward with a new design. These conversations were super helpful in understanding what the next steps would be design-wise, and I came away with some key things to consider:</p>
+
+         <div class="heading-lockup">
+          <div class="heading-lockup__item">
+            <h5 class="heading-lockup__subheading">Insight 1</h5>
+            <h4 class="heading-lockup__heading">Staff want to be able to see each others' Action Lists to make last minute coverage easier to orchestrate</h4>
+          </div>
+
+          <div class="heading-lockup__item">
+            <h5 class="heading-lockup__subheading">Insight 2</h5>
+            <h4 class="heading-lockup__heading">Staff want a better way to organize the tasks, whether by categorizing it themselves or applying filters to help them focus on what's important</h4>
+          </div>
+
+          <div class="heading-lockup__item">
+            <h5 class="heading-lockup__subheading">Insight 3</h5>
+            <h4 class="heading-lockup__heading">Staff want to be able to interact with the tasks and do things like reassign tasks, ask questions, and mark tasks as complete</h4>
+          </div>
+        </div>
+
+        <h2 class="article__subheader">Design</h2>
+
+        <p>After I had enough clarity on the context of the Action List and how it's incorporated into a staff member's daily workflow, I was ready to design what it could look like out of email and into our Digital Platform. When starting a brand new redesign like this, the first thing I do is gather inspiration from competitors and creative platforms like Dribbbl and Pinterest. In this case, I looked for UI examples of task management software, EHRs, ticketing systems, and filter experiences.</p>
+
+        <p>After many rounds of feedback sessions with stakeholders, I landed on an interface that prioritizes simplicity over information overload. This was an interesting challenge, because every task is different and different staff roles look for different things. I identified and surfaced the common information across all the different tasks that is needed in order to evaluate and take action:</p>
+
+
+        <div class="card card--list card--gray">
+          <h4 class="card__heading">Common information across different tasks</h4>
+          <ul class="list list--checks">
+            <li>Task title</li>
+            <li>Member associated with task</li>
+            <li>Group the member belongs to</li>
+            <li>Task due date</li>
+            <li>Task assignee</li>
+          </ul>
+        </div>
+
+
+        <div class="article__image-container">
+          <div class="article__image ui">
+            <%= image_tag "groups-al-collapsed.png",
+                :class => "border",
+                :alt => "Collapsed Action List" %>
+          </div>
+          <div class="article__caption">View 1 of 2: Collapsed Action List on page load</div>
+        </div>
+
+
+        <div class="article__image-container">
+          <div class="article__image ui">
+            <%= image_tag "groups-al-expanded.png",
+                :class => "border",
+                :alt => "Expanded Action List" %>
+          </div>
+          <div class="article__caption">View 2 of 2: Expanded details panel on Action List</div>
+        </div>
+
+        <p>I showed these designs in another round of staff user interviews and they were delighted by its simplicity and power. They were excited by the robust filters, as well as the ability to expand tasks to see more information about the member and the task itself. Each task now has a history timeline to keep track of reassignments and questions, as well when a task is completed. Staff and their managers were happy about this accountability and transparency, and all this new functionality helped them realize that the Action List does in fact belong in the Digital Platform, and not in an email. This realization was a win, because it meant that they saw and understood the reason for the workflow change – which is something that's usually met with resistance. I was happy to have their support as we rolled this out in a pilot program.</p>
+
+        <div class="article__embed-container">
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="600" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FrBstPGaBIC2Nhbf569j7Ob%2FPrototypes%3Fpage-id%3D4%253A3%26type%3Ddesign%26node-id%3D32-9628%26viewport%3D794%252C920%252C0.25%26t%3DxJ5sUsJUQQyEJ9Oz-1%26scaling%3Dscale-down-width%26starting-point-node-id%3D32%253A9628%26mode%3Ddesign" allowfullscreen></iframe>
+        </div>
+
+        <h3 class="article__heading">03. Outcome</h3>
+
+        <p>We released the Action List to a small subset of office managers and counselors and had them use it as part of their daily workflow for two months. During that time I conducted another round of interviews to hear about their experience using it and any adjustments we should make before releasing it to the rest of the staff. They talked about the difficulty of adapting a new routine and nuances around particular workflows at Groups, but overall the feedback was positive and there were no huge UI changes to be made. After the pilot ended we released it to the team at large and sunsetted the email.</p>
+
+        <p>This redesign was a huge win for our product team, which was reflected in the feedback survey we sent out a couple weeks after its release. We received overwhelmingly positive responses, with 92% of staff saying that the new Action List is easy to use, with its organization and sense of accomplishment being the things they valued most.</p>
+
+        <div class="card card--list card--blue">
+          <h4 class="card__heading">Feedback from user survey</h4>
+          <ul class="list">
+            <li>"It provides a reminder checklist of member's needs coming due."</li>
+            <li>"It holds me accountable."</li>
+            <li>"I feel like I am doing my job well, seeing that I have a to do list and getting it done."</li>
+            <li>"AL helps me stay on task with what is needed to stay current so I don't have to remember everything I have to do!"</li>
+            <li>"Everything makes me feel good about the work that I do!!"</li>
+            <li>"AL can help me to stay organized and focused on the tasks that I need to complete."</li>
+          </ul>
+        </div>
+
+        <p>As a designer, it makes me feel so good to make such a positive impact on our staff and members' lives, as well as on our business. Having a central place for task management in our Digital Platform means that we can now track task completion rate and size of workloads, to have better insight into how the work gets done and distributed to our staff. I'm looking forward to seeing how the Action List will change overtime, based on the insights we'll gain and feedback we'll continue to receive.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-container">
+  <%= partial "case-study-list" %>
+</section>
