@@ -29,6 +29,17 @@
 	}
 }
 
+.list--crosses {
+	li {
+		display: flex;
+
+		&:before {
+			content: '✖';
+			margin-right: $base-spacing;
+		}
+	}
+}
+
 
 .list--nested {
 	margin-top: $xsmall-spacing;

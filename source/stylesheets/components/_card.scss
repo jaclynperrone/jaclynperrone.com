@@ -83,6 +83,13 @@
 			}
 		}
 	}
+	.list--crosses {
+		li {
+			&:before {
+				color: $orange;
+			}
+		}
+	}
 }
 
 .card--gray {

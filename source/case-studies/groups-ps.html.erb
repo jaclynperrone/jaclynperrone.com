@@ -1,0 +1,139 @@
+---
+title: Jaclyn Perrone - Panel Summary Case Study
+type: case study
+---
+
+<section class="section-container">
+  <div class="section-content">
+    <div class="section-content__wrapper">
+      <div class="article">
+        <div class="section-content__header">
+          <h2 class="section-content__heading">Case study</h2>
+          <h2 class="section-content__subheading">Panel Summary</h2>
+        </div>
+
+        <ul class="tag-list">
+          <li class="tag-list__item">🏠 In-house work</li>
+          <li class="tag-list__item">💁‍♀️ Design lead</li>
+          <li class="tag-list__item">💬 User research</li>
+          <li class="tag-list__item">💡 Idea validation</li>
+        </ul>
+
+        <h3 class="article__heading">01. Challenge</h3>
+
+        <p>Groups Recover Together is a healthcare organization that provides medication-assisted treatment for its 6,000+ members who are struggling with opioid addiction. Their comprehensive approach to addiction treatment combines medication, group counseling, and peer support to help members on their journey to recovery. They have 80+ treatment centers across the United States, as well as a telehealth offering that I designed <a class="anchor-body" href="/case-studies/groups" target="_blank">back in 2020</a> as a Product Design contractor at thoughtbot. I joined Groups' Product Team in April 2022 as a full-time Senior Product Designer.</p>
+
+        <p>When I worked with Groups back in 2020, they had just transitioned over to a new EHR platform called eClincialWorks. While this platform helps their staff prescribe medication and coordinate care, it doesn't do a good job of organizing and presenting member information in a clear and intuitive way. It also doesn't have reporting, and cannot give insight about how a member is doing in general. Staff have to juggle multiple tabs and systems (e.g. Google sheets and Tableau reporting) in order to piece together a full picture of a member's journey and current state. This is inefficient and frustrating, and makes it difficult for staff to give members the most seamless care possible.</p>
+
+        <h2 class="article__subheader">The Panel Summary Email</h2>
+
+        <p>To bridge this gap, the Groups team created the Panel Summary, which contains a brief digest of a member's demographic, clinical, and medical history. It is sent in a daily email (like the <a class="anchor-body" href="/case-studies/groups-al" target="_blank">Action List</a>) to counselors and doctors, and gives an overview about each member they are going to see that day. The goal is to help them prepare for these encounters by summarizing a member's prescription details and recommendations, as well as their attendance and drug screen results for the last four weeks. This way, staff do not have to dig for this vital information about their member's care.</p>
+
+        <div class="article__image-container">
+          <div class="article__image">
+            <%= image_tag "groups-ps-email-1.png",
+                :class => "",
+                :alt => "Screenshot 1 of Panel Summary email" %>
+          </div>
+          <div class="article__caption">Screenshot of the original Panel Summary email, before the redesign</div>
+        </div>
+
+        <p>The email is well-received, but only partially solves the problem. Much like the <a class="anchor-body" href="/case-studies/groups-al" target="_blank">Action List</a>, it leaves much to be desired. Counselors and doctors appreciate this snapshot of their member cohort, but it is only a small piece of the puzzle. There is still so much they want to know, such as a more in-depth attendance and drug screen history, coupled with relevant insights and recommendations. They would also like to see the Panel Summary for other staff members, to help cover for them when they are out of office. This email is only the first step towards creating a fuller picture of a member's recovery journey for all staff members to access.</p>
+
+        <p>After about 6 months, I was asked to reimagine the Panel Summary as part of our Digital Platform, instead of in an email. The Digital Platform is our custom patient portal that talks directly to our EHR platform (eClinicalWorks). It was created as part of our thoughtbot contract work <a class="anchor-body" href="/case-studies/groups" target="_blank">back in 2020</a>.  It was developed and designed by our team to serve as a more intuitive interface for staff to access the appointment data and medical records that live in our (clunky, difficult to navigate) EHR platform. Taking the Panel Summary out of a static email and into our Digital Platform meant it would become interactive and dynamic, and there would now be a sense of transparency and accountability among staff.</p>
+
+        <div class="card card--list card--blue">
+          <h4 class="card__heading">Cons of Panel Summary Email</h4>
+          <ul class="list list--crosses">
+            <li>Unable to gain novel insights and recommendations via trend tracking</li>
+            <li>Lack of transparency into others' member cohorts</li>
+            <li>Lack of accountability</li>
+            <li>Lack of interaction, causing inefficiency</li>
+            <li>Cannot display member PHI (Protected Health Information) due to HIPAA compliance, so members are identified by numbers and initials and not their full names. This gives staff an extra step to lookup who the data corresponds to.</li>
+          </ul>
+        </div>
+
+        <div class="card card--list card--blue">
+          <h4 class="card__heading">Pros of Panel Summary in the Digital Platform</h4>
+          <ul class="list list--checks">
+            <li>New insights and recommendations to gain via trend tracking</li>
+            <li>Transparency into everyones' workload</li>
+            <li>Shared accountability</li>
+            <li>Interactive, dynamic content to promote efficiency</li>
+            <li>Ability to send reminders and alerts</li>
+            <li>HIPAA-compliant, so we can display member PHI</li>
+          </ul>
+        </div>
+
+        <h3 class="article__heading">02. Process</h3>
+
+        <h2 class="article__subheader">User Interviews</h2>
+
+        <p>In order to get started, I scheduled interviews with various counselors and doctors to learn about their experience using the Panel Summary daily email. I asked them how it fits into their workflow – how it helps them and how it hinders them. In these preliminary conversations I try to understand the bigger picture and the context in which a tool like this exists. I look for opportunities for improvement, as well things we should keep as we move forward with a new design. These conversations were super helpful in understanding what the next steps would be design-wise, and I came away with some key things to consider:</p>
+
+         <div class="heading-lockup">
+          <div class="heading-lockup__item">
+            <h5 class="heading-lockup__subheading">Insight 1</h5>
+            <h4 class="heading-lockup__heading">Staff want to be able to see each others' Panel Summaries to make last minute coverage easier to orchestrate</h4>
+          </div>
+
+          <div class="heading-lockup__item">
+            <h5 class="heading-lockup__subheading">Insight 2</h5>
+            <h4 class="heading-lockup__heading">Staff want the Panel Summary to better capture nuanced data. For example, they want to know if they should be worried about an illicit screen, or whether a member attended a makeup group session</h4>
+          </div>
+
+          <div class="heading-lockup__item">
+            <h5 class="heading-lockup__subheading">Insight 3</h5>
+            <h4 class="heading-lockup__heading">Staff want a deeper dive into a member's attendance history, looking back to eight weeks instead of four. This will give them a better idea if a member is at risk for discharge due to poor attendance</h4>
+          </div>
+
+          <div class="heading-lockup__item">
+            <h5 class="heading-lockup__subheading">Insight 4</h5>
+            <h4 class="heading-lockup__heading">Staff want a richer medical and clinical history about a member. They want to see more details about their prescriptions, as well as any underlying problems or diagnoses they might have</h4>
+          </div>
+
+          <div class="heading-lockup__item">
+            <h5 class="heading-lockup__subheading">Insight 5</h5>
+            <h4 class="heading-lockup__heading">Staff want flags and alerts to highlight important things, like when a member missed a drug screen or if their prescription is about to expire</h4>
+          </div>
+        </div>
+
+        <h2 class="article__subheader">Design</h2>
+
+        <p>After I had enough clarity on the context of the Panel Summary and how it's used by counselors and doctors, I was ready to design what it could look like out of email and into our Digital Platform. When starting a brand new redesign like this, the first thing I do is gather inspiration from competitors and creative platforms like Dribbbl and Pinterest. In this case, I looked for UI examples of EHRs, CRMs, healthcare apps, complex tables, and dashboards.</p>
+
+        <p>After additional rounds of feedback sessions with stakeholders, I landed on an interface that's rich with information yet easy to parse. It took many iterations to get the visual design, organization, and hierarchy right. I use bar charts, alerts, and collapsible panels to help staff focus on what's important to them. I use colors and font styles consistently and selectively, to convey meaning and a sense of priority. I wanted the visual design to be invisible, pleasing, and predictable; to minimize distraction and let the data speak for itself. Ultimately, I wanted a staff member to read a member's Panel Summary and know exactly what they need to do to keep that member engaged and in treatment.</p>
+
+        <div class="article__image-container">
+          <div class="article__image">
+            <%= image_tag "groups-ps-group.png",
+                :class => "",
+                :alt => "Collapsed Panel Summaries at the group level" %>
+          </div>
+          <div class="article__caption">View 1 of 2: Collapsed Panel Summaries on the group page</div>
+        </div>
+
+
+        <div class="article__image-container">
+          <div class="article__image">
+            <%= image_tag "groups-ps-expanded.png",
+                :class => "",
+                :alt => "Expanded Panel Summary at the group level" %>
+          </div>
+          <div class="article__caption">View 2 of 2: Expanded individual Panel Summary on the group page</div>
+        </div>
+
+
+        <h3 class="article__heading">03. Outcome</h3>
+        <p>I showed these designs in another round of staff user interviews and overall the feedback was very positive. They are delighted by its simple design and thoughtful organization. They appreciate the mix of visual elements with text, for it makes the information more digestible and easy to read. The bar charts give them a clear overview of the past three months, while the warnings and badges help them identify and prioritize which actions to take. Overall, they are so happy about having all of the member's information presented in one place. This will minimize the time spent cross-referencing other sources and digging for information – which will allow them to focus on the member and their needs.</p>
+
+        <p>The next steps are to pilot it among a small subset of staff, so we can learn and refine before we release to the larger group. My team and I are all excited to measure its impact on the organization and the member experience at Groups, which we believe will be very positive. By creating the Panel Summary, we are providing staff with the tools, insights, and confidence needed to give members with the best care possible – which is a huge win for everyone!</p>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-container">
+  <%= partial "case-study-list" %>
+</section>
