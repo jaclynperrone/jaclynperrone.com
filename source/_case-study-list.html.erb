@@ -11,11 +11,38 @@
             <div class="item-details__copy">
               <div class="item-details__header">
                 <%= link_to(
+                "Action List",
+                "/case-studies/groups-al",
+                target: "_blank"
+                ) %>
+                <div class="item-details__role">Visual & ux design</div>
+              </div>
+              <div class="item-details__description">Lead designer on a task management system for staff members.</div>
+            </div>
+            <div class="item-details__image item-details__image--devices">
+               <% link_to(
+                "/case-studies/groups-al",
+                target: "_blank",
+                rel: "Panel Summary") do %>
+                <%= image_tag "groups-al-thumb.png",
+                  :class => "",
+                  :alt => "Action List" %>
+              <% end %>
+            </div>
+          </div>
+        </li>
+
+        <li class="item-details">
+          <span class="item-details__number">[UPDATE]</span>
+          <div class="item-details__2-col">
+            <div class="item-details__copy">
+              <div class="item-details__header">
+                <%= link_to(
                 "Panel Summary",
                 "/case-studies/groups-ps",
                 target: "_blank"
                 ) %>
-                <div class="item-details__role">lead visual & ux designer</div>
+                <div class="item-details__role">Visual & ux design</div>
               </div>
               <div class="item-details__description">Lead designer on an initiative to surface and prioritize patient information.</div>
             </div>
@@ -42,7 +69,7 @@
                 "/case-studies/groups",
                 target: "_blank"
                 ) %>
-                <div class="item-details__role">lead visual & ux designer</div>
+                <div class="item-details__role">Visual & ux design</div>
               </div>
               <div class="item-details__description">Lead designer on an app that supports people in their journey towards recovery from opioid addiction.</div>
             </div>
