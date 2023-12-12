@@ -120,6 +120,15 @@
   }
 }
 
+.article__image-container--3up {
+  grid-template-columns: repeat(3, 1fr);
+
+  .article__caption {
+    grid-column-end: 4;
+    grid-column-start: 1;
+  }
+}
+
 .article__image-container--4up {
   grid-template-columns: repeat(4, 1fr);
 

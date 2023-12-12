@@ -1,0 +1,192 @@
+---
+title: Jaclyn Perrone - Care Plans Case Study
+type: case study
+---
+
+<section class="section-container">
+  <div class="section-content">
+    <div class="section-content__wrapper">
+      <div class="article">
+        <div class="section-content__header">
+          <h2 class="section-content__heading">Case study</h2>
+          <h2 class="section-content__subheading">Care Plans</h2>
+        </div>
+
+        <ul class="tag-list">
+          <li class="tag-list__item">🏠 In-house work</li>
+          <li class="tag-list__item">💁‍♀️ Design lead</li>
+          <li class="tag-list__item">💬 User research</li>
+          <li class="tag-list__item">⚡ Rapid prototyping</li>
+        </ul>
+
+        <h3 class="article__heading">01. Challenge</h3>
+
+        <p>Groups Recover Together is a healthcare organization that provides medication-assisted treatment for its 6,000+ members who are struggling with opioid addiction. Their comprehensive approach to addiction treatment combines medication, group counseling, and peer support to help members on their journey to recovery. They have 80+ treatment centers across the United States, as well as a telehealth offering that I designed <a class="anchor-body" href="/case-studies/groups" target="_blank">back in 2020</a> as a Product Design contractor at thoughtbot. I joined Groups' Product Team in April 2022 as a full-time Senior Product Designer.</p>
+
+        <p>Goal setting is the hallmark of the Groups experience, and is what sets them apart from their competitors. Not only are members attending weekly group therapy sessions, they are also setting and achieving long- and short-term goals, with the help of their counselors. This set of goals is called a Care Plan, and members create one when they join Groups, and update it every ten weeks.</p>
+
+        <p>While the idea is solid, the execution has been not so great over the years. Before Groups introduced their <a class="anchor-body" href="/case-studies/groups" target="_blank">telehealth experience</a> in 2020, Care Plans were paper-based. Counselors would print them, sit with members in-person, fill them out, and scan them back into the EHR. The process was inefficient and was near impossible to track and find trends.</p>
+
+        <p>When I joined Groups in 2020 as a thoughtbot contractor, I designed their first <a class="anchor-body" href="/case-studies/groups#treatmentplan" target="_blank">digital Care Plan</a> (formally Treatment Plan) as part of their brand new member app. In this app, members could join their group sessions virtually, as well as submit drug screenings and update their Care Plans. It was an incredible leap forward, and gave members the tools they needed to stay engaged and in care.</p>
+
+        <p>Fast forward three years later to now. We have since learned a lot about Care Planning, and the member experience has gone through a few iterations to accommodate updates to the program. While we've changed the Care Plans to fit our program needs, our next iteration involves changing it to meet member and staff needs.</p>
+
+
+        <h3 class="article__heading">02. Design</h3>
+
+        <p>This was a particularly meaty project, because it involved rethinking how we approach goal setting at Groups –  for both the members and the staff. The major piece of feedback we've heard from members is that they want to be able to write goals in their own words. Care Plans have always featured canned goals that members can choose from. Therefore, members bend their goals to fit into our choices, but they always fall short. On the staff side, we've repeatably heard the desire for more visibility and accountability around goal setting. Counselors want an easy way to see their members' current and past goals, as well as a history of all actions taken by themselves, members, and other staff members.</p>
+
+
+        <div class="card card--list card--blue">
+          <h4 class="card__heading">Old Care Plans</h4>
+          <ul class="list list--crosses">
+            <li>Members couldn't write in their own goals</li>
+            <li>Canned responses missed the mark</li>
+            <li>Unwieldy, confusing, and multi-step review process</li>
+            <li>Lack of transparency and accountability</li>
+          </ul>
+        </div>
+
+        <p>Another aspect of our original Care Plan was that members had to select at least three goals, which broke down into multiple steps and tasks. And each step, task, and goal was reviewed every ten weeks in a lengthy, multi-step process that left members and staff confused and frustrated. This review process was unwieldy and so far off from how members think about goal setting. As part of this initiative to redesign Care Plans, I worked with our clinical team to make them simpler and more aligned to our user feedback.</p>
+
+
+        <div class="card card--list card--blue">
+          <h4 class="card__heading">New Care Plans</h4>
+          <ul class="list list--checks">
+            <li>Members can write in their own goals</li>
+            <li>Closer to real life</li>
+            <li>Simpler, one-step review process</li>
+            <li>Staff has more control and visibility into the process</li>
+          </ul>
+        </div>
+
+        <h2 class="article__subheader">Member Experience</h2>
+
+        <p>We had two driving forces when redesigning the member experience: simplicity and celebration. We simplified the goal setting experience to two things: one long-term goal and one short-term goal – both in the member's own words. This greatly simplifies the experience, for members now keep track of one goal at a time (instead of potentially nine things at once).</p>
+
+        <p>In addition to the member-entered goals, we can also surface general program expectations (e.g. come to group four times this week) and personalized interventions, which we didn't do before. This is important for keeping members and staff on the same page, and being more transparent about what we expect from members to remain engaged in our program.</p>
+
+        <div class="article__image-container article__image-container--2up">
+          <div class="article__image ui">
+            <%= image_tag "groups-cp-member-dash-1.png",
+                :class => "border",
+                :alt => "Member dashboard showing current goal" %>
+          </div>
+          <div class="article__image ui">
+            <%= image_tag "groups-cp-member-dash-2.png",
+                :class => "border",
+                :alt => "Member dashboard showing previous goals" %>
+          </div>
+          <div class="article__caption">Member dashboard showing their current goal and previous goals</div>
+        </div>
+
+        <p>Members also now have the ability to write, edit, replace, and mark a goal complete in real-time, instead of once every ten weeks during review time. This makes the goal setting experience flexible and closer to life, because it accounts for the chaos and constant change in a member's life. They also have the ability to see their goal history, which they couldn't do before without the help of a counselor. These changes open the door for us to celebrate their progress and keep them engaged in a positive way.</p>
+
+        <div class="article__image-container article__image-container--4up">
+          <div class="article__image ui">
+            <%= image_tag "groups-cp-member-complete-1.png",
+                :class => "border",
+                :alt => "Goal completion screen 1" %>
+          </div>
+          <div class="article__image ui">
+            <%= image_tag "groups-cp-member-complete-2.png",
+                :class => "border",
+                :alt => "Goal completion screen 2" %>
+          </div>
+          <div class="article__image ui">
+            <%= image_tag "groups-cp-member-complete-3.png",
+                :class => "border",
+                :alt => "Goal completion screen 3" %>
+          </div>
+          <div class="article__image ui">
+            <%= image_tag "groups-cp-member-complete-4.png",
+                :class => "border",
+                :alt => "Goal completion screen 4" %>
+          </div>
+          <div class="article__caption">Flow for completing and replacing a goal</div>
+        </div>
+
+        <div class="article__embed-container">
+          <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="600" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FrBstPGaBIC2Nhbf569j7Ob%2FPrototype%3Fpage-id%3D1%253A2%26type%3Ddesign%26node-id%3D4-3362%26viewport%3D1515%252C-666%252C0.43%26t%3Dfcg6ZUuJMhpMWrhp-1%26scaling%3Dscale-down%26starting-point-node-id%3D4%253A3362%26mode%3Ddesign" allowfullscreen></iframe>
+        </div>
+
+        <p>Due to compliance reasons, every ten weeks a member needs to update their progress on their goals. Our original flow turned into a a multi-step, confusing experience that didn't celebrate a member and the progress they made. This new review flow is now a two step process that highlights a member's achievements, and summarizes the progress they've made since the last review. This shift towards simplicity and celebration motivates a member, keeps them engaged, and saves them so much time (and headaches).</p>
+
+
+        <div class="article__image-container article__image-container--3up">
+          <div class="article__image ui">
+            <%= image_tag "groups-cp-member-review-1.png",
+                :class => "border",
+                :alt => "Goal completion screen 1" %>
+          </div>
+          <div class="article__image ui">
+            <%= image_tag "groups-cp-member-review-2.png",
+                :class => "border",
+                :alt => "Goal completion screen 2" %>
+          </div>
+          <div class="article__image ui">
+            <%= image_tag "groups-cp-member-review-3.png",
+                :class => "border",
+                :alt => "Goal completion screen 3" %>
+          </div>
+          <div class="article__caption">Flow for reviewing goals from the last ten weeks</div>
+        </div>
+
+
+        <div class="article__embed-container">
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="600" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FrBstPGaBIC2Nhbf569j7Ob%2FPrototype%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D4-7545%26viewport%3D683%252C614%252C0.23%26t%3D9dUcS11BjfwG6dih-1%26scaling%3Dscale-down%26starting-point-node-id%3D4%253A7545%26mode%3Ddesign" allowfullscreen></iframe>
+        </div>
+
+
+        <h2 class="article__subheader">Staff Experience</h2>
+
+        <p>Transparency and simplicity were the driving forces when redesigning the staff workflow. Before, they did not have a holistic view of the goals each member in their cohort were working on. They instead had to view goals at the individual level, and then piece together the information themselves. With this new design, they can now see goals at the group and individual level, which helps them better prepare for their group sessions. They can now go in confidently knowing what all their members are working on, and can facilitate discussions, create connections, and surface opportunities for them to help each other.</p>
+
+        <div class="article__image-container">
+          <div class="article__image ui">
+            <%= image_tag "groups-cp-staff-group-1.png",
+                :class => "border",
+                :alt => "Group view of member goals" %>
+          </div>
+          <div class="article__caption">Member goals and Care Plan review statuses at the group level</div>
+        </div>
+
+        <p>On a member's profile page, staff can see a timeline of all the actions taken by both member and counselor, to promote accountability and transparency. They can see when a goal has been added or changed, and who made the update. This level of reporting sets the stage for recommendations, to give staff more insight into a member's progress and how they can help them set and achieve their goals.</p>
+
+        <div class="article__image-container">
+          <div class="article__image ui">
+            <%= image_tag "groups-cp-staff-1.png",
+                :class => "border",
+                :alt => "Individual view of member goals" %>
+          </div>
+          <div class="article__caption">Individual view of a member's Care Plan on their profile profile</div>
+        </div>
+
+        <p>In terms of actions, counselors have the same abilities a member has – and more. Counselors can add, edit, remove, and replace a member's goals, as well as mark them as complete. The ability for staff to act on a member's behalf – if needed – closes the gap between member and staff, and creates a seamless, frictionless experience for the member. Staff can also see alerts and badges that call out things like stale or overdue goals, to help them prioritize what actions to take next.</p>
+
+
+        <div class="article__image-container article__image-container--2up">
+          <div class="article__image ui">
+            <%= image_tag "groups-cp-staff-2.png",
+                :class => "border",
+                :alt => "Edit and expanded view on profile page" %>
+          </div>
+          <div class="article__image ui">
+            <%= image_tag "groups-cp-staff-group-2.png",
+                :class => "border",
+                :alt => "Edit and expanded view on group page" %>
+          </div>
+          <div class="article__caption">Edit and expanded views on profile and group page</div>
+        </div>
+
+        <h3 class="article__heading">03. Next Steps</h3>
+
+        <p>The next steps are to further test this approach with members and staff, to gain insight into what works and what we need to tweak. We will then pilot it among a small subset of staff and members, so we can learn and refine before we release to the larger group. My team and I are all excited to measure its impact on the organization and the member experience at Groups, which we believe will be highly impactful. By releasing this new version of Care Plans, we are providing members and staff with an experience that more closely aligns with their needs. Ultimately, this means a smarter, more holistic and realistic approach to goal setting, which is a win for everyone. which is a huge step forward for our members, staff, and business.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-container">
+  <%= partial "case-study-list" %>
+</section>

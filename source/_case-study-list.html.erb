@@ -38,6 +38,33 @@
             <div class="item-details__copy">
               <div class="item-details__header">
                 <%= link_to(
+                "Care Plans",
+                "/case-studies/groups-cp",
+                target: "_blank"
+                ) %>
+                <div class="item-details__role">Visual & ux design</div>
+              </div>
+              <div class="item-details__description">Lead designer on a more holistic and realistic approach to goal setting.</div>
+            </div>
+            <div class="item-details__image item-details__image--devices">
+               <% link_to(
+                "/case-studies/groups-cp",
+                target: "_blank",
+                rel: "Care Plans") do %>
+                <%= image_tag "groups-cp-thumb.png",
+                  :class => "",
+                  :alt => "Action List" %>
+              <% end %>
+            </div>
+          </div>
+        </li>
+
+        <li class="item-details">
+          <span class="item-details__number">[UPDATE]</span>
+          <div class="item-details__2-col">
+            <div class="item-details__copy">
+              <div class="item-details__header">
+                <%= link_to(
                 "Panel Summary",
                 "/case-studies/groups-ps",
                 target: "_blank"
