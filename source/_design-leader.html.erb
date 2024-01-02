@@ -4,56 +4,6 @@
       <h2 class="section-content__heading">Design leader</h2>
 
       <section class="section-sub">
-        <h3 id="podcasts">Podcasts</h3>
-        <ul class="section-sub__list">
-          <li class="item-details">
-            <span class="item-details__number">01</span>
-            <div class="item-details__header">
-              <%= link_to(
-              "Tentative",
-              "https://www.tentative.fm/",
-              target: "_blank"
-              ) %>
-              <div class="item-details__role">co-host</div>
-            </div>
-            <div class="item-details__description">A podcast by thoughtbot about digital product design</div>
-            <div class="item-details__image">
-               <% link_to(
-                "https://www.tentative.fm/",
-                target: "_blank",
-                rel: "Tentative") do %>
-                <%= image_tag "thumb__tentative.png",
-                  :class => "",
-                  :alt => "Tentative" %>
-              <% end %>
-            </div>
-          </li>
-          <li class="item-details">
-            <span class="item-details__number">02</span>
-            <div class="item-details__header">
-              <%= link_to(
-              "Awkward Silences by User Interviews",
-              "https://www.userinterviews.com/blog/thoughtbots-jaclyn-perrone-preparing-for-amazing-research",
-              target: "_blank"
-              ) %>
-              <div class="item-details__role">guest</div>
-            </div>
-            <div class="item-details__description">Episode 2: "When Research Doesn't Go As Planned</div>
-            <div class="item-details__image">
-              <% link_to(
-                "https://www.userinterviews.com/blog/thoughtbots-jaclyn-perrone-preparing-for-amazing-research",
-                target: "_blank",
-                rel: "Awkward Silences") do %>
-                <%= image_tag "thumb__awkward-silences.png",
-                  :class => "",
-                  :alt => "Awkward Silences" %>
-              <% end %>
-            </div>
-          </li>
-        </ul>
-      </section>
-
-     <section class="section-sub">
         <h3 id="workshops">Workshops</h3>
         <ul class="section-sub__list">
           <li class="item-details">
@@ -267,6 +217,56 @@
                 <%= image_tag "thumb__advice.png",
                   :class => "",
                   :alt => "Advice for our User" %>
+              <% end %>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="section-sub">
+        <h3 id="podcasts">Podcasts</h3>
+        <ul class="section-sub__list">
+          <li class="item-details">
+            <span class="item-details__number">01</span>
+            <div class="item-details__header">
+              <%= link_to(
+              "Tentative",
+              "https://open.spotify.com/show/1ekoVpq7r5fmgyQxEhhWDx",
+              target: "_blank"
+              ) %>
+              <div class="item-details__role">co-host</div>
+            </div>
+            <div class="item-details__description">A podcast by thoughtbot about digital product design</div>
+            <div class="item-details__image">
+               <% link_to(
+                "https://open.spotify.com/show/1ekoVpq7r5fmgyQxEhhWDx",
+                target: "_blank",
+                rel: "Tentative") do %>
+                <%= image_tag "thumb__tentative.png",
+                  :class => "",
+                  :alt => "Tentative" %>
+              <% end %>
+            </div>
+          </li>
+          <li class="item-details">
+            <span class="item-details__number">02</span>
+            <div class="item-details__header">
+              <%= link_to(
+              "Awkward Silences by User Interviews",
+              "https://podcast.userinterviews.com/episodes/2-when-research-doesnt-go-as-planned-with-jaclyn-perrone-of-thoughtbot",
+              target: "_blank"
+              ) %>
+              <div class="item-details__role">guest</div>
+            </div>
+            <div class="item-details__description">Episode 2: "When Research Doesn't Go As Planned</div>
+            <div class="item-details__image">
+              <% link_to(
+                "https://podcast.userinterviews.com/episodes/2-when-research-doesnt-go-as-planned-with-jaclyn-perrone-of-thoughtbot",
+                target: "_blank",
+                rel: "Awkward Silences") do %>
+                <%= image_tag "thumb__awkward-silences.png",
+                  :class => "",
+                  :alt => "Awkward Silences" %>
               <% end %>
             </div>
           </li>
