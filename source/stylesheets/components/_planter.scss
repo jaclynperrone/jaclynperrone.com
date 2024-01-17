@@ -1,0 +1,34 @@
+.planter--group-1 {
+  @media only screen and (min-width: $small-screen) {
+    grid-column: 5 / span 2;
+    grid-row: 2 / span 2;
+  }
+}
+
+.planter--group-3 {
+  @media only screen and (min-width: $small-screen) {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+  }
+}
+
+.planter--group-4 {
+  @media only screen and (min-width: $small-screen) {
+    grid-column: 3 / span 2;
+    grid-row: 3 / span 2;
+  }
+}
+
+.planter--group-8 {
+  @media only screen and (min-width: $small-screen) {
+    grid-column: 2 / span 2;
+    grid-row: 5 / span 2;
+  }
+}
+
+.planter--group-9 {
+  @media only screen and (min-width: $small-screen) {
+    grid-column: 5 / span 2;
+    grid-row: 6 / span 2;
+  }
+}
