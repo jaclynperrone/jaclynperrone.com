@@ -1,0 +1,48 @@
+.site-nav-container {
+  display: flex;
+  flex-direction: column;
+
+  @media only screen and (min-width: $small-screen) {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.site-nav__logo {
+  margin-right: 0;
+  border-bottom: 6px solid transparent;
+
+  a {
+    @extend .anchor-reset;
+  }
+
+  @media only screen and (min-width: $small-screen) {
+     margin-right: $xlarge-spacing;
+  }
+}
+
+.site-nav {
+  display: flex;
+}
+
+.site-nav__item {
+  border-bottom: 2px solid transparent;
+  transition: border-color 300ms;
+  margin: 0 $xlarge-spacing 0 0;
+
+  &:hover {
+    border-color: $dark-gray;
+  }
+}
+
+.site-nav__anchor {
+  @extend .hvr-float, .anchor-reset;
+  text-decoration: none;
+  padding: $medium-spacing 0;
+}
+
+.index .site-nav__item--designer,
+.portfolio_index .site-nav__item--artist,
+.case-studies .site-nav__item--case-studies {
+  border-color: $dark-gray;
+}

@@ -10,9 +10,6 @@
   @media only screen and (min-width: $small-screen) {
     padding-bottom: 0;
   }
-  h1 {
-    @extend .hvr-float;
-  }
 }
 
 .section-container--artist {

@@ -1,10 +1,21 @@
 <header class="section-container section-container--hero">
-  <div class="section-content">
-    <h1><%= link_to(
-      "JACLYN PERRONE",
-      "/",
-      :class => "anchor-reset anchor-reset--home"
-      ) %>
-    </h1>
+  <div class="<%= page_classes %>">
+    <div class="site-nav-container">
+      <div>
+        <h1 class="site-nav__logo"><%= link_to("Jaclyn Perrone","/"
+          ) %>
+        </h1>
+      </div>
+      <div class="site-nav">
+        <div class="site-nav__item site-nav__item--designer"><%= link_to("Design","/", class: "site-nav__anchor") %>
+        </div>
+        <div class="site-nav__item site-nav__item--artist"><%= link_to("Artwork","/portfolio", class: "site-nav__anchor") %>
+        </div>
+        <% if current_page.data.type == "case study" %>
+          <div class="site-nav__item site-nav__item--case-studies"><%= link_to("Case Studies","/case-studies", class: "site-nav__anchor") %>
+          </div>
+        <% end %>
+      </div>
+    </div>
   </div>
 </header>
