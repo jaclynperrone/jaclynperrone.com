@@ -10,6 +10,9 @@
 
       gtag('config', 'G-07JN4HEX06');
     </script>
+  <% if current_page.data.type == "case study" %>
+    <meta name="robots" content="noindex, nofollow, noimageindex">
+  <% end %>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport"
@@ -28,7 +31,7 @@
         <main>
           <%= yield %>
         </main>
-        <%= partial "bio-art" %>
+        <%= partial "bio-design" %>
       </div>
       <%= partial "contact" %>
     </div>
