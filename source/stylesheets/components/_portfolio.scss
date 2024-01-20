@@ -29,9 +29,7 @@
 
 .portfolio__grid--prints {
   & li {
-    &:hover {
-      @extend .hvr-float;
-    }
+    position: relative;
   }
 }
 

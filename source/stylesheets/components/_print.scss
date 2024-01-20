@@ -1,8 +1,3 @@
-.print__link {
-  display: block;
-  position: relative;
-}
-
 .print__overlay {
   display: none;
 
@@ -28,311 +23,259 @@
     grid-column: 1 / span 3;
     grid-row: 1 / span 2;
 
-    &:hover {
-      .print__overlay {
+    & .print__overlay {
         background-image: url("/images/portfolio/prints/village_framed.jpg");
       }
     }
-  }
 }
 
 .print--purple-brownstones {
   @media only screen and (min-width: $small-screen) {
 
-    &:hover {
-      .print__overlay {
+    & .print__overlay {
         background-image: url("/images/portfolio/prints/purple-brownstones_framed.jpg");
       }
     }
   }
-}
 
 .print--rooftops {
   @media only screen and (min-width: $small-screen) {
 
-    &:hover {
-      .print__overlay {
+    & .print__overlay {
         background-image: url("/images/portfolio/prints/rooftops_framed.jpg");
       }
     }
   }
-}
 
 .print--bk-sunset {
   @media only screen and (min-width: $small-screen) {
 
-    &:hover {
-      .print__overlay {
+    & .print__overlay {
         background-image: url("/images/portfolio/prints/bk-sunset_framed.jpg");
       }
     }
   }
-}
 
 .print--autumn {
   @media only screen and (min-width: $small-screen) {
 
-    &:hover {
-      .print__overlay {
+    & .print__overlay {
         background-image: url("/images/portfolio/prints/autumn_framed.jpg");
       }
     }
   }
-}
 
 .print--alive {
   @media only screen and (min-width: $small-screen) {
     grid-column: 1 / span 2;
     grid-row: 3 / span 1;
 
-    &:hover {
-      .print__overlay {
+    & .print__overlay {
         background-image: url("/images/portfolio/prints/alive_framed.jpg");
       }
     }
   }
-}
 
 .print--guernsey {
   @media only screen and (min-width: $small-screen) {
     grid-column: 5 / span 2;
     grid-row: 2 / span 2;
 
-    &:hover {
-      .print__overlay {
+    & .print__overlay {
         background-image: url("/images/portfolio/prints/guernsey_framed.jpg");
       }
     }
   }
-}
 
 .print--lush {
   @media only screen and (min-width: $small-screen) {
     grid-column: 3 / span 2;
     grid-row: 3 / span 1;
 
-    &:hover {
-      .print__overlay {
+    & .print__overlay {
         background-image: url("/images/portfolio/prints/lush_framed.jpg");
       }
     }
   }
-}
 
 .print--smoky-mountains {
   @media only screen and (min-width: $small-screen) {
     grid-column: 1 / span 3;
     grid-row: 5 / span 2;
 
-    &:hover {
-      .print__overlay {
+    & .print__overlay {
         background-image: url("/images/portfolio/prints/smoky-mountains_framed.jpg");
       }
     }
   }
-}
 
 .print--red-field {
   @media only screen and (min-width: $small-screen) {
 
-    &:hover {
-      .print__overlay {
+    & .print__overlay {
         background-image: url("/images/portfolio/prints/red-field_framed.jpg");
       }
     }
   }
-}
 
 .print--tremont {
   @media only screen and (min-width: $small-screen) {
-    &:hover {
-      .print__overlay {
+    & .print__overlay {
         background-image: url("/images/portfolio/prints/tremont_framed.jpg");
       }
     }
   }
-}
 
 .print--winter-street {
   @media only screen and (min-width: $small-screen) {
-    &:hover {
-      .print__overlay {
+    & .print__overlay {
         background-image: url("/images/portfolio/prints/winter-street_framed.jpg");
       }
     }
   }
-}
 
 .print--green-valley {
   @media only screen and (min-width: $small-screen) {
 
-    &:hover {
-      .print__overlay {
+    & .print__overlay {
         background-image: url("/images/portfolio/prints/green-valley_framed.jpg");
       }
     }
   }
-}
 
 .print--midnight {
   @media only screen and (min-width: $small-screen) {
     grid-column: 1 / span 2;
     grid-row: 7 / span 1;
 
-    &:hover {
-      .print__overlay {
+    & .print__overlay {
         background-image: url("/images/portfolio/prints/midnight_framed.jpg");
       }
     }
   }
-}
 
 .print--forest-walk {
   @media only screen and (min-width: $small-screen) {
     grid-column: 5 / span 2;
     grid-row: 6 / span 2;
 
-    &:hover {
-      .print__overlay {
+    & .print__overlay {
         background-image: url("/images/portfolio/prints/forest-walk_framed.jpg");
       }
     }
   }
-}
 
 .print--green-house {
   @media only screen and (min-width: $small-screen) {
     grid-column: 3 / span 2;
     grid-row: 7 / span 1;
 
-    &:hover {
-      .print__overlay {
+    & .print__overlay {
         background-image: url("/images/portfolio/prints/green-house_framed.jpg");
       }
     }
   }
-}
 
 .print--pastel-city {
   @media only screen and (min-width: $small-screen) {
     grid-column: 1 / span 2;
     grid-row: 4 / span 1;
 
-    &:hover {
-      .print__overlay {
+    & .print__overlay {
         background-image: url("/images/portfolio/prints/pastel-city_framed.jpg");
       }
     }
   }
-}
 
 .print--uws {
   @media only screen and (min-width: $small-screen) {
     grid-column: 3 / span 2;
     grid-row: 4 / span 1;
 
-    &:hover {
-      .print__overlay {
+    & .print__overlay {
         background-image: url("/images/portfolio/prints/uws_framed.jpg");
       }
     }
   }
-}
 
 .print--brushy {
   @media only screen and (min-width: $small-screen) {
     grid-column: 5 / span 2;
     grid-row: 4 / span 1;
 
-    &:hover {
-      .print__overlay {
+    & .print__overlay {
         background-image: url("/images/portfolio/prints/brushy_framed.jpg");
       }
     }
   }
-}
 
 .print--willburg-i {
   @media only screen and (min-width: $small-screen) {
     grid-column: 1 / span 3;
     grid-row: 8 / span 2;
 
-    &:hover {
-      .print__overlay {
+    & .print__overlay {
         background-image: url("/images/portfolio/prints/willburg-i_framed.jpg");
       }
     }
   }
-}
 
 .print--treehouse {
   @media only screen and (min-width: $small-screen) {
 
-    &:hover {
-      .print__overlay {
+    & .print__overlay {
         background-image: url("/images/portfolio/prints/treehouse_framed.jpg");
       }
     }
   }
-}
 
 .print--midtown {
   @media only screen and (min-width: $small-screen) {
 
-    &:hover {
-      .print__overlay {
+    & .print__overlay {
         background-image: url("/images/portfolio/prints/midtown_framed.jpg");
       }
     }
   }
-}
 
 .print--forest {
   @media only screen and (min-width: $small-screen) {
 
-    &:hover {
-      .print__overlay {
+    & .print__overlay {
         background-image: url("/images/portfolio/prints/forest_framed.jpg");
       }
     }
   }
-}
 
 .print--fractured {
   @media only screen and (min-width: $small-screen) {
     grid-column: 1 / span 2;
     grid-row: 10 / span 1;
 
-    &:hover {
-      .print__overlay {
+    & .print__overlay {
         background-image: url("/images/portfolio/prints/fractured_framed.jpg");
       }
     }
   }
-}
 
 .print--willburg-ii {
   @media only screen and (min-width: $small-screen) {
     grid-column: 5 / span 2;
     grid-row: 9 / span 2;
 
-    &:hover {
-      .print__overlay {
+    & .print__overlay {
         background-image: url("/images/portfolio/prints/willburg-ii_framed.jpg");
       }
     }
   }
-}
 
 .print--afterglow {
   @media only screen and (min-width: $small-screen) {
     grid-column: 3 / span 2;
     grid-row: 10 / span 1;
 
-    &:hover {
-      .print__overlay {
+    & .print__overlay {
         background-image: url("/images/portfolio/prints/afterglow_framed.jpg");
       }
     }
   }
-}
