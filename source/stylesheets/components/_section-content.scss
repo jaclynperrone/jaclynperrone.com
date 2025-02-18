@@ -17,19 +17,33 @@
   }
 }
 
+.section-content__client {
+  font-family: $number-font-family;
+  font-weight: $black-font-weight;
+  color: $copy-dimmed;
+  font-size: $small-font-size;
+  letter-spacing: 1px;
+  margin: 0 5px $base-spacing;
+}
+
 .section-content__heading {
   font-size: 2.25rem;
   margin-bottom: $base-spacing;
 }
 
+.section-content__heading--case-study {
+  font-size: 2rem;
+}
+
 .section-content__subheading {
   margin-left: 5px;
-  margin-top: $large-spacing;
-  margin-bottom: $large-spacing;
-  font-size: 2.25rem;
+  margin-bottom: $base-spacing;
+  font-size: 2rem;
   font-family: $heading-font-family;
-  line-height: 1.1;
+  line-height: $subheading-line-height;
   font-weight: $black-font-weight;
+  text-transform: none;
+  margin-top: 2rem;
 
   @media only screen and (min-width: $small-screen) {
     margin-top: 2.5rem;

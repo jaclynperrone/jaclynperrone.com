@@ -10,7 +10,7 @@
 }
 
 .item-details__role {
-  margin-top: $xsmall-spacing;
+  margin-top: $small-spacing;
   color: $copy-dimmed;
   text-transform: uppercase;
   font-size: $small-font-size;
@@ -22,7 +22,7 @@
   font-weight: $black-font-weight;
   color: $copy-dimmed;
   font-size: $small-font-size;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   border-bottom: 1px solid $light-gray;
   display: block;
 }
@@ -63,4 +63,8 @@
   background-color: $ice-blue;
   padding: $large-spacing;
   border-radius: $base-border-radius;
+}
+
+.item-details__link {
+  line-height: $heading-line-height;
 }
