@@ -32,21 +32,21 @@
 }
 
 .section-content__heading--case-study {
-  font-size: 2rem;
+  font-size: $medium-font-size;
+  margin-left: 5px;
+  margin-bottom: 0.25em;
+  text-transform: uppercase;
 }
 
 .section-content__subheading {
-  margin-left: 5px;
-  margin-bottom: $base-spacing;
+  margin: $base-spacing 5px;
   font-size: 2rem;
   font-family: $heading-font-family;
   line-height: $subheading-line-height;
   font-weight: $black-font-weight;
   text-transform: none;
-  margin-top: 2rem;
 
   @media only screen and (min-width: $small-screen) {
-    margin-top: 2.5rem;
     font-size: 2.5rem;
   }
 }
