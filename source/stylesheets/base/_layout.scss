@@ -70,3 +70,13 @@ strong {
 img {
   border-radius: $base-border-radius;
 }
+
+.ui {
+  box-sizing: border-box;
+  border: 2px solid $dark-gray;
+  border-radius: 10px!important;
+}
+
+.border {
+  border: 1px solid $light-gray;
+}

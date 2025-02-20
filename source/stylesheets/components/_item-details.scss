@@ -39,17 +39,6 @@
   }
 }
 
-.item-details__image--phone {
-  img {
-    width: 60%;
-  }
-
-  @media only screen and (min-width: $small-screen) {
-    img {
-      width: 50%;
-    }
-  }
-}
 
 .item-details__3-col {
   display: grid;
@@ -69,14 +58,23 @@
   .item-details__image {
     text-align: center;
     grid-area: 1 / 3 / 2 / 4;
+    margin-top: $base-spacing;
 
     @media only screen and (max-width: $small-screen) {
       width: 100%;
     }
   }
+}
 
-  .item-details__image {
-    margin-top: $base-spacing;
+.item-details__image--phone {
+  img {
+    width: 60%;
+  }
+
+  @media only screen and (min-width: $small-screen) {
+    img {
+      width: 50%;
+    }
   }
 }
 

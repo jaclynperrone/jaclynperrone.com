@@ -30,9 +30,9 @@ type: case study
         <p>Being that a problem of this nature could be solved in a myriad of different ways, we decided to use Design Thinking to tackle the problem with its solution-based, user-centric approach. The five phases of the Design Thinking process are: Empathize, Define, Ideate, Prototype, Test. With a small team of six designers and developers, we set out to do these phases over the course of three months, with the goal of having software in the hands of Green Line officials quickly to get feedback and continue iteration from there.</p>
 
         <div class="article__image-container">
-          <div class="article__image">
+          <div>
             <%= image_tag "mbta-reservoir.jpg",
-                :class => "",
+                :class => "article__image",
                 :alt => "Heading to user interviews" %>
           </div>
           <div class="article__caption">Heading to Reservoir terminal for our first user interview</div>
@@ -97,18 +97,18 @@ type: case study
         </div>
 
         <div class="article__image-container">
-          <div class="article__image">
+          <div>
             <%= image_tag "mbta-interview.jpg",
-                :class => "",
+                :class => "article__image",
                 :alt => "Interviewing a Chief Inspector" %>
           </div>
           <div class="article__caption">Interviewing an MBTA Chief Inspector</div>
         </div>
 
         <div class="article__image-container">
-          <div class="article__image">
+          <div>
             <%= image_tag "mbta-occ.jpg",
-                :class => "",
+                :class => "article__image",
                 :alt => "Visiting the OCC" %>
           </div>
           <div class="article__caption">Visiting the Operations Control Center (OCC) to conduct user research</div>
@@ -118,9 +118,9 @@ type: case study
         <p>After a day’s interviews were over, we would come together as a team and synthesize. We captured our observations (things we heard, saw, felt) on sticky notes, and over time clustered similar ones together to form overarching insights. We came up with 30+ insights, all of which could easily spin off into their own product offering. The task at hand was prioritizing these insights and choosing one that we could tackle together in this short time that would yield the highest impact. This marked the second phase of the Design Thinking process: Define. Now it was up to us to use these insights to determine an objective to work towards that focuses on a critical, common unmet need that we heard throughout our interviews.</p>
 
         <div class="article__image-container">
-          <div class="article__image">
+          <div>
             <%= image_tag "mbta-insights.jpg",
-                :class => "",
+                :class => "article__image",
                 :alt => "Our board of insights" %>
           </div>
           <div class="article__caption">User research findings clustered into overarching themes</div>
@@ -129,9 +129,9 @@ type: case study
         <p>In order to help inform prioritization, we created a series of user personas to further document our findings. We culminated our findings into seven different personas, featuring the Chief Inspector, Desk Official, Dispatcher, Operator, Pull-out Inspector, Supervisor, and Yard Master. Our personas dove into topics such as: Goals, Behaviors & Habits, Technology Access, and Relationships. It was important for us to create and share artifacts like these from the research phase, to help inform future MBTA projects.</p>
 
         <div class="article__image-container">
-          <div class="article__image ui">
+          <div>
             <%= image_tag "mbta-persona.jpg",
-                :class => "border",
+                :class => "article__image border",
                 :alt => "A Chief Inspector persona" %>
           </div>
           <div class="article__caption">Persona for a Chief Inspector</div>
@@ -140,14 +140,14 @@ type: case study
         <p>Once we had a better understanding of all the different players and the nature of their relationships (the questions they asked each other and the blockers they experienced), we revisited our insights and determined that <strong>reducing radio chatter</strong> would have the greatest impact on their community. At this time there was one radio channel that handled all the communication on the Green Line, and there were times it was taken up with questions that could be easily answered through software (eg. who is operating a particular train). Questions like these prevented more urgent information from being distributed, which ultimately caused a breakdown in communication.</p>
 
         <div class="article__image-container article__image-container--2up">
-          <div class="article__image">
+          <div>
             <%= image_tag "mbta-whiteboard-1.jpg",
-                :class => "",
+                :class => "article__image",
                 :alt => "MVP screen" %>
           </div>
-          <div class="article__image">
+          <div>
             <%= image_tag "mbta-whiteboard-2.jpg",
-                :class => "",
+                :class => "article__image",
                 :alt => "MVP screen" %>
           </div>
           <div class="article__caption">Mapping out communication between Green Line officials</div>
@@ -158,24 +158,24 @@ type: case study
         <p>Now that we had a problem statement defined (<em>how might we reduce radio chatter?</em>), we were now ready to begin the third phase of the Design Thinking process: Ideate. As a team we sat down and did a series of design exercises to help us generate as many solutions as possible to solve our objective. We started with a round of Mind Mapping, which is used as a warm-up exercise to get our ideas out of our heads and onto paper. From there we did a few rounds of a rapid sketching exercise called Speedy Eights, to get as many solutions and ideas out as quickly as we can. Finally, we finished up with an activity called Story Boarding, which allowed each of us to develop an idea further by diving into the details of its interaction. After a few rounds of sharing and critiquing our ideas, we converged on a final storyboard that outlined the screens of the prototype we wanted to build.</p>
 
         <div class="article__image-container article__image-container--2up article__image-container--mosiac">
-          <div class="article__image mosiac-1">
+          <div class="mosaic-1">
             <%= image_tag "mbta-sketch-1.jpg",
-                :class => "",
+                :class => "article__image",
                 :alt => "MVP screen" %>
           </div>
-          <div class="article__image mosiac-2">
+          <div class="mosaic-2">
             <%= image_tag "mbta-sketch-2.jpg",
-                :class => "",
+                :class => "article__image",
                 :alt => "MVP screen" %>
           </div>
-          <div class="article__image mosiac-3">
+          <div class="mosaic-3">
             <%= image_tag "mbta-sketch-3.jpg",
-                :class => "",
+                :class => "article__image",
                 :alt => "MVP screen" %>
           </div>
-          <div class="article__image mosiac-4">
+          <div class="mosaic-4">
             <%= image_tag "mbta-sketch-4.jpg",
-                :class => "",
+                :class => "article__image",
                 :alt => "MVP screen" %>
           </div>
           <div class="article__caption">A selection of sketches from ideation exercises</div>
@@ -207,48 +207,48 @@ type: case study
         <p>We went back out to our interviewees and showed them the prototype on our phones to get their feedback. We asked questions like “What’s happening on this screen? What information is missing here? When would you use this feature? What would you do next?” After multiple rounds of showing and iterating on our prototype, we started to have a clearer idea of what we wanted to build for our first version of the product, our MVP.</p>
 
         <div class="article__image-container article__image-container--4up">
-          <div class="article__image ui">
+          <div>
             <%= image_tag "mbta-prototype-1.png",
-                :class => "border",
+                :class => "article__image ui",
                 :alt => "Prototype screen" %>
           </div>
-          <div class="article__image ui">
+          <div>
             <%= image_tag "mbta-prototype-2.png",
-                :class => "border",
+                :class => "article__image ui",
                 :alt => "Prototype screen" %>
           </div>
-          <div class="article__image ui">
+          <div>
             <%= image_tag "mbta-prototype-3.png",
-                :class => "border",
+                :class => "article__image ui",
                 :alt => "Prototype screen" %>
           </div>
-          <div class="article__image ui">
+          <div>
             <%= image_tag "mbta-prototype-4.png",
-                :class => "border",
+                :class => "article__image ui",
                 :alt => "Prototype screen" %>
           </div>
           <div class="article__caption">A selection of screens from our first prototype</div>
         </div>
 
         <div class="article__image-container article__image-container--4up">
-          <div class="article__image ui">
+          <div>
             <%= image_tag "mbta-mvp-1.png",
-                :class => "",
+                :class => "article__image ui",
                 :alt => "MVP screen" %>
           </div>
-          <div class="article__image ui">
+          <div>
             <%= image_tag "mbta-mvp-2.png",
-                :class => "",
+                :class => "article__image ui",
                 :alt => "MVP screen" %>
           </div>
-          <div class="article__image ui">
+          <div>
             <%= image_tag "mbta-mvp-3.png",
-                :class => "",
+                :class => "article__image ui",
                 :alt => "MVP screen" %>
           </div>
-          <div class="article__image ui">
+          <div>
             <%= image_tag "mbta-mvp-4.png",
-                :class => "",
+                :class => "article__image ui",
                 :alt => "MVP screen" %>
           </div>
           <div class="article__caption">A selection of screens from our newly designed MVP</div>
@@ -258,15 +258,15 @@ type: case study
         <p>As a team we created a backlog of all the features that we wanted to include in our first build, based on user feedback from testing. Once this list was created, we prioritized and honed in on which features would be required in order for our app to function and provide value. These features included train locations, train sheets (entering who is operating which car), and a way to collect user feedback. We also decided to integrate analytics from the start in order to gather information on usage to inform future iterations.</p>
 
         <div class="article__image-container article__image-container--2up">
-          <div class="article__image">
+          <div>
             <%= image_tag "mbta-release-1.jpg",
-                :class => "",
-                :alt => "MVP screen" %>
+                :class => "article__image",
+                :alt => "MBTA inspectors using our app" %>
           </div>
-          <div class="article__image">
+          <div>
             <%= image_tag "mbta-release-2.jpg",
-                :class => "",
-                :alt => "MVP screen" %>
+                :class => "article__image",
+                :alt => "MBTA inspectors using our app" %>
           </div>
           <div class="article__caption">MBTA Inspectors using our app during our initial launch</div>
         </div>

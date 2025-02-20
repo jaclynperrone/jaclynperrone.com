@@ -1,10 +1,10 @@
 .featured-content-heading {
-	text-align: center;
-	margin-top: 0;
+  text-align: center;
+  margin-top: 0;
   margin-bottom: $large-spacing;
   font-weight: $strong-font-weight;
 
 	@media only screen and (min-width: $small-screen) {
-    font-size: 2rem;
+    font-size: $large-font-size;
   }
 }
