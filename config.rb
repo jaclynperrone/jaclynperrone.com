@@ -51,3 +51,7 @@ end
 configure :build do
 	activate :relative_assets
 end
+
+after_build do
+  FileUtils.cp(File.join(root, 'source', '_redirects'), File.join(root, 'build', '_redirects'))
+end
